@@ -1,0 +1,35 @@
+﻿#!/usr/bin/perl
+use strict;
+use Data::Dumper;
+$|=1;   #makes the macro produce all results at once, not in spurts
+
+#written by LaRosa Johnson on 5/1/2012 to add unique id for each anchor
+
+my $filename = "netbiblemobile.html";
+my $output = $filename;
+$output =~ s{\.html*}{.new.html}i;
+
+open (IN, $filename);
+my @bookarray = <IN>;
+close IN;
+
+my $bible;
+my $chapter;
+
+foreach (@bookarray) {
+	if($_ =~ m{<li><a name="([^"]+)"}){
+		$bible = $1;
+		
+		$_ =~ s{(name="[^"]+")}{$1 id="$bible"}i;
+	}
+	
+	if($_ =~ m{<li><a href="[^"]+" target="content" class="chapter">([0-9]+)</a></li>}){
+		$chapter = $1;
+		
+		$_ =~ s{(class="chapter")}{$1 id="$bible-$chapter"}i;
+	}
+}
+
+open (OUT, ">$output");
+print OUT @bookarray;
+close OUT;

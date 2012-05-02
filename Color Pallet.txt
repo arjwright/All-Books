@@ -1,0 +1,39 @@
+Primary and Secondary Color Pallet Used for All Books Project
+Created: 5/2/2012
+Last Updated: 11:44 AM 5/2/2012
+
+
+Primary Colors
+
+Text:
+#000 - Black
+#FFD700 - Orange (variant): used for hover-text state
+
+UI (Books/Chapter Number Squares)
+#F1F1F1 - Grey (variant): used for borders, background color for book/chapter list
+#F90 - Orange (variant): focus color for square borders
+#0CC, #00CCCC - Sea Blue: used for Old Testament Books
+#0EE, #00EEEE - Sky Blue: used for Apocrypha Books
+#0F9, #00FF99 - Light Leaf Green: used for New Testament Books
+#0D9, #00DD99 - Sea Green: used for Other Historical Books
+#0B9, #00BB99 - Green-Blue: used for About/References
+
+Secondary Colors
+#C1CDCD - Grey (variant): used for Torah-OT
+#9A32CD - Purple (variant): used for Poetry-OT
+#C1FFC1 - Light Tan: used for Minor Prophets-OT
+#00FF99 - Red: used for Gospels-NT
+#FFFFF2 - Sand (variant): used for Pauline Letters-NT
+
+Aging Colors (used showing how often an item was clicked)
+#FFF, #FFFFFF - Grey (100)/White
+#E5E5E5 - Grey (90)
+#CCC, #CCCCCC - Grey (80)
+#B3B3B3 - Grey (70)
+#999, #999999 - Grey (60)
+#7F7F7F - Grey (50)
+#666, #666666 - Grey (40)
+#4D4D4D - Grey (30)
+#333, #333333 - Grey (20)
+#1A1A1A - Grey (10)
+#000, #000000 - Grey (0)/Black
