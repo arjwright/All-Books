@@ -16,17 +16,17 @@
 		<a class="other">Others</a> | 
 		<a class="about">About</a>
 	</nav>
-	<script>$('h1').click(function () {$('ul.chapters').hide("fast");$('section.content').hide("fast");$('section.admin').hide("fast");$('section.books').show("fast");$('a').removeClass('active');});</script>
-	<script>$('a.ot').click(function () {$('a').removeClass('active');$('a.ot').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.ot').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");});</script>
-	<script>$('a.apocrypha').click(function () {$('a').removeClass('active');$('a.apocrypha').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.apocrypha').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");});</script>
-	<script>$('a.nt').click(function () {$('a').removeClass('active');$('a.nt').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.nt').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");});</script>
-	<script>$('a.other').click(function () {$('a').removeClass('active');$('a.other').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.other').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");});</script>
-	<script>$('a.about').click(function () {$('a').removeClass('active');$('a.about').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.about').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");});</script>
+	<script>$('h1').click(function () {$('ul.chapters').hide("fast");$('section.content').hide("fast");$('section.admin').hide("fast");$('section.books').show("fast");$('a').removeClass('active');$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.ot').click(function () {$('a').removeClass('active');$('a.ot').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.ot').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.apocrypha').click(function () {$('a').removeClass('active');$('a.apocrypha').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.apocrypha').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.nt').click(function () {$('a').removeClass('active');$('a.nt').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.nt').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.other').click(function () {$('a').removeClass('active');$('a.other').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.other').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.about').click(function () {$('a').removeClass('active');$('a.about').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.about').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
 </header>
 <div style="clear:both;height:1px;">&nbsp;</div>
 <section class="clicked0 books ot">
 	<ul>
-		<li><a name="gen" id="gen" class="clicked0 book gen torah">Gen</a>
+		<li><a name="gen" id="gen" onclick="clickOTBook()" class="clicked0 book gen torah">Gen</a>
 			<ul class="gen torah chapters">
 				<li><a href="gen1.htm" target="content" class="chapter" id="gen-1">1</a></li>
 				<li><a href="gen2.htm" target="content" class="chapter" id="gen-2">2</a></li>
@@ -81,7 +81,7 @@
 			</ul>
 		<script>$('a.gen').click(function () {$('ul.gen').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="exo" id="exo" class="clicked0 book exo torah">Exo</a>
+		<li><a name="exo" id="exo" onclick="clickOTBook()" class="clicked0 book exo torah">Exo</a>
 			<ul class="exo torah chapters">
 				<li><a href="exo1.htm" target="content" class="chapter" id="exo-1">1</a></li>
 				<li><a href="exo2.htm" target="content" class="chapter" id="exo-2">2</a></li>
@@ -126,7 +126,7 @@
 			</ul>
 		<script>$('a.exo').click(function () {$('ul.exo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="lev" id="lev" class="clicked0 book lev torah">Lev</a>
+		<li><a name="lev" id="lev" onclick="clickOTBook()" class="clicked0 book lev torah">Lev</a>
 			<ul class="lev torah chapters">
 				<li><a href="lev1.htm" target="content" class="chapter" id="lev-1">1</a></li>
 				<li><a href="lev2.htm" target="content" class="chapter" id="lev-2">2</a></li>
@@ -158,7 +158,7 @@
 			</ul>
 		<script>$('a.lev').click(function () {$('ul.lev').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="num" id="num" class="clicked0 book num torah">Num</a>
+		<li><a name="num" id="num" onclick="clickOTBook()" class="clicked0 book num torah">Num</a>
 			<ul class="num torah chapters">
 				<li><a href="num1.htm" target="content" class="chapter" id="num-1">1</a></li>
 				<li><a href="num2.htm" target="content" class="chapter" id="num-2">2</a></li>
@@ -199,7 +199,7 @@
 			</ul>
 		<script>$('a.num').click(function () {$('ul.num').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="deu" id="deu" class="clicked0 book deu torah">Deu</a>
+		<li><a name="deu" id="deu" onclick="clickOTBook()" class="clicked0 book deu torah">Deu</a>
 			<ul class="deu torah chapters">
 				<li><a href="deu1.htm" target="content" class="chapter" id="deu-1">1</a></li>
 				<li><a href="deu2.htm" target="content" class="chapter" id="deu-2">2</a></li>
@@ -238,7 +238,7 @@
 			</ul>
 		<script>$('a.deu').click(function () {$('ul.deu').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jos" id="jos" class="clicked0 book jos">Jos</a>
+		<li><a name="jos" id="jos" onclick="clickOTBook()" class="clicked0 book jos">Jos</a>
 			<ul class="jos chapters">
 				<li><a href="jos1.htm" target="content" class="chapter" id="jos-1">1</a></li>
 				<li><a href="jos2.htm" target="content" class="chapter" id="jos-2">2</a></li>
@@ -267,7 +267,7 @@
 			</ul>
 		<script>$('a.jos').click(function () {$('ul.jos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jdg" id="jdg" class="clicked0 book jdg">Jdg</a>
+		<li><a name="jdg" id="jdg" onclick="clickOTBook()" class="clicked0 book jdg">Jdg</a>
 			<ul class="jdg chapters">
 				<li><a href="jdg1.htm" target="content" class="chapter" id="jdg-1">1</a></li>
 				<li><a href="jdg2.htm" target="content" class="chapter" id="jdg-2">2</a></li>
@@ -293,7 +293,7 @@
 			</ul>
 		<script>$('a.jdg').click(function () {$('ul.jdg').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="rut" id="rut" class="clicked0 book rut">Ruth</a>
+		<li><a name="rut" id="rut" onclick="clickOTBook()" class="clicked0 book rut">Ruth</a>
 			<ul class="rut chapters">
 				<li><a href="rut1.htm" target="content" class="chapter" id="rut-1">1</a></li>
 				<li><a href="rut2.htm" target="content" class="chapter" id="rut-2">2</a></li>
@@ -302,7 +302,7 @@
 			</ul>
 		<script>$('a.rut').click(function () {$('ul.rut').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="sam1" id="sam1" class="clicked0 book sam1">1 Sam</a>
+		<li><a name="sam1" id="sam1" onclick="clickOTBook()" class="clicked0 book sam1">1 Sam</a>
 			<ul class="sam1 chapters">
 				<li><a href="1sa1.htm" target="content" class="chapter" id="sam1-1">1</a></li>
 				<li><a href="1sa2.htm" target="content" class="chapter" id="sam1-2">2</a></li>
@@ -338,7 +338,7 @@
 			</ul>
 		<script>$('a.sam1').click(function () {$('ul.sam1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="sam2" id="sam2" class="clicked0 book sam2">2 Sam</a>
+		<li><a name="sam2" id="sam2" onclick="clickOTBook()" class="clicked0 book sam2">2 Sam</a>
 			<ul class="sam2 chapters">
 				<li><a href="2sa1.htm" target="content" class="chapter" id="sam2-1">1</a></li>
 				<li><a href="2sa2.htm" target="content" class="chapter" id="sam2-2">2</a></li>
@@ -367,7 +367,7 @@
 			</ul>
 		<script>$('a.sam2').click(function () {$('ul.sam2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="kgs1" id="kgs1" class="clicked0 book kgs1">1 Kgs</a>
+		<li><a name="kgs1" id="kgs1" onclick="clickOTBook()" class="clicked0 book kgs1">1 Kgs</a>
 			<ul class="kgs1 chapters">
 				<li><a href="1ki1.htm" target="content" class="chapter" id="kgs1-1">1</a></li>
 				<li><a href="1ki2.htm" target="content" class="chapter" id="kgs1-2">2</a></li>
@@ -394,7 +394,7 @@
 			</ul>
 		<script>$('a.kgs1').click(function () {$('ul.kgs1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="kgs2" id="kgs2" class="clicked0 book kgs2">2 Kgs</a>
+		<li><a name="kgs2" id="kgs2" onclick="clickOTBook()" class="clicked0 book kgs2">2 Kgs</a>
 			<ul class="kgs2 chapters">
 				<li><a href="2ki1.htm" target="content" class="chapter" id="kgs2-1">1</a></li>
 				<li><a href="2ki2.htm" target="content" class="chapter" id="kgs2-2">2</a></li>
@@ -424,7 +424,7 @@
 			</ul>
 		<script>$('a.kgs2').click(function () {$('ul.kgs2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="chr1" id="chr1" class="clicked0 book chr1">1 Chr</a>
+		<li><a name="chr1" id="chr1" onclick="clickOTBook()" class="clicked0 book chr1">1 Chr</a>
 			<ul class="chr1 chapters">
 				<li><a href="1ch1.htm" target="content" class="chapter" id="chr1-1">1</a></li>
 				<li><a href="1ch2.htm" target="content" class="chapter" id="chr1-2">2</a></li>
@@ -458,7 +458,7 @@
 			</ul>
 		<script>$('a.chr1').click(function () {$('ul.chr1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="chr2" id="chr2" class="clicked0 book">2 Chr</a>
+		<li><a name="chr2" id="chr2" onclick="clickOTBook()" class="clicked0 book chr2">2 Chr</a>
 			<ul class="chr2 chapters">
 				<li><a href="2ch1.htm" target="content" class="chapter" id="chr2-1">1</a></li>
 				<li><a href="2ch2.htm" target="content" class="chapter" id="chr2-2">2</a></li>
@@ -500,7 +500,7 @@
 			</ul>
 		<script>$('a.chr2').click(function () {$('ul.chr2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="ezr" id="ezr" class="clicked0 book ezr">Ezr</a>
+		<li><a name="ezr" id="ezr" onclick="clickOTBook()" class="clicked0 book ezr">Ezr</a>
 			<ul class="ezra chapters">
 				<li><a href="ezr1.htm" target="content" class="chapter" id="ezr-1">1</a></li>
 				<li><a href="ezr2.htm" target="content" class="chapter" id="ezr-2">2</a></li>
@@ -515,7 +515,7 @@
 			</ul>
 		<script>$('a.ezr').click(function () {$('ul.ezr').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="neh" id="neh" class="clicked0 book neh">Neh</a>
+		<li><a name="neh" id="neh" onclick="clickOTBook()" class="clicked0 book neh">Neh</a>
 			<ul class="neh chapters">
 				<li><a href="neh1.htm" target="content" class="chapter" id="neh-1">1</a></li>
 				<li><a href="neh2.htm" target="content" class="chapter" id="neh-2">2</a></li>
@@ -533,7 +533,7 @@
 			</ul>
 		<script>$('a.neh').click(function () {$('ul.neh').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="est" id="est" class="clicked0 book est">Est</a>
+		<li><a name="est" id="est" onclick="clickOTBook()" class="clicked0 book est">Est</a>
 			<ul class="est chapters">
 				<li><a href="est1.htm" target="content" class="chapter" id="est-1">1</a></li>
 				<li><a href="est2.htm" target="content" class="chapter" id="est-2">2</a></li>
@@ -548,7 +548,7 @@
 			</ul>
 		<script>$('a.est').click(function () {$('ul.est').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="job" id="job" class="clicked0 book job">Job</a>
+		<li><a name="job" id="job" onclick="clickOTBook()" class="clicked0 book job">Job</a>
 			<ul class="job chapters">
 				<li><a href="job1.htm" target="content" class="chapter" id="job-1">1</a></li>
 				<li><a href="job2.htm" target="content" class="chapter" id="job-2">2</a></li>
@@ -595,7 +595,7 @@
 			</ul>
 		<script>$('a.job').click(function () {$('ul.job').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="psa" id="psa" class="clicked0 book psa poetry">Psa</a>
+		<li><a name="psa" id="psa" onclick="clickOTBook()" class="clicked0 book psa poetry">Psa</a>
 			<ul class="psa poetry chapters">
 				<li><a href="psa1.htm" target="content" class="chapter" id="psa-1">1</a></li>
 				<li><a href="psa2.htm" target="content" class="chapter" id="psa-2">2</a></li>
@@ -750,7 +750,7 @@
 			</ul>
 		<script>$('a.psa').click(function () {$('ul.psa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="pro" id="pro" class="clicked0 book pro poetry">Pro</a>
+		<li><a name="pro" id="pro" onclick="clickOTBook()" class="clicked0 book pro poetry">Pro</a>
 			<ul class="pro poetry chapters">
 				<li><a href="pro1.htm" target="content" class="chapter" id="pro-1">1</a></li>
 				<li><a href="pro2.htm" target="content" class="chapter" id="pro-2">2</a></li>
@@ -786,7 +786,7 @@
 			</ul>
 		<script>$('a.pro').click(function () {$('ul.pro').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="" class="clicked0 book ecc poetry">Ecc</a>
+		<li><a name="" onclick="clickOTBook()" class="clicked0 book ecc poetry">Ecc</a>
 			<ul class="ecc poetry chapters">
 				<li><a href="ecc1.htm" target="content" class="chapter" id="pro-1">1</a></li>
 				<li><a href="ecc2.htm" target="content" class="chapter" id="pro-2">2</a></li>
@@ -803,7 +803,7 @@
 			</ul>
 		<script>$('a.ecc').click(function () {$('ul.ecc').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="sos" id="sos" class="clicked0 book sos poetry">SOS</a>
+		<li><a name="sos" id="sos" onclick="clickOTBook()" class="clicked0 book sos poetry">SOS</a>
 			<ul class="sos poetry chapters">
 				<li><a href="sos1.htm" target="content" class="chapter" id="sos-1">1</a></li>
 				<li><a href="sos2.htm" target="content" class="chapter" id="sos-2">2</a></li>
@@ -816,7 +816,7 @@
 			</ul>
 		<script>$('a.sos').click(function () {$('ul.sos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="isa" id="isa" class="clicked0 book isa">Isa</a>
+		<li><a name="isa" id="isa" onclick="clickOTBook()" class="clicked0 book isa">Isa</a>
 			<ul class="isa chapters">
 				<li><a href="isa1.htm" target="content" class="chapter" id="isa-1">1</a></li>
 				<li><a href="isa2.htm" target="content" class="chapter" id="isa-2">2</a></li>
@@ -887,7 +887,7 @@
 			</ul>
 		<script>$('a.isa').click(function () {$('ul.isa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jer" id="jer" class="clicked0 book jer">Jer</a>
+		<li><a name="jer" id="jer" onclick="clickOTBook()" class="clicked0 book jer">Jer</a>
 			<ul class="jer chapters">
 				<li><a href="jer1.htm" target="content" class="chapter" id="jer-1">1</a></li>
 				<li><a href="jer2.htm" target="content" class="chapter" id="jer-2">2</a></li>
@@ -944,7 +944,7 @@
 			</ul>
 		<script>$('a.jer').click(function () {$('ul.jer').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="lam" id="lam" class="clicked0 book lam">Lam</a>
+		<li><a name="lam" id="lam" onclick="clickOTBook()" class="clicked0 book lam">Lam</a>
 			<ul class="lam chapters">
 				<li><a href="lam1.htm" target="content" class="chapter" id="lam-1">1</a></li>
 				<li><a href="lam2.htm" target="content" class="chapter" id="lam-2">2</a></li>
@@ -954,7 +954,7 @@
 			</ul>
 		<script>$('a.lam').click(function () {$('ul.lam').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="eze" id="eze" class="clicked0 book eeze">Eze</a>
+		<li><a name="eze" id="eze" onclick="clickOTBook()" class="clicked0 book eeze">Eze</a>
 			<ul class="eze chapters">
 				<li><a href="eze1.htm" target="content" class="chapter" id="eze-1">1</a></li>
 				<li><a href="eze2.htm" target="content" class="chapter" id="eze-2">2</a></li>
@@ -1007,7 +1007,7 @@
 			</ul>
 		<script>$('a.eze').click(function () {$('ul.eze').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="dan" id="dan" class="clicked0 book dan">Dan</a>
+		<li><a name="dan" id="dan" onclick="clickOTBook()" class="clicked0 book dan">Dan</a>
 			<ul class="dan chapters">
 				<li><a href="dan1.htm" target="content" class="chapter" id="dan-1">1</a></li>
 				<li><a href="dan2.htm" target="content" class="chapter" id="dan-2">2</a></li>
@@ -1024,7 +1024,7 @@
 			</ul>
 		<script>$('a.dan').click(function () {$('ul.dan').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="hos" id="hos" class="clicked0 book hos minor">Hos</a>
+		<li><a name="hos" id="hos" onclick="clickOTBook()" class="clicked0 book hos minor">Hos</a>
 			<ul class="hos minor chapters">
 				<li><a href="hos1.htm" target="content" class="chapter" id="hos-1">1</a></li>
 				<li><a href="hos2.htm" target="content" class="chapter" id="hos-2">2</a></li>
@@ -1043,7 +1043,7 @@
 			</ul>
 		<script>$('a.hos').click(function () {$('ul.hos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="joe" id="joe" class="clicked0 book joe minor">Joe</a>
+		<li><a name="joe" id="joe" onclick="clickOTBook()" class="clicked0 book joe minor">Joe</a>
 			<ul class="joe minor chapters">
 				<li><a href="joe1.htm" target="content" class="chapter" id="joe-1">1</a></li>
 				<li><a href="joe2.htm" target="content" class="chapter" id="joe-2">2</a></li>
@@ -1051,7 +1051,7 @@
 			</ul>
 		<script>$('a.joe').click(function () {$('ul.joe').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="amo" id="amo" class="clicked0 book amo minor">Amo</a>
+		<li><a name="amo" id="amo" onclick="clickOTBook()" class="clicked0 book amo minor">Amo</a>
 			<ul class="amo minor chapters">
 				<li><a href="amo1.htm" target="content" class="chapter" id="amo-1">1</a></li>
 				<li><a href="amo2.htm" target="content" class="chapter" id="amo-2">2</a></li>
@@ -1065,13 +1065,13 @@
 			</ul>
 		<script>$('a.amo').click(function () {$('ul.amo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="oba" id="oba" class="clicked0 book oba minor">Oba</a>
+		<li><a name="oba" id="oba" onclick="clickOTBook()" class="clicked0 book oba minor">Oba</a>
 			<ul class="oba minor chapters">
 				<li><a href="oba1.htm" target="content" class="chapter" id="oba-1">1</a></li>
 			</ul>
 		<script>$('a.oba').click(function () {$('ul.oba').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jon" id="jon" class="clicked0 book jon minor">Jon</a>
+		<li><a name="jon" id="jon" onclick="clickOTBook()" class="clicked0 book jon minor">Jon</a>
 			<ul class="jon minor chapters">
 				<li><a href="jon1.htm" target="content" class="chapter" id="jon-1">1</a></li>
 				<li><a href="jon2.htm" target="content" class="chapter" id="jon-2">2</a></li>
@@ -1080,7 +1080,7 @@
 			</ul>
 		<script>$('a.jon').click(function () {$('ul.jon').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="mic" id="mic" class="clicked0 book mic minor">Mic</a>
+		<li><a name="mic" id="mic" onclick="clickOTBook()" class="clicked0 book mic minor">Mic</a>
 			<ul class="mic minor chapters">
 				<li><a href="mic1.htm" target="content" class="chapter" id="mic-1">1</a></li>
 				<li><a href="mic2.htm" target="content" class="chapter" id="mic-2">2</a></li>
@@ -1092,7 +1092,7 @@
 			</ul>
 		<script>$('a.mic').click(function () {$('ul.mic').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="nah" id="nah" class="clicked0 book nah minor">Nah</a>
+		<li><a name="nah" id="nah" onclick="clickOTBook()" class="clicked0 book nah minor">Nah</a>
 			<ul class="nah minor chapters">
 				<li><a href="nah1.htm" target="content" class="chapter" id="nah-1">1</a></li>
 				<li><a href="nah2.htm" target="content" class="chapter" id="nah-2">2</a></li>
@@ -1100,7 +1100,7 @@
 			</ul>
 		<script>$('a.nah').click(function () {$('ul.nah').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="hab" id="hab" class="clicked0 book hab minor">Hab</a>
+		<li><a name="hab" id="hab" onclick="clickOTBook()" class="clicked0 book hab minor">Hab</a>
 			<ul class="hab minor chapters">
 				<li><a href="hab1.htm" target="content" class="chapter" id="hab-1">1</a></li>
 				<li><a href="hab2.htm" target="content" class="chapter" id="hab-2">2</a></li>
@@ -1108,7 +1108,7 @@
 			</ul>
 		<script>$('a.hab').click(function () {$('ul.hab').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="zep" id="zep" class="clicked0 book zep minor">Zeph</a>
+		<li><a name="zep" id="zep" onclick="clickOTBook()" class="clicked0 book zep minor">Zeph</a>
 			<ul class="zep minor chapters">
 				<li><a href="zep1.htm" target="content" class="chapter" id="zep-1">1</a></li>
 				<li><a href="zep2.htm" target="content" class="chapter" id="zep-2">2</a></li>
@@ -1116,14 +1116,14 @@
 			</ul>
 		<script>$('a.zep').click(function () {$('ul.zep').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="hag" id="hag" class="clicked0 book hag minor">Hag</a>
+		<li><a name="hag" id="hag" onclick="clickOTBook()" class="clicked0 book hag minor">Hag</a>
 			<ul class="hag minor chapters">
 				<li><a href="hag1.htm" target="content" class="chapter" id="hag-1">1</a></li>
 				<li><a href="hag2.htm" target="content" class="chapter" id="hag-2">2</a></li>
 			</ul>
 		<script>$('a.hag').click(function () {$('ul.hag').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="zec" id="zec" class="clicked0 book zec minor">Zec</a>
+		<li><a name="zec" id="zec" onclick="clickOTBook()" class="clicked0 book zec minor">Zec</a>
 			<ul class="zec minor chapters">
 				<li><a href="zec1.htm" target="content" class="chapter" id="zec-1">1</a></li>
 				<li><a href="zec2.htm" target="content" class="chapter" id="zec-2">2</a></li>
@@ -1142,7 +1142,7 @@
 			</ul>
 		<script>$('a.zec').click(function () {$('ul.zec').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="mal" id="mal" class="clicked0 book mal minor">Mal</a>
+		<li><a name="mal" id="mal" onclick="clickOTBook()" class="clicked0 book mal minor">Mal</a>
 			<ul class="mal minor chapters">
 				<li><a href="mal1.htm" target="content" class="chapter" id="mal-1">1</a></li>
 				<li><a href="mal2.htm" target="content" class="chapter" id="mal-2">2</a></li>
@@ -1155,7 +1155,7 @@
 </section>
 <section class="clicked0 books apocrypha">
 	<ul>
-		<li><a name="bar" id="bar" class="clicked0 book bar">Bar</a>
+		<li><a name="bar" id="bar" onclick="clickAPBook()" class="clicked0 book bar">Bar</a>
 			<ul class="bar chapters">
 				<li><a href="bar1.htm" target="content" class="chapter" id="bar-1">1</a></li>
 				<li><a href="bar2.htm" target="content" class="chapter" id="bar-2">2</a></li>
@@ -1165,57 +1165,57 @@
 			</ul>
 		<script>$('a.bar').click(function () {$('ul.bar').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="ada" id="ada" class="clicked0 book">Add Dan</a></li>
-		<li><a name="pra" id="pra" class="clicked0 book pra">Pr Azar</a>
+		<li><a name="ada" id="ada" onclick="clickAPBook()" class="clicked0 book">Add Dan</a></li>
+		<li><a name="pra" id="pra" onclick="clickAPBook()" class="clicked0 book pra">Pr Azar</a>
 			<ul class="pra chapters">
 				<li><a href="pra1.htm" target="content" class="chapter" id="pra-1">1</a></li>
 			</ul>
 		<script>$('a.pra').click(function () {$('ul.pra').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="bel" id="bel" class="clicked0 book bel">Bel</a>
+		<li><a name="bel" id="bel" onclick="clickAPBook()" class="clicked0 book bel">Bel</a>
 			<ul class="bel chapters">
 				<li><a href="bel1.htm" target="content" class="chapter" id="bel-1">1</a></li>
 			</ul>
 		<script>$('a.bel').click(function () {$('ul.bel').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="sth" id="sth" class="clicked0 book">Sg Three</a></li>
-		<li><a name="sus" id="sus" class="clicked0 book sus">Sus</a>
+		<li><a name="sth" id="sth" onclick="clickAPBook()" class="clicked0 book">Sg Three</a></li>
+		<li><a name="sus" id="sus" onclick="clickAPBook()" class="clicked0 book sus">Sus</a>
 			<ul class="sus chapters">
 				<li><a href="sus1.htm" target="content" class="chapter" id="sus-1">1</a></li>
 			</ul>
 		<script>$('a.sus').click(function () {$('ul.sus').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="esd" id="esd" class="clicked0 book">1-2 Esd</a></li>
-		<li><a name="aest" id="aest" class="clicked0 book">Add Esth</a></li>
-		<li><a name="lje" id="lje" class="clicked0 book lje">Ep Jer</a>
+		<li><a name="esd" id="esd" onclick="clickAPBook()" class="clicked0 book">1-2 Esd</a></li>
+		<li><a name="aest" id="aest" onclick="clickAPBook()" class="clicked0 book">Add Esth</a></li>
+		<li><a name="lje" id="lje" onclick="clickAPBook()" class="clicked0 book lje">Ep Jer</a>
 			<ul class="lje chapters">
 				<li><a href="lje1.htm" target="content" class="chapter" id="lje-1">1</a></li>
 			</ul>
 		<script>$('a.lje').click(function () {$('ul.lje').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jdt" id="jdt" class="clicked0 book">Jdt</a></li>
-		<li><a name="mac" id="mac" class="clicked0 book">1-4 Macc</a></li>
-		<li><a name="prm" id="prm" class="clicked0 book prm">Pr Man</a>
+		<li><a name="jdt" id="jdt" onclick="clickAPBook()" class="clicked0 book">Jdt</a></li>
+		<li><a name="mac" id="mac" onclick="clickAPBook()" class="clicked0 book">1-4 Macc</a></li>
+		<li><a name="prm" id="prm" onclick="clickAPBook()" class="clicked0 book prm">Pr Man</a>
 			<ul class="prm chapters">
 				<li><a href="prm1.htm" target="content" class="chapter" id="prm-1">1</a></li>
 			</ul>
 		<script>$('a.prm').click(function () {$('ul.prm').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="adp" id="adp" class="clicked0 book adp">Ps 151</a>
+		<li><a name="adp" id="adp" onclick="clickAPBook()" class="clicked0 book adp">Ps 151</a>
 			<ul class="adp chapters">
 				<li><a href="adp1.htm" target="content" class="chapter">Add 151</a></li>
 				<li><a href="adp151.htm" target="content" class="chapter">Psa 151</a></li>
 			</ul>
 		<script>$('a.adp').click(function () {$('ul.adp').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="sir" id="sir" class="clicked0 book">Sir</a></li>
-		<li><a name="tob" id="tob" class="clicked0 book">Tob</a></li>
-		<li><a name="wis" id="wis" class="clicked0 book">Wis</a></li>
+		<li><a name="sir" id="sir" onclick="clickAPBook()" class="clicked0 book">Sir</a></li>
+		<li><a name="tob" id="tob" onclick="clickAPBook()" class="clicked0 book">Tob</a></li>
+		<li><a name="wis" id="wis" onclick="clickAPBook()" class="clicked0 book">Wis</a></li>
 	</ul>
 </section>
 <section class="clicked0 books nt">
 	<ul>
-		<li><a name="mat" id="mat" class="clicked0 book mat gspl">Mat</a>
+		<li><a name="mat" id="mat" onclick="clickNTBook()" class="clicked0 book mat gspl">Mat</a>
 			<ul class="mat gspl chapters">
 				<li><a href="mat1.htm" target="content" class="chapter" id="mat-1">1</a></li>
 				<li><a href="mat2.htm" target="content" class="chapter" id="mat-2">2</a></li>
@@ -1248,7 +1248,7 @@
 			</ul>
 		<script>$('a.mat').click(function () {$('ul.mat').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="mar" id="mar" class="clicked0 book mar gspl">Mar</a>
+		<li><a name="mar" id="mar" onclick="clickNTBook()" class="clicked0 book mar gspl">Mar</a>
 			<ul class="mar gspl chapters">
 				<li><a href="mar1.htm" target="content" class="chapter" id="mar-1">1</a></li>
 				<li><a href="mar2.htm" target="content" class="chapter" id="mar-2">2</a></li>
@@ -1269,7 +1269,7 @@
 			</ul>
 		<script>$('a.mar').click(function () {$('ul.mar').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="luk" id="luk" class="clicked0 book luk gspl">Luk</a>
+		<li><a name="luk" id="luk" onclick="clickNTBook()" class="clicked0 book luk gspl">Luk</a>
 			<ul class="luk gspl chapters">
 				<li><a href="luk1.htm" target="content" class="chapter" id="luk-1">1</a></li>
 				<li><a href="luk2.htm" target="content" class="chapter" id="luk-2">2</a></li>
@@ -1298,7 +1298,7 @@
 			</ul>
 		<script>$('a.luk').click(function () {$('ul.luk').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="joh" id="joh" class="clicked0 book joh gspl">John</a>
+		<li><a name="joh" id="joh" onclick="clickNTBook()" class="clicked0 book joh gspl">John</a>
 			<ul class="joh gspl chapters">
 				<li><a href="joh1.htm" target="content" class="chapter" id="joh-1">1</a></li>
 				<li><a href="joh2.htm" target="content" class="chapter" id="joh-2">2</a></li>
@@ -1324,7 +1324,7 @@
 			</ul>
 		<script>$('a.joh').click(function () {$('ul.joh').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="act" id="act" class="clicked0 book act gspl">Acts</a>
+		<li><a name="act" id="act" onclick="clickNTBook()" class="clicked0 book act gspl">Acts</a>
 			<ul class="act gspl chapters">
 				<li><a href="act1.htm" target="content" class="chapter" id="act-1">1</a></li>
 				<li><a href="act2.htm" target="content" class="chapter" id="act-2">2</a></li>
@@ -1357,7 +1357,7 @@
 			</ul>
 		<script>$('a.act').click(function () {$('ul.act').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="rom" id="rom" class="clicked0 book rom plltr">Rom</a>
+		<li><a name="rom" id="rom" onclick="clickNTBook()" class="clicked0 book rom plltr">Rom</a>
 			<ul class="rom plltr chapters">
 				<li><a href="rom1.htm" target="content" class="chapter" id="rom-1">1</a></li>
 				<li><a href="rom2.htm" target="content" class="chapter" id="rom-2">2</a></li>
@@ -1378,7 +1378,7 @@
 			</ul>
 		<script>$('a.rom').click(function () {$('ul.rom').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="cor1" id="cor1" class="clicked0 book cor1 plltr">1 Cor</a>
+		<li><a name="cor1" id="cor1" onclick="clickNTBook()" class="clicked0 book cor1 plltr">1 Cor</a>
 			<ul class="cor1 plltr chapters">
 				<li><a href="1co1.htm" target="content" class="chapter" id="cor1-1">1</a></li>
 				<li><a href="1co2.htm" target="content" class="chapter" id="cor1-2">2</a></li>
@@ -1399,7 +1399,7 @@
 			</ul>
 		<script>$('a.cor1').click(function () {$('ul.cor1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="cor2" id="cor2" class="clicked0 book cor2 plltr">2 Cor</a>
+		<li><a name="cor2" id="cor2" onclick="clickNTBook()" class="clicked0 book cor2 plltr">2 Cor</a>
 			<ul class="cor2 plltr chapters">
 				<li><a href="2co1.htm" target="content" class="chapter" id="cor2-1">1</a></li>
 				<li><a href="2co2.htm" target="content" class="chapter" id="cor2-2">2</a></li>
@@ -1417,7 +1417,7 @@
 			</ul>
 		<script>$('a.cor2').click(function () {$('ul.cor2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="gal" id="gal" class="clicked0 book gal plltr">Gal</a>
+		<li><a name="gal" id="gal" onclick="clickNTBook()" class="clicked0 book gal plltr">Gal</a>
 			<ul class="gal plltr chapters">
 				<li><a href="gal1.htm" target="content" class="chapter" id="gal-1">1</a></li>
 				<li><a href="gal2.htm" target="content" class="chapter" id="gal-2">2</a></li>
@@ -1428,7 +1428,7 @@
 			</ul>
 		<script>$('a.gal').click(function () {$('ul.gal').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="eph" id="eph" class="clicked0 book eph plltr">Eph</a>
+		<li><a name="eph" id="eph" onclick="clickNTBook()" class="clicked0 book eph plltr">Eph</a>
 			<ul class="eph plltr chapters">
 				<li><a href="eph1.htm" target="content" class="chapter" id="eph-1">1</a></li>
 				<li><a href="eph2.htm" target="content" class="chapter" id="eph-2">2</a></li>
@@ -1439,7 +1439,7 @@
 			</ul>
 		<script>$('a.eph').click(function () {$('ul.eph').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="phi" id="phi" class="clicked0 book phi plltr">Phil</a>
+		<li><a name="phi" id="phi" onclick="clickNTBook()" class="clicked0 book phi plltr">Phil</a>
 			<ul class="phi plltr chapters">
 				<li><a href="phi1.htm" target="content" class="chapter" id="phi-1">1</a></li>
 				<li><a href="phi2.htm" target="content" class="chapter" id="phi-2">2</a></li>
@@ -1448,7 +1448,7 @@
 			</ul>
 		<script>$('a.phi').click(function () {$('ul.phi').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="col" id="col" class="clicked0 book col plltr">Col</a>
+		<li><a name="col" id="col" onclick="clickNTBook()" class="clicked0 book col plltr">Col</a>
 			<ul class="col plltr chapters">
 				<li><a href="col1.htm" target="content" class="chapter" id="col-1">1</a></li>
 				<li><a href="col2.htm" target="content" class="chapter" id="col-2">2</a></li>
@@ -1457,7 +1457,7 @@
 			</ul>
 		<script>$('a.col').click(function () {$('ul.col').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="1th" id="1th" class="clicked0 book th1 plltr">1 Thess</a>
+		<li><a name="1th" id="1th" onclick="clickNTBook()" class="clicked0 book th1 plltr">1 Thess</a>
 			<ul class="th1 plltr chapters">
 				<li><a href="1th1.htm" target="content" class="chapter" id="1th-1">1</a></li>
 				<li><a href="1th2.htm" target="content" class="chapter" id="1th-2">2</a></li>
@@ -1467,7 +1467,7 @@
 			</ul>
 		<script>$('a.th1').click(function () {$('ul.th1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="2th" id="2th" class="clicked0 book th2 plltr">2 Thess</a>
+		<li><a name="2th" id="2th" onclick="clickNTBook()" class="clicked0 book th2 plltr">2 Thess</a>
 			<ul class="th2 plltr chapters">
 				<li><a href="2th1.htm" target="content" class="chapter" id="2th-1">1</a></li>
 				<li><a href="2th2.htm" target="content" class="chapter" id="2th-2">2</a></li>
@@ -1475,7 +1475,7 @@
 			</ul>
 		<script>$('a.th2').click(function () {$('ul.th2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="1ti" id="1ti" class="clicked0 book ti1 plltr">1 Tim</a>
+		<li><a name="1ti" id="1ti" onclick="clickNTBook()" class="clicked0 book ti1 plltr">1 Tim</a>
 			<ul class="ti1 plltr chapters">
 				<li><a href="1ti1.htm" target="content" class="chapter" id="1ti-1">1</a></li>
 				<li><a href="1ti2.htm" target="content" class="chapter" id="1ti-2">2</a></li>
@@ -1486,16 +1486,16 @@
 			</ul>
 		<script>$('a.ti1').click(function () {$('ul.ti1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="2ti" id="2ti" class="clicked0 book ti2 plltr">2 Tim</a>
+		<li><a name="2ti" id="2ti" onclick="clickNTBook()" class="clicked0 book ti2 plltr">2 Tim</a>
 			<ul class="ti2 plltr chapters">
 				<li><a href="2ti1.htm" target="content" class="chapter" id="2ti-1">1</a></li>
-				<li><a href="2ti1.htm" target="content" class="chapter" id="2ti-2">2</a></li>
-				<li><a href="2ti1.htm" target="content" class="chapter" id="2ti-3">3</a></li>
-				<li><a href="2ti1.htm" target="content" class="chapter" id="2ti-4">4</a></li>
+				<li><a href="2ti2.htm" target="content" class="chapter" id="2ti-2">2</a></li>
+				<li><a href="2ti3.htm" target="content" class="chapter" id="2ti-3">3</a></li>
+				<li><a href="2ti14.htm" target="content" class="chapter" id="2ti-4">4</a></li>
 			</ul>
 		<script>$('a.ti2').click(function () {$('ul.ti2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="tit" id="tit" class="clicked0 book tit plltr">Titus</a>
+		<li><a name="tit" id="tit" onclick="clickNTBook()" class="clicked0 book tit plltr">Titus</a>
 			<ul class="tit plltr chapters">
 				<li><a href="tit1.htm" target="content" class="chapter" id="tit-1">1</a></li>
 				<li><a href="tit2.htm" target="content" class="chapter" id="tit-2">2</a></li>
@@ -1503,13 +1503,13 @@
 			</ul>
 		<script>$('a.tit').click(function () {$('ul.tit').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="phm" id="phm" class="clicked0 book phm">Phm</a>
+		<li><a name="phm" id="phm" onclick="clickNTBook()" class="clicked0 book phm">Phm</a>
 			<ul class="phm chapters">
 				<li><a href="phm1.htm" target="content" class="chapter" id="phm-1">1</a></li>
 			</ul>
 		<script>$('a.phm').click(function () {$('ul.phm').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="heb" id="heb" class="clicked0 book heb">Heb</a>
+		<li><a name="heb" id="heb" onclick="clickNTBook()" class="clicked0 book heb">Heb</a>
 			<ul class="heb chapters">
 				<li><a href="heb1.htm" target="content" class="chapter" id="heb-1">1</a></li>
 				<li><a href="heb2.htm" target="content" class="chapter" id="heb-2">2</a></li>
@@ -1527,7 +1527,7 @@
 			</ul>
 		<script>$('a.heb').click(function () {$('ul.heb').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jam" id="jam" class="clicked0 book jam">Jam</a>
+		<li><a name="jam" id="jam" onclick="clickNTBook()" class="clicked0 book jam">Jam</a>
 			<ul class="jam chapters">
 				<li><a href="jam1.htm" target="content" class="chapter" id="jam-1">1</a></li>
 				<li><a href="jam2.htm" target="content" class="chapter" id="jam-2">2</a></li>
@@ -1537,7 +1537,7 @@
 			</ul>
 		<script>$('a.jam').click(function () {$('ul.jam').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="1pe" id="1pe" class="clicked0 book pe1">1 Pe</a>
+		<li><a name="1pe" id="1pe" onclick="clickNTBook()" class="clicked0 book pe1">1 Pe</a>
 			<ul class="pe1 chapters">
 				<li><a href="1pe1.htm" target="content" class="chapter" id="1pe-1">1</a></li>
 				<li><a href="1pe2.htm" target="content" class="chapter" id="1pe-2">2</a></li>
@@ -1547,7 +1547,7 @@
 			</ul>
 		<script>$('a.pe1').click(function () {$('ul.pe1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="2pe" id="2pe" class="clicked0 book pe2">2 Pe</a>
+		<li><a name="2pe" id="2pe" onclick="clickNTBook()" class="clicked0 book pe2">2 Pe</a>
 			<ul class="pe2 chapters">
 				<li><a href="2pe1.htm" target="content" class="chapter" id="2pe-1">1</a></li>
 				<li><a href="2pe2.htm" target="content" class="chapter" id="2pe-2">2</a></li>
@@ -1555,7 +1555,7 @@
 			</ul>
 		<script>$('a.pe2').click(function () {$('ul.pe2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="1jo" id="1jo" class="clicked0 book jo1">1 Jo</a>
+		<li><a name="1jo" id="1jo" onclick="clickNTBook()" class="clicked0 book jo1">1 Jo</a>
 			<ul class="john1 chapters">
 				<li><a href="1jo1.htm" target="content" class="chapter" id="1jo-1">1</a></li>
 				<li><a href="1jo2.htm" target="content" class="chapter" id="1jo-2">2</a></li>
@@ -1565,25 +1565,25 @@
 			</ul>
 		<script>$('a.jo1').click(function () {$('ul.jo1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="2jo" id="2jo" class="clicked0 book jo2">2 Jo</a>
+		<li><a name="2jo" id="2jo" onclick="clickNTBook()" class="clicked0 book jo2">2 Jo</a>
 			<ul class="jo2 chapters">
 				<li><a href="2jo1.htm" target="content" class="chapter" id="2jo-1">1</a></li>
 			</ul>
 		<script>$('a.jo2').click(function () {$('ul.jo2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="3jo" id="3jo" class="clicked0 book jo3">3 Jo</a>
+		<li><a name="3jo" id="3jo" onclick="clickNTBook()" class="clicked0 book jo3">3 Jo</a>
 			<ul class="jo3 chapters">
 				<li><a href="3jo1.htm" target="content" class="chapter" id="3jo-1">1</a></li>
 			</ul>
 		<script>$('a.john3').click(function () {$('ul.john3').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jud" id="jud" class="clicked0 book jud">Jud</a>
+		<li><a name="jud" id="jud" onclick="clickNTBook()" class="clicked0 book jud">Jud</a>
 			<ul class="jud chapters">
 				<li><a href="jud1.htm" target="content" class="chapter" id="jud-1">1</a></li>
 			</ul>
 		<script>$('a.jud').click(function () {$('ul.jud').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="rev" id="rev" class="clicked0 book rev">Rev</a>
+		<li><a name="rev" id="rev" onclick="clickNTBook()" class="clicked0 book rev">Rev</a>
 			<ul class="rev chapters">
 				<li><a href="rev1.htm" target="content" class="chapter" id="rev-1">1</a></li>
 				<li><a href="rev2.htm" target="content" class="chapter" id="rev-2">2</a></li>
@@ -1614,7 +1614,7 @@
 </section>
 <section class="clicked0 books other">
 	<ul>
-		<li><a name="eno" id="eno" class="clicked0 book eno">Enoch</a>
+		<li><a name="eno" id="eno" onclick="clickOtherBook()" class="clicked0 book eno">Enoch</a>
 			<ul class="eno chapters">
 				<li><a href="enoch.html#01" target="content" class="chapter" id="eno-1">1</a></li>
 				<li><a href="enoch.html#02" target="content" class="chapter" id="eno-2">2</a></li>
@@ -1724,8 +1724,8 @@
 			</ul>
 		<script>$('a.eno').click(function () {$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="jub" id="jub" class="clicked0 book jub">Jubliee</a></li>
-		<li><a name="jose" class="clicked0 book jose" title="Josephus">Jose</a>
+		<li><a name="jub" id="jub" onclick="clickOtherBook()" class="clicked0 book jub">Jubliee</a></li>
+		<li><a name="jose" onclick="clickOtherBook()" class="clicked0 book jose" title="Josephus">Jose</a>
 			<ul class="jose chapters">
 				<li><a href="janpr.htm" target="content" class="chapter">Preface</a></li>
 				<li><a href="jan1.htm" target="content" class="chapter">1</a></li>
@@ -1751,7 +1751,7 @@
 			</ul>
 		<script>$('a.jose').click(function () {$('ul.jose').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
 		</li>
-		<li><a name="euse" class="clicked0 book euse" title="Eusebius">Euse</a>
+		<li><a name="euse" onclick="clickOtherBook()" class="clicked0 book euse" title="Eusebius">Euse</a>
 			<ul class="other euse chapters">
 				<li><a href="euch1.htm" target="content" class="chapter bks">I</a></li>
 				<li><a href="euch2.htm" target="content" class="chapte bks">II</a></li>
@@ -1797,7 +1797,7 @@
 				<li>All Books is a personalized collection of Biblical, extra-Biblical, and historical books observed within the Christian domain. This is a personal project and archive for <a href="http://antoinerjwright.com">Antoine RJ Wright</a> and has only been created for his consumption, and for a reference design to sharing for those parties interested in creating a mobile-friendly reader for open licensed religious and historical texts.</li>
 				<li><a name="contributions-link" class="contributions-link">Text Sources</a>.</li>
 				<li><a href="https://github.com/arjwright/All-Books">All Books Project on GitHub</a></li>
-				<li><a name"reset-reading" class="reset-reading">Reset Reading Markers</a></li>
+				<li><a name"reset-reading" class="reset-reading">Reset</a></li>
 			</ul>
 		<script>$('a.about-aa').click(function () {$('ul.about-aa').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
 		<script>$('a.contributions-link').click(function () {$('ul.contributions').show("fast");$('ul.about-aa').hide("fast");});</script>
@@ -1812,6 +1812,17 @@
 				<li><a href="http://rbedrosian.com/hsrces.html" target="_blank" class="chapter">Arme. His.</a></li>
 			</ul>
 		<script>$('a.contributions').click(function () {$('ul.contributions').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="stats" class="book stats-aa">Stats</a>
+			<ul class="stats-aa">
+				<li>Books read in OT: <span id="resultOT"></span></li>
+				<li>Books read in Apocrypha: <span id="resultAP"></span></li>
+				<li>Books read in NT: <span id="resultNT"></span></li>
+				<li>Books read in Others: <span id="resultHB"></span></li>
+				<li><a name"reset-reading" class="reset-reading">Reset</a></li>
+			</ul>
+		<script>$('a.stats-aa').click(function () {$('ul.stats-aa').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
 	</ul>
 </section>
 <section class="content">
@@ -1819,8 +1830,94 @@
 		Ideally, there would be content here that is a seperate html document. 
 	</iframe>
 </section>
-<footer></footer>
+<footer id="resultNone">
+</footer>
 <script>$('a.chapter').click(function () {$('section.content').show("fast");$('ul.chapters').hide("fast");$('a.book').hide("fast");});</script>
 <script>var count = 0; $("a").each(function() {var $thisBook = $(this); var count = 0; $thisBook.click(function() {count++; $thisBook.toggleClass("clicked1", count % 1 == 0); $thisBook.toggleClass("clicked2", count % 2 == 0); $thisBook.toggleClass("clicked3", count % 3 == 0); $thisBook.toggleClass("clicked4", count % 4 == 0); $thisBook.toggleClass("clicked5", count % 5 == 0);});});</script>
+
+<script>
+function clickOTBook()
+{
+if(typeof(Storage)!=="All Books OT")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultOT").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickAPBook()
+{
+if(typeof(Storage)!=="All Books AP")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultAP").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickNTBook()
+{
+if(typeof(Storage)!=="All Books NT")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultNT").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickOtherBook()
+{
+if(typeof(Storage)!=="All Books HB")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultHB").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 </body>
 </html>

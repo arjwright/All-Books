@@ -13,6 +13,9 @@ Last Modified: 1:18 PM 5/2/2012 */
 			header nav {margin-left: 5.5em; margin-top:-1.5em;}
 				header nav a, header nav span {padding:.25em; display:inline-block; height: 1.5em;}
 				header nav a.active, header nav span {color:#FFF; background-color:#FFD700; text-decoration:none;}
+					header nav span {background-color:transparent; color:#000; font-weight:700; padding:0 .125em;}
+						header nav span:before {content:"(";}
+						header nav span:after {content:")";}
 		section.home ul li {list-style-type:none; display:inline-block; float:left;}
 			section.home ul li a {border:1px solid #F1F1F1;  padding: .5em; width: 5em; }
 		section.books ul, section.other ul {margin-left:-2.5em;}
@@ -35,15 +38,15 @@ Last Modified: 1:18 PM 5/2/2012 */
 					background: -ms-linear-gradient(top, #00cccc 0%,#c1cdcd 100%); /* IE10+ */
 					background: linear-gradient(top, #00cccc 0%,#c1cdcd 100%); /* W3C */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccc', endColorstr='#c1cdcd',GradientType=0 ); /* IE6-9 */}
-				section.ot ul li a.poetry, ul.poetry li a  {background-color:#9A32CD;
-					background: #00CCCC; /* Old browsers */
-					background: -moz-linear-gradient(top, #00CCCC 0%, #9A32CD 100%); /* FF3.6+ */
-					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00CCCC), color-stop(100%,#9A32CD)); /* Chrome,Safari4+ */
-					background: -webkit-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* Chrome10+,Safari5.1+ */
-					background: -o-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* Opera 11.10+ */
-					background: -ms-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* IE10+ */
-					background: linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* W3C */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00CCCC', endColorstr='#9A32CD',GradientType=0 ); /* IE6-9 */}
+				section.ot ul li a.poetry, ul.poetry li a  {background-color:#9A32CD;
+					background: #00CCCC; /* Old browsers */
+					background: -moz-linear-gradient(top, #00CCCC 0%, #9A32CD 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00CCCC), color-stop(100%,#9A32CD)); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* IE10+ */
+					background: linear-gradient(top, #00CCCC 0%,#9A32CD 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00CCCC', endColorstr='#9A32CD',GradientType=0 ); /* IE6-9 */}
 				section.ot ul li a.minor, ul.minor li a {background-color:#C1FFC1;
 					background: #00cccc; /* Old browsers */
 					background: -moz-linear-gradient(top, #00cccc 0%, #C1FFC1 100%); /* FF3.6+ */
@@ -103,10 +106,11 @@ Last Modified: 1:18 PM 5/2/2012 */
 					background: linear-gradient(top, #CDC673 0%,#00DD99 100%); /* W3C */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CDC673', endColorstr='#00DD99',GradientType=0 ); /* IE6-9 */}
 			section.about ul li a {background-color:#0B9;}
-				section.about ul li ul.about-aa li {width: 85%; margin: 1em .5em; background-color:none; font-size:.75em; line-height: 1.75em;}
-				section.about ul li ul.about-aa li a, section.about ul li ul.about-aa li a:visited {display:inline; width: auto; height: auto; text-decoration:underline; color:#FFF;}
+				section.about ul li ul.about-aa li, ul.stats-aa li {width: 85%; margin: 1em .5em; background-color:none; font-size:.75em; line-height: 1.75em;}
+				section.about ul li ul.about-aa li a, section.about ul li ul.about-aa li a:visited, ul.stats-aa li a, ul.stats-aa li a:visited {display:inline; width: auto; height: auto; text-decoration:underline; color:#FFF;}
 			.btt {padding: .5em; color:#FFF;}
-		ul.chapters, ul.contributions, ul.about-aa {margin-left:-2em; display:none;}
+		ul.chapters, ul.contributions, ul.about-aa, ul.stats-aa {margin-left:-2em; display:none;}
+			ul.stats-aa li span {font-weight:700;}
 		iframe.content {width:98%; height:97%; max-height:97%; position:absolute; top:1.5em; margin-left:3px; display:block; overflow:scroll;}
 			iframe p span {display:none;}
 		section.content, sup {display:none;}
