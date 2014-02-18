@@ -1,0 +1,1922 @@
+hos<!DOCTYPE HTML>
+<html manifest="allbooks.appcache">
+<head>
+	<meta charset="UTF-8" />
+		<meta name="Author" content="Antoine RJ Wright" />
+		<meta name="Description" content="All Books is a user interface design exercise and personal bible reader by Antoine RJ Wright; initial version used NET HTML, current version implements Unbound Bible and other sources" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>All Books</title>
+	<link rel="stylesheet" type="text/css" href="all-books-styles.css" />
+	<script src="jquery-latest.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>All Books</h1>
+	<nav>
+		<a class="ot"><abbr title="Old Testament">OT</abbr></a>
+		<a class="apocrypha">Apocrypha</a>
+		<a class="nt"><abbr title="New Testament">NT</abbr></a>
+		<a class="other">Others</a>
+		<a class="about">About</a>
+	</nav>
+	<script>$('h1').click(function () {$('ul.chapters').hide("fast");$('section.content').hide("fast");$('section.admin').hide("fast");$('section.books').show("fast");$('a').removeClass('active');$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.ot').click(function () {$('a').removeClass('active');$('a.ot').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.ot').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.apocrypha').click(function () {$('a').removeClass('active');$('a.apocrypha').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.apocrypha').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.nt').click(function () {$('a').removeClass('active');$('a.nt').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.nt').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.other').click(function () {$('a').removeClass('active');$('a.other').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.other').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+	<script>$('a.about').click(function () {$('a').removeClass('active');$('a.about').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.about').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
+</header>
+<div style="clear:both;height:1px;">&nbsp;</div>
+<section class="clicked0 books ot">
+	<ul>
+		<li><a name="gen" id="gen" onclick="clickOTBook()" class="clicked0 book gen torah">Gen</a>
+			<ul class="gen torah chapters">
+				<li><a href="WEB/Gen.1.html" target="content" class="chapter" id="gen-1">1</a></li>
+				<li><a href="WEB/Gen.2.html" target="content" class="chapter" id="gen-2">2</a></li>
+				<li><a href="WEB/Gen.3.html" target="content" class="chapter" id="gen-3">3</a></li>
+				<li><a href="WEB/Gen.4.html" target="content" class="chapter" id="gen-4">4</a></li>
+				<li><a href="WEB/Gen.5.html" target="content" class="chapter" id="gen-5">5</a></li>
+				<li><a href="WEB/Gen.6.html" target="content" class="chapter" id="gen-6">6</a></li>
+				<li><a href="WEB/Gen.7.html" target="content" class="chapter" id="gen-7">7</a></li>
+				<li><a href="WEB/Gen.8.html" target="content" class="chapter" id="gen-8">8</a></li>
+				<li><a href="WEB/Gen.9.html" target="content" class="chapter" id="gen-9">9</a></li>
+				<li><a href="WEB/Gen.10.html" target="content" class="chapter" id="gen-10">10</a></li>
+				<li><a href="WEB/Gen.11.html" target="content" class="chapter" id="gen-11">11</a></li>
+				<li><a href="WEB/Gen.12.html" target="content" class="chapter" id="gen-12">12</a></li>
+				<li><a href="WEB/Gen.13.html" target="content" class="chapter" id="gen-13">13</a></li>
+				<li><a href="WEB/Gen.14.html" target="content" class="chapter" id="gen-14">14</a></li>
+				<li><a href="WEB/Gen.15.html" target="content" class="chapter" id="gen-15">15</a></li>
+				<li><a href="WEB/Gen.16.html" target="content" class="chapter" id="gen-16">16</a></li>
+				<li><a href="WEB/Gen.17.html" target="content" class="chapter" id="gen-17">17</a></li>
+				<li><a href="WEB/Gen.18.html" target="content" class="chapter" id="gen-18">18</a></li>
+				<li><a href="WEB/Gen.19.html" target="content" class="chapter" id="gen-19">19</a></li>
+				<li><a href="WEB/Gen.20.html" target="content" class="chapter" id="gen-20">20</a></li>
+				<li><a href="WEB/Gen.21.html" target="content" class="chapter" id="gen-21">21</a></li>
+				<li><a href="WEB/Gen.22.html" target="content" class="chapter" id="gen-22">22</a></li>
+				<li><a href="WEB/Gen.23.html" target="content" class="chapter" id="gen-23">23</a></li>
+				<li><a href="WEB/Gen.24.html" target="content" class="chapter" id="gen-24">24</a></li>
+				<li><a href="WEB/Gen.25.html" target="content" class="chapter" id="gen-25">25</a></li>
+				<li><a href="WEB/Gen.26.html" target="content" class="chapter" id="gen-26">26</a></li>
+				<li><a href="WEB/Gen.27.html" target="content" class="chapter" id="gen-27">27</a></li>
+				<li><a href="WEB/Gen.28.html" target="content" class="chapter" id="gen-28">28</a></li>
+				<li><a href="WEB/Gen.29.html" target="content" class="chapter" id="gen-29">29</a></li>
+				<li><a href="WEB/Gen.30.html" target="content" class="chapter" id="gen-30">30</a></li>
+				<li><a href="WEB/Gen.31.html" target="content" class="chapter" id="gen-31">31</a></li>
+				<li><a href="WEB/Gen.32.html" target="content" class="chapter" id="gen-32">32</a></li>
+				<li><a href="WEB/Gen.33.html" target="content" class="chapter" id="gen-33">33</a></li>
+				<li><a href="WEB/Gen.34.html" target="content" class="chapter" id="gen-34">34</a></li>
+				<li><a href="WEB/Gen.35.html" target="content" class="chapter" id="gen-35">35</a></li>
+				<li><a href="WEB/Gen.36.html" target="content" class="chapter" id="gen-36">36</a></li>
+				<li><a href="WEB/Gen.37.html" target="content" class="chapter" id="gen-37">37</a></li>
+				<li><a href="WEB/Gen.38.html" target="content" class="chapter" id="gen-38">38</a></li>
+				<li><a href="WEB/Gen.39.html" target="content" class="chapter" id="gen-39">39</a></li>
+				<li><a href="WEB/Gen.40.html" target="content" class="chapter" id="gen-40">40</a></li>
+				<li><a href="WEB/Gen.41.html" target="content" class="chapter" id="gen-41">41</a></li>
+				<li><a href="WEB/Gen.42.html" target="content" class="chapter" id="gen-42">42</a></li>
+				<li><a href="WEB/Gen.43.html" target="content" class="chapter" id="gen-43">43</a></li>
+				<li><a href="WEB/Gen.44.html" target="content" class="chapter" id="gen-44">44</a></li>
+				<li><a href="WEB/Gen.45.html" target="content" class="chapter" id="gen-45">45</a></li>
+				<li><a href="WEB/Gen.46.html" target="content" class="chapter" id="gen-46">46</a></li>
+				<li><a href="WEB/Gen.47.html" target="content" class="chapter" id="gen-47">47</a></li>
+				<li><a href="WEB/Gen.48.html" target="content" class="chapter" id="gen-48">48</a></li>
+				<li><a href="WEB/Gen.49.html" target="content" class="chapter" id="gen-49">49</a></li>
+				<li><a href="WEB/Gen.50.html" target="content" class="chapter" id="gen-50">50</a></li>
+			</ul>
+		<script>$('a.gen').click(function () {$('ul.gen').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="exo" id="exo" onclick="clickOTBook()" class="clicked0 book exo torah">Exo</a>
+			<ul class="exo torah chapters">
+				<li><a href="WEB/Exod.1.html" target="content" class="chapter" id="exo-1">1</a></li>
+				<li><a href="WEB/Exod.2.html" target="content" class="chapter" id="exo-2">2</a></li>
+				<li><a href="WEB/Exod.3.html" target="content" class="chapter" id="exo-3">3</a></li>
+				<li><a href="WEB/Exod.4.html" target="content" class="chapter" id="exo-4">4</a></li>
+				<li><a href="WEB/Exod.5.html" target="content" class="chapter" id="exo-5">5</a></li>
+				<li><a href="WEB/Exod.6.html" target="content" class="chapter" id="exo-6">6</a></li>
+				<li><a href="WEB/Exod.7.html" target="content" class="chapter" id="exo-7">7</a></li>
+				<li><a href="WEB/Exod.8.html" target="content" class="chapter" id="exo-8">8</a></li>
+				<li><a href="WEB/Exod.9.html" target="content" class="chapter" id="exo-9">9</a></li>
+				<li><a href="WEB/Exod.10.html" target="content" class="chapter" id="exo-10">10</a></li>
+				<li><a href="WEB/Exod.11.html" target="content" class="chapter" id="exo-11">11</a></li>
+				<li><a href="WEB/Exod.12.html" target="content" class="chapter" id="exo-12">12</a></li>
+				<li><a href="WEB/Exod.13.html" target="content" class="chapter" id="exo-13">13</a></li>
+				<li><a href="WEB/Exod.14.html" target="content" class="chapter" id="exo-14">14</a></li>
+				<li><a href="WEB/Exod.15.html" target="content" class="chapter" id="exo-15">15</a></li>
+				<li><a href="WEB/Exod.16.html" target="content" class="chapter" id="exo-16">16</a></li>
+				<li><a href="WEB/Exod.17.html" target="content" class="chapter" id="exo-17">17</a></li>
+				<li><a href="WEB/Exod.18.html" target="content" class="chapter" id="exo-18">18</a></li>
+				<li><a href="WEB/Exod.19.html" target="content" class="chapter" id="exo-19">19</a></li>
+				<li><a href="WEB/Exod.20.html" target="content" class="chapter" id="exo-20">20</a></li>
+				<li><a href="WEB/Exod.21.html" target="content" class="chapter" id="exo-21">21</a></li>
+				<li><a href="WEB/Exod.22.html" target="content" class="chapter" id="exo-22">22</a></li>
+				<li><a href="WEB/Exod.23.html" target="content" class="chapter" id="exo-23">23</a></li>
+				<li><a href="WEB/Exod.24.html" target="content" class="chapter" id="exo-24">24</a></li>
+				<li><a href="WEB/Exod.25.html" target="content" class="chapter" id="exo-25">25</a></li>
+				<li><a href="WEB/Exod.26.html" target="content" class="chapter" id="exo-26">26</a></li>
+				<li><a href="WEB/Exod.27.html" target="content" class="chapter" id="exo-27">27</a></li>
+				<li><a href="WEB/Exod.28.html" target="content" class="chapter" id="exo-28">28</a></li>
+				<li><a href="WEB/Exod.29.html" target="content" class="chapter" id="exo-29">29</a></li>
+				<li><a href="WEB/Exod.30.html" target="content" class="chapter" id="exo-30">30</a></li>
+				<li><a href="WEB/Exod.31.html" target="content" class="chapter" id="exo-31">31</a></li>
+				<li><a href="WEB/Exod.32.html" target="content" class="chapter" id="exo-32">32</a></li>
+				<li><a href="WEB/Exod.33.html" target="content" class="chapter" id="exo-33">33</a></li>
+				<li><a href="WEB/Exod.34.html" target="content" class="chapter" id="exo-34">34</a></li>
+				<li><a href="WEB/Exod.35.html" target="content" class="chapter" id="exo-35">35</a></li>
+				<li><a href="WEB/Exod.36.html" target="content" class="chapter" id="exo-36">36</a></li>
+				<li><a href="WEB/Exod.37.html" target="content" class="chapter" id="exo-37">37</a></li>
+				<li><a href="WEB/Exod.38.html" target="content" class="chapter" id="exo-38">38</a></li>
+				<li><a href="WEB/Exod.39.html" target="content" class="chapter" id="exo-39">39</a></li>
+				<li><a href="WEB/Exod.40.html" target="content" class="chapter" id="exo-40">40</a></li>
+			</ul>
+		<script>$('a.exo').click(function () {$('ul.exo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="lev" id="lev" onclick="clickOTBook()" class="clicked0 book lev torah">Lev</a>
+			<ul class="lev torah chapters">
+				<li><a href="WEB/Lev.1.html" target="content" class="chapter" id="lev-1">1</a></li>
+				<li><a href="WEB/Lev.2.html" target="content" class="chapter" id="lev-2">2</a></li>
+				<li><a href="WEB/Lev.3.html" target="content" class="chapter" id="lev-3">3</a></li>
+				<li><a href="WEB/Lev.4.html" target="content" class="chapter" id="lev-4">4</a></li>
+				<li><a href="WEB/Lev.5.html" target="content" class="chapter" id="lev-5">5</a></li>
+				<li><a href="WEB/Lev.6.html" target="content" class="chapter" id="lev-6">6</a></li>
+				<li><a href="WEB/Lev.7.html" target="content" class="chapter" id="lev-7">7</a></li>
+				<li><a href="WEB/Lev.8.html" target="content" class="chapter" id="lev-8">8</a></li>
+				<li><a href="WEB/Lev.9.html" target="content" class="chapter" id="lev-9">9</a></li>
+				<li><a href="WEB/Lev.10.html" target="content" class="chapter" id="lev-10">10</a></li>
+				<li><a href="WEB/Lev.11.html" target="content" class="chapter" id="lev-11">11</a></li>
+				<li><a href="WEB/Lev.12.html" target="content" class="chapter" id="lev-12">12</a></li>
+				<li><a href="WEB/Lev.13.html" target="content" class="chapter" id="lev-13">13</a></li>
+				<li><a href="WEB/Lev.14.html" target="content" class="chapter" id="lev-14">14</a></li>
+				<li><a href="WEB/Lev.15.html" target="content" class="chapter" id="lev-15">15</a></li>
+				<li><a href="WEB/Lev.16.html" target="content" class="chapter" id="lev-16">16</a></li>
+				<li><a href="WEB/Lev.17.html" target="content" class="chapter" id="lev-17">17</a></li>
+				<li><a href="WEB/Lev.18.html" target="content" class="chapter" id="lev-18">18</a></li>
+				<li><a href="WEB/Lev.19.html" target="content" class="chapter" id="lev-19">19</a></li>
+				<li><a href="WEB/Lev.20.html" target="content" class="chapter" id="lev-20">20</a></li>
+				<li><a href="WEB/Lev.21.html" target="content" class="chapter" id="lev-21">21</a></li>
+				<li><a href="WEB/Lev.22.html" target="content" class="chapter" id="lev-22">22</a></li>
+				<li><a href="WEB/Lev.23.html" target="content" class="chapter" id="lev-23">23</a></li>
+				<li><a href="WEB/Lev.24.html" target="content" class="chapter" id="lev-24">24</a></li>
+				<li><a href="WEB/Lev.25.html" target="content" class="chapter" id="lev-25">25</a></li>
+				<li><a href="WEB/Lev.26.html" target="content" class="chapter" id="lev-26">26</a></li>
+				<li><a href="WEB/Lev.27.html" target="content" class="chapter" id="lev-27">27</a></li>
+			</ul>
+		<script>$('a.lev').click(function () {$('ul.lev').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="num" id="num" onclick="clickOTBook()" class="clicked0 book num torah">Num</a>
+			<ul class="num torah chapters">
+				<li><a href="WEB/Num.1.html" target="content" class="chapter" id="num-1">1</a></li>
+				<li><a href="WEB/Num.2.html" target="content" class="chapter" id="num-2">2</a></li>
+				<li><a href="WEB/Num.3.html" target="content" class="chapter" id="num-3">3</a></li>
+				<li><a href="WEB/Num.4.html" target="content" class="chapter" id="num-4">4</a></li>
+				<li><a href="WEB/Num.5.html" target="content" class="chapter" id="num-5">5</a></li>
+				<li><a href="WEB/Num.6.html" target="content" class="chapter" id="num-6">6</a></li>
+				<li><a href="WEB/Num.7.html" target="content" class="chapter" id="num-7">7</a></li>
+				<li><a href="WEB/Num.8.html" target="content" class="chapter" id="num-8">8</a></li>
+				<li><a href="WEB/Num.9.html" target="content" class="chapter" id="num-9">9</a></li>
+				<li><a href="WEB/Num.10.html" target="content" class="chapter" id="num-10">10</a></li>
+				<li><a href="WEB/Num.11.html" target="content" class="chapter" id="num-11">11</a></li>
+				<li><a href="WEB/Num.12.html" target="content" class="chapter" id="num-12">12</a></li>
+				<li><a href="WEB/Num.13.html" target="content" class="chapter" id="num-13">13</a></li>
+				<li><a href="WEB/Num.14.html" target="content" class="chapter" id="num-14">14</a></li>
+				<li><a href="WEB/Num.15.html" target="content" class="chapter" id="num-15">15</a></li>
+				<li><a href="WEB/Num.16.html" target="content" class="chapter" id="num-16">16</a></li>
+				<li><a href="WEB/Num.17.html" target="content" class="chapter" id="num-17">17</a></li>
+				<li><a href="WEB/Num.18.html" target="content" class="chapter" id="num-18">18</a></li>
+				<li><a href="WEB/Num.19.html" target="content" class="chapter" id="num-19">19</a></li>
+				<li><a href="WEB/Num.20.html" target="content" class="chapter" id="num-20">20</a></li>
+				<li><a href="WEB/Num.21.html" target="content" class="chapter" id="num-21">21</a></li>
+				<li><a href="WEB/Num.22.html" target="content" class="chapter" id="num-22">22</a></li>
+				<li><a href="WEB/Num.23.html" target="content" class="chapter" id="num-23">23</a></li>
+				<li><a href="WEB/Num.24.html" target="content" class="chapter" id="num-24">24</a></li>
+				<li><a href="WEB/Num.25.html" target="content" class="chapter" id="num-25">25</a></li>
+				<li><a href="WEB/Num.26.html" target="content" class="chapter" id="num-26">26</a></li>
+				<li><a href="WEB/Num.27.html" target="content" class="chapter" id="num-27">27</a></li>
+				<li><a href="WEB/Num.28.html" target="content" class="chapter" id="num-28">28</a></li>
+				<li><a href="WEB/Num.29.html" target="content" class="chapter" id="num-29">29</a></li>
+				<li><a href="WEB/Num.30.html" target="content" class="chapter" id="num-30">30</a></li>
+				<li><a href="WEB/Num.31.html" target="content" class="chapter" id="num-31">31</a></li>
+				<li><a href="WEB/Num.32.html" target="content" class="chapter" id="num-32">32</a></li>
+				<li><a href="WEB/Num.33.html" target="content" class="chapter" id="num-33">33</a></li>
+				<li><a href="WEB/Num.34.html" target="content" class="chapter" id="num-34">34</a></li>
+				<li><a href="WEB/Num.35.html" target="content" class="chapter" id="num-35">35</a></li>
+				<li><a href="WEB/Num.36.html" target="content" class="chapter" id="num-36">36</a></li>
+			</ul>
+		<script>$('a.num').click(function () {$('ul.num').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="deu" id="deu" onclick="clickOTBook()" class="clicked0 book deu torah">Deu</a>
+			<ul class="deu torah chapters">
+				<li><a href="WEB/Deut.1.html" target="content" class="chapter" id="deu-1">1</a></li>
+				<li><a href="WEB/Deut.2.html" target="content" class="chapter" id="deu-2">2</a></li>
+				<li><a href="WEB/Deut.3.html" target="content" class="chapter" id="deu-3">3</a></li>
+				<li><a href="WEB/Deut.4.html" target="content" class="chapter" id="deu-4">4</a></li>
+				<li><a href="WEB/Deut.5.html" target="content" class="chapter" id="deu-5">5</a></li>
+				<li><a href="WEB/Deut.6.html" target="content" class="chapter" id="deu-6">6</a></li>
+				<li><a href="WEB/Deut.7.html" target="content" class="chapter" id="deu-7">7</a></li>
+				<li><a href="WEB/Deut.8.html" target="content" class="chapter" id="deu-8">8</a></li>
+				<li><a href="WEB/Deut.9.html" target="content" class="chapter" id="deu-9">9</a></li>
+				<li><a href="WEB/Deut.10.html" target="content" class="chapter" id="deu-10">10</a></li>
+				<li><a href="WEB/Deut.11.html" target="content" class="chapter" id="deu-11">11</a></li>
+				<li><a href="WEB/Deut.12.html" target="content" class="chapter" id="deu-12">12</a></li>
+				<li><a href="WEB/Deut.13.html" target="content" class="chapter" id="deu-13">13</a></li>
+				<li><a href="WEB/Deut.14.html" target="content" class="chapter" id="deu-14">14</a></li>
+				<li><a href="WEB/Deut.15.html" target="content" class="chapter" id="deu-15">15</a></li>
+				<li><a href="WEB/Deut.16.html" target="content" class="chapter" id="deu-16">16</a></li>
+				<li><a href="WEB/Deut.17.html" target="content" class="chapter" id="deu-17">17</a></li>
+				<li><a href="WEB/Deut.18.html" target="content" class="chapter" id="deu-18">18</a></li>
+				<li><a href="WEB/Deut.19.html" target="content" class="chapter" id="deu-19">19</a></li>
+				<li><a href="WEB/Deut.20.html" target="content" class="chapter" id="deu-20">20</a></li>
+				<li><a href="WEB/Deut.21.html" target="content" class="chapter" id="deu-21">21</a></li>
+				<li><a href="WEB/Deut.22.html" target="content" class="chapter" id="deu-22">22</a></li>
+				<li><a href="WEB/Deut.23.html" target="content" class="chapter" id="deu-23">23</a></li>
+				<li><a href="WEB/Deut.24.html" target="content" class="chapter" id="deu-24">24</a></li>
+				<li><a href="WEB/Deut.25.html" target="content" class="chapter" id="deu-25">25</a></li>
+				<li><a href="WEB/Deut.26.html" target="content" class="chapter" id="deu-26">26</a></li>
+				<li><a href="WEB/Deut.27.html" target="content" class="chapter" id="deu-27">27</a></li>
+				<li><a href="WEB/Deut.28.html" target="content" class="chapter" id="deu-28">28</a></li>
+				<li><a href="WEB/Deut.29.html" target="content" class="chapter" id="deu-29">29</a></li>
+				<li><a href="WEB/Deut.30.html" target="content" class="chapter" id="deu-30">30</a></li>
+				<li><a href="WEB/Deut.31.html" target="content" class="chapter" id="deu-31">31</a></li>
+				<li><a href="WEB/Deut.32.html" target="content" class="chapter" id="deu-32">32</a></li>
+				<li><a href="WEB/Deut.33.html" target="content" class="chapter" id="deu-33">33</a></li>
+				<li><a href="WEB/Deut.34.html" target="content" class="chapter" id="deu-34">34</a></li>
+			</ul>
+		<script>$('a.deu').click(function () {$('ul.deu').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jos" id="jos" onclick="clickOTBook()" class="clicked0 book jos">Jos</a>
+			<ul class="jos chapters">
+				<li><a href="WEB/Josh.1.html" target="content" class="chapter" id="jos-1">1</a></li>
+				<li><a href="WEB/Josh.2.html" target="content" class="chapter" id="jos-2">2</a></li>
+				<li><a href="WEB/Josh.3.html" target="content" class="chapter" id="jos-3">3</a></li>
+				<li><a href="WEB/Josh.4.html" target="content" class="chapter" id="jos-4">4</a></li>
+				<li><a href="WEB/Josh.5.html" target="content" class="chapter" id="jos-5">5</a></li>
+				<li><a href="WEB/Josh.6.html" target="content" class="chapter" id="jos-6">6</a></li>
+				<li><a href="WEB/Josh.7.html" target="content" class="chapter" id="jos-7">7</a></li>
+				<li><a href="WEB/Josh.8.html" target="content" class="chapter" id="jos-8">8</a></li>
+				<li><a href="WEB/Josh.9.html" target="content" class="chapter" id="jos-9">9</a></li>
+				<li><a href="WEB/Josh.10.html" target="content" class="chapter" id="jos-10">10</a></li>
+				<li><a href="WEB/Josh.11.html" target="content" class="chapter" id="jos-11">11</a></li>
+				<li><a href="WEB/Josh.12.html" target="content" class="chapter" id="jos-12">12</a></li>
+				<li><a href="WEB/Josh.13.html" target="content" class="chapter" id="jos-13">13</a></li>
+				<li><a href="WEB/Josh.14.html" target="content" class="chapter" id="jos-14">14</a></li>
+				<li><a href="WEB/Josh.15.html" target="content" class="chapter" id="jos-15">15</a></li>
+				<li><a href="WEB/Josh.16.html" target="content" class="chapter" id="jos-16">16</a></li>
+				<li><a href="WEB/Josh.17.html" target="content" class="chapter" id="jos-17">17</a></li>
+				<li><a href="WEB/Josh.18.html" target="content" class="chapter" id="jos-18">18</a></li>
+				<li><a href="WEB/Josh.19.html" target="content" class="chapter" id="jos-19">19</a></li>
+				<li><a href="WEB/Josh.20.html" target="content" class="chapter" id="jos-20">20</a></li>
+				<li><a href="WEB/Josh.21.html" target="content" class="chapter" id="jos-21">21</a></li>
+				<li><a href="WEB/Josh.22.html" target="content" class="chapter" id="jos-22">22</a></li>
+				<li><a href="WEB/Josh.23.html" target="content" class="chapter" id="jos-23">23</a></li>
+				<li><a href="WEB/Josh.24.html" target="content" class="chapter" id="jos-24">24</a></li>
+			</ul>
+		<script>$('a.jos').click(function () {$('ul.jos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jdg" id="jdg" onclick="clickOTBook()" class="clicked0 book jdg">Jdg</a>
+			<ul class="jdg chapters">
+				<li><a href="WEB/Judg.1.html" target="content" class="chapter" id="jdg-1">1</a></li>
+				<li><a href="WEB/Judg.2.html" target="content" class="chapter" id="jdg-2">2</a></li>
+				<li><a href="WEB/Judg.3.html" target="content" class="chapter" id="jdg-3">3</a></li>
+				<li><a href="WEB/Judg.4.html" target="content" class="chapter" id="jdg-4">4</a></li>
+				<li><a href="WEB/Judg.5.html" target="content" class="chapter" id="jdg-5">5</a></li>
+				<li><a href="WEB/Judg.6.html" target="content" class="chapter" id="jdg-6">6</a></li>
+				<li><a href="WEB/Judg.7.html" target="content" class="chapter" id="jdg-7">7</a></li>
+				<li><a href="WEB/Judg.8.html" target="content" class="chapter" id="jdg-8">8</a></li>
+				<li><a href="WEB/Judg.9.html" target="content" class="chapter" id="jdg-9">9</a></li>
+				<li><a href="WEB/Judg.10.html" target="content" class="chapter" id="jdg-10">10</a></li>
+				<li><a href="WEB/Judg.11.html" target="content" class="chapter" id="jdg-11">11</a></li>
+				<li><a href="WEB/Judg.12.html" target="content" class="chapter" id="jdg-12">12</a></li>
+				<li><a href="WEB/Judg.13.html" target="content" class="chapter" id="jdg-13">13</a></li>
+				<li><a href="WEB/Judg.14.html" target="content" class="chapter" id="jdg-14">14</a></li>
+				<li><a href="WEB/Judg.15.html" target="content" class="chapter" id="jdg-15">15</a></li>
+				<li><a href="WEB/Judg.16.html" target="content" class="chapter" id="jdg-16">16</a></li>
+				<li><a href="WEB/Judg.17.html" target="content" class="chapter" id="jdg-17">17</a></li>
+				<li><a href="WEB/Judg.18.html" target="content" class="chapter" id="jdg-18">18</a></li>
+				<li><a href="WEB/Judg.19.html" target="content" class="chapter" id="jdg-19">19</a></li>
+				<li><a href="WEB/Judg.20.html" target="content" class="chapter" id="jdg-20">20</a></li>
+				<li><a href="WEB/Judg.21.html" target="content" class="chapter" id="jdg-21">21</a></li>
+			</ul>
+		<script>$('a.jdg').click(function () {$('ul.jdg').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="rut" id="rut" onclick="clickOTBook()" class="clicked0 book rut">Ruth</a>
+			<ul class="rut chapters">
+				<li><a href="WEB/Ruth.1.html" target="content" class="chapter" id="rut-1">1</a></li>
+				<li><a href="WEB/Ruth.2.html" target="content" class="chapter" id="rut-2">2</a></li>
+				<li><a href="WEB/Ruth.3.html" target="content" class="chapter" id="rut-3">3</a></li>
+				<li><a href="WEB/Ruth.4.html" target="content" class="chapter" id="rut-4">4</a></li>
+			</ul>
+		<script>$('a.rut').click(function () {$('ul.rut').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="sam1" id="sam1" onclick="clickOTBook()" class="clicked0 book sam1">1 Sam</a>
+			<ul class="sam1 chapters">
+				<li><a href="WEB/1Sam.1.html" target="content" class="chapter" id="sam1-1">1</a></li>
+				<li><a href="WEB/1Sam.2.html" target="content" class="chapter" id="sam1-2">2</a></li>
+				<li><a href="WEB/1Sam.3.html" target="content" class="chapter" id="sam1-3">3</a></li>
+				<li><a href="WEB/1Sam.4.html" target="content" class="chapter" id="sam1-4">4</a></li>
+				<li><a href="WEB/1Sam.5.html" target="content" class="chapter" id="sam1-5">5</a></li>
+				<li><a href="WEB/1Sam.6.html" target="content" class="chapter" id="sam1-6">6</a></li>
+				<li><a href="WEB/1Sam.7.html" target="content" class="chapter" id="sam1-7">7</a></li>
+				<li><a href="WEB/1Sam.8.html" target="content" class="chapter" id="sam1-8">8</a></li>
+				<li><a href="WEB/1Sam.9.html" target="content" class="chapter" id="sam1-9">9</a></li>
+				<li><a href="WEB/1Sam.10.html" target="content" class="chapter" id="sam1-10">10</a></li>
+				<li><a href="WEB/1Sam.11.html" target="content" class="chapter" id="sam1-11">11</a></li>
+				<li><a href="WEB/1Sam.12.html" target="content" class="chapter" id="sam1-12">12</a></li>
+				<li><a href="WEB/1Sam.13.html" target="content" class="chapter" id="sam1-13">13</a></li>
+				<li><a href="WEB/1Sam.14.html" target="content" class="chapter" id="sam1-14">14</a></li>
+				<li><a href="WEB/1Sam.15.html" target="content" class="chapter" id="sam1-15">15</a></li>
+				<li><a href="WEB/1Sam.16.html" target="content" class="chapter" id="sam1-16">16</a></li>
+				<li><a href="WEB/1Sam.17.html" target="content" class="chapter" id="sam1-17">17</a></li>
+				<li><a href="WEB/1Sam.18.html" target="content" class="chapter" id="sam1-18">18</a></li>
+				<li><a href="WEB/1Sam.19.html" target="content" class="chapter" id="sam1-19">19</a></li>
+				<li><a href="WEB/1Sam.20.html" target="content" class="chapter" id="sam1-20">20</a></li>
+				<li><a href="WEB/1Sam.21.html" target="content" class="chapter" id="sam1-21">21</a></li>
+				<li><a href="WEB/1Sam.22.html" target="content" class="chapter" id="sam1-22">22</a></li>
+				<li><a href="WEB/1Sam.23.html" target="content" class="chapter" id="sam1-23">23</a></li>
+				<li><a href="WEB/1Sam.24.html" target="content" class="chapter" id="sam1-24">24</a></li>
+				<li><a href="WEB/1Sam.25.html" target="content" class="chapter" id="sam1-25">25</a></li>
+				<li><a href="WEB/1Sam.26.html" target="content" class="chapter" id="sam1-26">26</a></li>
+				<li><a href="WEB/1Sam.27.html" target="content" class="chapter" id="sam1-27">27</a></li>
+				<li><a href="WEB/1Sam.28.html" target="content" class="chapter" id="sam1-28">28</a></li>
+				<li><a href="WEB/1Sam.29.html" target="content" class="chapter" id="sam1-29">29</a></li>
+				<li><a href="WEB/1Sam.30.html" target="content" class="chapter" id="sam1-30">30</a></li>
+				<li><a href="WEB/1Sam.31.html" target="content" class="chapter" id="sam1-31">31</a></li>
+			</ul>
+		<script>$('a.sam1').click(function () {$('ul.sam1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="sam2" id="sam2" onclick="clickOTBook()" class="clicked0 book sam2">2 Sam</a>
+			<ul class="sam2 chapters">
+				<li><a href="WEB/2Sam.1.html" target="content" class="chapter" id="sam2-1">1</a></li>
+				<li><a href="WEB/2Sam.2.html" target="content" class="chapter" id="sam2-2">2</a></li>
+				<li><a href="WEB/2Sam.3.html" target="content" class="chapter" id="sam2-3">3</a></li>
+				<li><a href="WEB/2Sam.4.html" target="content" class="chapter" id="sam2-4">4</a></li>
+				<li><a href="WEB/2Sam.5.html" target="content" class="chapter" id="sam2-5">5</a></li>
+				<li><a href="WEB/2Sam.6.html" target="content" class="chapter" id="sam2-6">6</a></li>
+				<li><a href="WEB/2Sam.7.html" target="content" class="chapter" id="sam2-7">7</a></li>
+				<li><a href="WEB/2Sam.8.html" target="content" class="chapter" id="sam2-8">8</a></li>
+				<li><a href="WEB/2Sam.9.html" target="content" class="chapter" id="sam2-9">9</a></li>
+				<li><a href="WEB/2Sam.10.html" target="content" class="chapter" id="sam2-10">10</a></li>
+				<li><a href="WEB/2Sam.11.html" target="content" class="chapter" id="sam2-11">11</a></li>
+				<li><a href="WEB/2Sam.12.html" target="content" class="chapter" id="sam2-12">12</a></li>
+				<li><a href="WEB/2Sam.13.html" target="content" class="chapter" id="sam2-13">13</a></li>
+				<li><a href="WEB/2Sam.14.html" target="content" class="chapter" id="sam2-14">14</a></li>
+				<li><a href="WEB/2Sam.15.html" target="content" class="chapter" id="sam2-15">15</a></li>
+				<li><a href="WEB/2Sam.16.html" target="content" class="chapter" id="sam2-16">16</a></li>
+				<li><a href="WEB/2Sam.17.html" target="content" class="chapter" id="sam2-17">17</a></li>
+				<li><a href="WEB/2Sam.18.html" target="content" class="chapter" id="sam2-18">18</a></li>
+				<li><a href="WEB/2Sam.19.html" target="content" class="chapter" id="sam2-19">19</a></li>
+				<li><a href="WEB/2Sam.20.html" target="content" class="chapter" id="sam2-20">20</a></li>
+				<li><a href="WEB/2Sam.21.html" target="content" class="chapter" id="sam2-21">21</a></li>
+				<li><a href="WEB/2Sam.22.html" target="content" class="chapter" id="sam2-22">22</a></li>
+				<li><a href="WEB/2Sam.23.html" target="content" class="chapter" id="sam2-23">23</a></li>
+				<li><a href="WEB/2Sam.24.html" target="content" class="chapter" id="sam2-24">24</a></li>
+			</ul>
+		<script>$('a.sam2').click(function () {$('ul.sam2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="kgs1" id="kgs1" onclick="clickOTBook()" class="clicked0 book kgs1">1 Kgs</a>
+			<ul class="kgs1 chapters">
+				<li><a href="WEB/1ki1.html" target="content" class="chapter" id="kgs1-1">1</a></li>
+				<li><a href="WEB/1ki2.html" target="content" class="chapter" id="kgs1-2">2</a></li>
+				<li><a href="WEB/1ki3.html" target="content" class="chapter" id="kgs1-3">3</a></li>
+				<li><a href="WEB/1ki4.html" target="content" class="chapter" id="kgs1-4">4</a></li>
+				<li><a href="WEB/1ki5.html" target="content" class="chapter" id="kgs1-5">5</a></li>
+				<li><a href="WEB/1ki6.html" target="content" class="chapter" id="kgs1-6">6</a></li>
+				<li><a href="WEB/1ki7.html" target="content" class="chapter" id="kgs1-7">7</a></li>
+				<li><a href="WEB/1ki8.html" target="content" class="chapter" id="kgs1-8">8</a></li>
+				<li><a href="WEB/1ki9.html" target="content" class="chapter" id="kgs1-9">9</a></li>
+				<li><a href="WEB/1ki10.html" target="content" class="chapter" id="kgs1-10">10</a></li>
+				<li><a href="WEB/1ki11.html" target="content" class="chapter" id="kgs1-11">11</a></li>
+				<li><a href="WEB/1ki12.html" target="content" class="chapter" id="kgs1-12">12</a></li>
+				<li><a href="WEB/1ki13.html" target="content" class="chapter" id="kgs1-13">13</a></li>
+				<li><a href="WEB/1ki14.html" target="content" class="chapter" id="kgs1-14">14</a></li>
+				<li><a href="WEB/1ki15.html" target="content" class="chapter" id="kgs1-15">15</a></li>
+				<li><a href="WEB/1ki16.html" target="content" class="chapter" id="kgs1-16">16</a></li>
+				<li><a href="WEB/1ki17.html" target="content" class="chapter" id="kgs1-17">17</a></li>
+				<li><a href="WEB/1ki18.html" target="content" class="chapter" id="kgs1-18">18</a></li>
+				<li><a href="WEB/1ki19.html" target="content" class="chapter" id="kgs1-19">19</a></li>
+				<li><a href="WEB/1ki20.html" target="content" class="chapter" id="kgs1-20">20</a></li>
+				<li><a href="WEB/1ki21.html" target="content" class="chapter" id="kgs1-21">21</a></li>
+				<li><a href="WEB/1ki22.html" target="content" class="chapter" id="kgs1-22">22</a></li>
+			</ul>
+		<script>$('a.kgs1').click(function () {$('ul.kgs1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="kgs2" id="kgs2" onclick="clickOTBook()" class="clicked0 book kgs2">2 Kgs</a>
+			<ul class="kgs2 chapters">
+				<li><a href="WEB/2ki1.html" target="content" class="chapter" id="kgs2-1">1</a></li>
+				<li><a href="WEB/2ki2.html" target="content" class="chapter" id="kgs2-2">2</a></li>
+				<li><a href="WEB/2ki3.html" target="content" class="chapter" id="kgs2-3">3</a></li>
+				<li><a href="WEB/2ki4.html" target="content" class="chapter" id="kgs2-4">4</a></li>
+				<li><a href="WEB/2ki5.html" target="content" class="chapter" id="kgs2-5">5</a></li>
+				<li><a href="WEB/2ki6.html" target="content" class="chapter" id="kgs2-6">6</a></li>
+				<li><a href="WEB/2ki7.html" target="content" class="chapter" id="kgs2-7">7</a></li>
+				<li><a href="WEB/2ki8.html" target="content" class="chapter" id="kgs2-8">8</a></li>
+				<li><a href="WEB/2ki9.html" target="content" class="chapter" id="kgs2-9">9</a></li>
+				<li><a href="WEB/2ki10.html" target="content" class="chapter" id="kgs2-10">10</a></li>
+				<li><a href="WEB/2ki11.html" target="content" class="chapter" id="kgs2-11">11</a></li>
+				<li><a href="WEB/2ki12.html" target="content" class="chapter" id="kgs2-12">12</a></li>
+				<li><a href="WEB/2ki13.html" target="content" class="chapter" id="kgs2-13">13</a></li>
+				<li><a href="WEB/2ki14.html" target="content" class="chapter" id="kgs2-14">14</a></li>
+				<li><a href="WEB/2ki15.html" target="content" class="chapter" id="kgs2-15">15</a></li>
+				<li><a href="WEB/2ki16.html" target="content" class="chapter" id="kgs2-16">16</a></li>
+				<li><a href="WEB/2ki17.html" target="content" class="chapter" id="kgs2-17">17</a></li>
+				<li><a href="WEB/2ki18.html" target="content" class="chapter" id="kgs2-18">18</a></li>
+				<li><a href="WEB/2ki19.html" target="content" class="chapter" id="kgs2-19">19</a></li>
+				<li><a href="WEB/2ki20.html" target="content" class="chapter" id="kgs2-20">20</a></li>
+				<li><a href="WEB/2ki21.html" target="content" class="chapter" id="kgs2-21">21</a></li>
+				<li><a href="WEB/2ki22.html" target="content" class="chapter" id="kgs2-22">22</a></li>
+				<li><a href="WEB/2ki23.html" target="content" class="chapter" id="kgs2-23">23</a></li>
+				<li><a href="WEB/2ki24.html" target="content" class="chapter" id="kgs2-24">24</a></li>
+				<li><a href="WEB/2ki25.html" target="content" class="chapter" id="kgs2-25">25</a></li>
+			</ul>
+		<script>$('a.kgs2').click(function () {$('ul.kgs2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="chr1" id="chr1" onclick="clickOTBook()" class="clicked0 book chr1">1 Chr</a>
+			<ul class="chr1 chapters">
+				<li><a href="WEB/1Chr.1.html" target="content" class="chapter" id="chr1-1">1</a></li>
+				<li><a href="WEB/1Chr.2.html" target="content" class="chapter" id="chr1-2">2</a></li>
+				<li><a href="WEB/1Chr.3.html" target="content" class="chapter" id="chr1-3">3</a></li>
+				<li><a href="WEB/1Chr.4.html" target="content" class="chapter" id="chr1-4">4</a></li>
+				<li><a href="WEB/1Chr.5.html" target="content" class="chapter" id="chr1-5">5</a></li>
+				<li><a href="WEB/1Chr.6.html" target="content" class="chapter" id="chr1-6">6</a></li>
+				<li><a href="WEB/1Chr.7.html" target="content" class="chapter" id="chr1-7">7</a></li>
+				<li><a href="WEB/1Chr.8.html" target="content" class="chapter" id="chr1-8">8</a></li>
+				<li><a href="WEB/1Chr.9.html" target="content" class="chapter" id="chr1-9">9</a></li>
+				<li><a href="WEB/1Chr.10.html" target="content" class="chapter" id="chr1-10">10</a></li>
+				<li><a href="WEB/1Chr.11.html" target="content" class="chapter" id="chr1-11">11</a></li>
+				<li><a href="WEB/1Chr.12.html" target="content" class="chapter" id="chr1-12">12</a></li>
+				<li><a href="WEB/1Chr.13.html" target="content" class="chapter" id="chr1-13">13</a></li>
+				<li><a href="WEB/1Chr.14.html" target="content" class="chapter" id="chr1-14">14</a></li>
+				<li><a href="WEB/1Chr.15.html" target="content" class="chapter" id="chr1-15">15</a></li>
+				<li><a href="WEB/1Chr.16.html" target="content" class="chapter" id="chr1-16">16</a></li>
+				<li><a href="WEB/1Chr.17.html" target="content" class="chapter" id="chr1-17">17</a></li>
+				<li><a href="WEB/1Chr.18.html" target="content" class="chapter" id="chr1-18">18</a></li>
+				<li><a href="WEB/1Chr.19.html" target="content" class="chapter" id="chr1-19">19</a></li>
+				<li><a href="WEB/1Chr.20.html" target="content" class="chapter" id="chr1-20">20</a></li>
+				<li><a href="WEB/1Chr.21.html" target="content" class="chapter" id="chr1-21">21</a></li>
+				<li><a href="WEB/1Chr.22.html" target="content" class="chapter" id="chr1-22">22</a></li>
+				<li><a href="WEB/1Chr.23.html" target="content" class="chapter" id="chr1-23">23</a></li>
+				<li><a href="WEB/1Chr.24.html" target="content" class="chapter" id="chr1-24">24</a></li>
+				<li><a href="WEB/1Chr.25.html" target="content" class="chapter" id="chr1-25">25</a></li>
+				<li><a href="WEB/1Chr.26.html" target="content" class="chapter" id="chr1-26">26</a></li>
+				<li><a href="WEB/1Chr.27.html" target="content" class="chapter" id="chr1-27">27</a></li>
+				<li><a href="WEB/1Chr.28.html" target="content" class="chapter" id="chr1-28">28</a></li>
+				<li><a href="WEB/1Chr.29.html" target="content" class="chapter" id="chr1-29">29</a></li>
+			</ul>
+		<script>$('a.chr1').click(function () {$('ul.chr1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="chr2" id="chr2" onclick="clickOTBook()" class="clicked0 book chr2">2 Chr</a>
+			<ul class="chr2 chapters">
+				<li><a href="WEB/2Chr.1.html" target="content" class="chapter" id="chr2-1">1</a></li>
+				<li><a href="WEB/2Chr.2.html" target="content" class="chapter" id="chr2-2">2</a></li>
+				<li><a href="WEB/2Chr.3.html" target="content" class="chapter" id="chr2-3">3</a></li>
+				<li><a href="WEB/2Chr.4.html" target="content" class="chapter" id="chr2-4">4</a></li>
+				<li><a href="WEB/2Chr.5.html" target="content" class="chapter" id="chr2-5">5</a></li>
+				<li><a href="WEB/2Chr.6.html" target="content" class="chapter" id="chr2-6">6</a></li>
+				<li><a href="WEB/2Chr.7.html" target="content" class="chapter" id="chr2-7">7</a></li>
+				<li><a href="WEB/2Chr.8.html" target="content" class="chapter" id="chr2-8">8</a></li>
+				<li><a href="WEB/2Chr.9.html" target="content" class="chapter" id="chr2-9">9</a></li>
+				<li><a href="WEB/2Chr.10.html" target="content" class="chapter" id="chr2-10">10</a></li>
+				<li><a href="WEB/2Chr.11.html" target="content" class="chapter" id="chr2-11">11</a></li>
+				<li><a href="WEB/2Chr.12.html" target="content" class="chapter" id="chr2-12">12</a></li>
+				<li><a href="WEB/2Chr.13.html" target="content" class="chapter" id="chr2-13">13</a></li>
+				<li><a href="WEB/2Chr.14.html" target="content" class="chapter" id="chr2-14">14</a></li>
+				<li><a href="WEB/2Chr.15.html" target="content" class="chapter" id="chr2-15">15</a></li>
+				<li><a href="WEB/2Chr.16.html" target="content" class="chapter" id="chr2-16">16</a></li>
+				<li><a href="WEB/2Chr.17.html" target="content" class="chapter" id="chr2-17">17</a></li>
+				<li><a href="WEB/2Chr.18.html" target="content" class="chapter" id="chr2-18">18</a></li>
+				<li><a href="WEB/2Chr.19.html" target="content" class="chapter" id="chr2-19">19</a></li>
+				<li><a href="WEB/2Chr.20.html" target="content" class="chapter" id="chr2-20">20</a></li>
+				<li><a href="WEB/2Chr.21.html" target="content" class="chapter" id="chr2-21">21</a></li>
+				<li><a href="WEB/2Chr.22.html" target="content" class="chapter" id="chr2-22">22</a></li>
+				<li><a href="WEB/2Chr.23.html" target="content" class="chapter" id="chr2-23">23</a></li>
+				<li><a href="WEB/2Chr.24.html" target="content" class="chapter" id="chr2-24">24</a></li>
+				<li><a href="WEB/2Chr.25.html" target="content" class="chapter" id="chr2-25">25</a></li>
+				<li><a href="WEB/2Chr.26.html" target="content" class="chapter" id="chr2-26">26</a></li>
+				<li><a href="WEB/2Chr.27.html" target="content" class="chapter" id="chr2-27">27</a></li>
+				<li><a href="WEB/2Chr.28.html" target="content" class="chapter" id="chr2-28">28</a></li>
+				<li><a href="WEB/2Chr.29.html" target="content" class="chapter" id="chr2-29">29</a></li>
+				<li><a href="WEB/2Chr.30.html" target="content" class="chapter" id="chr2-30">30</a></li>
+				<li><a href="WEB/2Chr.31.html" target="content" class="chapter" id="chr2-31">31</a></li>
+				<li><a href="WEB/2Chr.32.html" target="content" class="chapter" id="chr2-32">32</a></li>
+				<li><a href="WEB/2Chr.33.html" target="content" class="chapter" id="chr2-33">33</a></li>
+				<li><a href="WEB/2Chr.34.html" target="content" class="chapter" id="chr2-34">34</a></li>
+				<li><a href="WEB/2Chr.35.html" target="content" class="chapter" id="chr2-35">35</a></li>
+				<li><a href="WEB/2Chr.36.html" target="content" class="chapter" id="chr2-36">36</a></li>
+				<li><a href="WEB/2Chr.37.html" target="content" class="chapter" id="chr2-37">37</a></li>
+			</ul>
+		<script>$('a.chr2').click(function () {$('ul.chr2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="ezr" id="ezr" onclick="clickOTBook()" class="clicked0 book ezr">Ezr</a>
+			<ul class="ezra chapters">
+				<li><a href="WEB/Ezra.1.html" target="content" class="chapter" id="ezr-1">1</a></li>
+				<li><a href="WEB/Ezra.2.html" target="content" class="chapter" id="ezr-2">2</a></li>
+				<li><a href="WEB/Ezra.3.html" target="content" class="chapter" id="ezr-3">3</a></li>
+				<li><a href="WEB/Ezra.4.html" target="content" class="chapter" id="ezr-4">4</a></li>
+				<li><a href="WEB/Ezra.5.html" target="content" class="chapter" id="ezr-5">5</a></li>
+				<li><a href="WEB/Ezra.6.html" target="content" class="chapter" id="ezr-6">6</a></li>
+				<li><a href="WEB/Ezra.7.html" target="content" class="chapter" id="ezr-7">7</a></li>
+				<li><a href="WEB/Ezra.8.html" target="content" class="chapter" id="ezr-8">8</a></li>
+				<li><a href="WEB/Ezra.9.html" target="content" class="chapter" id="ezr-9">9</a></li>
+				<li><a href="WEB/Ezra.9.html" target="content" class="chapter" id="ezr-10">10</a></li>
+			</ul>
+		<script>$('a.ezr').click(function () {$('ul.ezr').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="neh" id="neh" onclick="clickOTBook()" class="clicked0 book neh">Neh</a>
+			<ul class="neh chapters">
+				<li><a href="WEB/Neh.1.html" target="content" class="chapter" id="neh-1">1</a></li>
+				<li><a href="WEB/Neh.2.html" target="content" class="chapter" id="neh-2">2</a></li>
+				<li><a href="WEB/Neh.3.html" target="content" class="chapter" id="neh-3">3</a></li>
+				<li><a href="WEB/Neh.4.html" target="content" class="chapter" id="neh-4">4</a></li>
+				<li><a href="WEB/Neh.5.html" target="content" class="chapter" id="neh-5">5</a></li>
+				<li><a href="WEB/Neh.6.html" target="content" class="chapter" id="neh-6">6</a></li>
+				<li><a href="WEB/Neh.7.html" target="content" class="chapter" id="neh-7">7</a></li>
+				<li><a href="WEB/Neh.8.html" target="content" class="chapter" id="neh-8">8</a></li>
+				<li><a href="WEB/Neh.9.html" target="content" class="chapter" id="neh-9">9</a></li>
+				<li><a href="WEB/Neh.10.html" target="content" class="chapter" id="neh-10">10</a></li>
+				<li><a href="WEB/Neh.11.html" target="content" class="chapter" id="neh-11">11</a></li>
+				<li><a href="WEB/Neh.12.html" target="content" class="chapter" id="neh-12">12</a></li>
+				<li><a href="WEB/Neh.13.html" target="content" class="chapter" id="neh-13">13</a></li>
+			</ul>
+		<script>$('a.neh').click(function () {$('ul.neh').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="est" id="est" onclick="clickOTBook()" class="clicked0 book est">Est</a>
+			<ul class="est chapters">
+				<li><a href="WEB/Esth.1.html" target="content" class="chapter" id="est-1">1</a></li>
+				<li><a href="WEB/Esth.2.html" target="content" class="chapter" id="est-2">2</a></li>
+				<li><a href="WEB/Esth.3.html" target="content" class="chapter" id="est-3">3</a></li>
+				<li><a href="WEB/Esth.4.html" target="content" class="chapter" id="est-4">4</a></li>
+				<li><a href="WEB/Esth.5.html" target="content" class="chapter" id="est-5">5</a></li>
+				<li><a href="WEB/Esth.6.html" target="content" class="chapter" id="est-6">6</a></li>
+				<li><a href="WEB/Esth.7.html" target="content" class="chapter" id="est-7">7</a></li>
+				<li><a href="WEB/Esth.8.html" target="content" class="chapter" id="est-8">8</a></li>
+				<li><a href="WEB/Esth.9.html" target="content" class="chapter" id="est-9">9</a></li>
+				<li><a href="WEB/Esth.10.html" target="content" class="chapter" id="est-10">10</a></li>
+			</ul>
+		<script>$('a.est').click(function () {$('ul.est').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="job" id="job" onclick="clickOTBook()" class="clicked0 book job">Job</a>
+			<ul class="job chapters">
+				<li><a href="WEB/Job.1.html" target="content" class="chapter" id="job-1">1</a></li>
+				<li><a href="WEB/Job.2.html" target="content" class="chapter" id="job-2">2</a></li>
+				<li><a href="WEB/Job.3.html" target="content" class="chapter" id="job-3">3</a></li>
+				<li><a href="WEB/Job.4.html" target="content" class="chapter" id="job-4">4</a></li>
+				<li><a href="WEB/Job.5.html" target="content" class="chapter" id="job-5">5</a></li>
+				<li><a href="WEB/Job.6.html" target="content" class="chapter" id="job-6">6</a></li>
+				<li><a href="WEB/Job.7.html" target="content" class="chapter" id="job-7">7</a></li>
+				<li><a href="WEB/Job.8.html" target="content" class="chapter" id="job-8">8</a></li>
+				<li><a href="WEB/Job.9.html" target="content" class="chapter" id="job-9">9</a></li>
+				<li><a href="WEB/Job.10.html" target="content" class="chapter" id="job-10">10</a></li>
+				<li><a href="WEB/Job.11.html" target="content" class="chapter" id="job-11">11</a></li>
+				<li><a href="WEB/Job.12.html" target="content" class="chapter" id="job-12">12</a></li>
+				<li><a href="WEB/Job.13.html" target="content" class="chapter" id="job-13">13</a></li>
+				<li><a href="WEB/Job.14.html" target="content" class="chapter" id="job-14">14</a></li>
+				<li><a href="WEB/Job.15.html" target="content" class="chapter" id="job-15">15</a></li>
+				<li><a href="WEB/Job.16.html" target="content" class="chapter" id="job-16">16</a></li>
+				<li><a href="WEB/Job.17.html" target="content" class="chapter" id="job-17">17</a></li>
+				<li><a href="WEB/Job.18.html" target="content" class="chapter" id="job-18">18</a></li>
+				<li><a href="WEB/Job.19.html" target="content" class="chapter" id="job-19">19</a></li>
+				<li><a href="WEB/Job.20.html" target="content" class="chapter" id="job-20">20</a></li>
+				<li><a href="WEB/Job.21.html" target="content" class="chapter" id="job-21">21</a></li>
+				<li><a href="WEB/Job.22.html" target="content" class="chapter" id="job-22">22</a></li>
+				<li><a href="WEB/Job.23.html" target="content" class="chapter" id="job-23">23</a></li>
+				<li><a href="WEB/Job.24.html" target="content" class="chapter" id="job-24">24</a></li>
+				<li><a href="WEB/Job.25.html" target="content" class="chapter" id="job-25">25</a></li>
+				<li><a href="WEB/Job.26.html" target="content" class="chapter" id="job-26">26</a></li>
+				<li><a href="WEB/Job.27.html" target="content" class="chapter" id="job-27">27</a></li>
+				<li><a href="WEB/Job.28.html" target="content" class="chapter" id="job-28">28</a></li>
+				<li><a href="WEB/Job.29.html" target="content" class="chapter" id="job-29">29</a></li>
+				<li><a href="WEB/Job.30.html" target="content" class="chapter" id="job-30">30</a></li>
+				<li><a href="WEB/Job.31.html" target="content" class="chapter" id="job-31">31</a></li>
+				<li><a href="WEB/Job.32.html" target="content" class="chapter" id="job-32">32</a></li>
+				<li><a href="WEB/Job.33.html" target="content" class="chapter" id="job-33">33</a></li>
+				<li><a href="WEB/Job.34.html" target="content" class="chapter" id="job-34">34</a></li>
+				<li><a href="WEB/Job.35.html" target="content" class="chapter" id="job-35">35</a></li>
+				<li><a href="WEB/Job.36.html" target="content" class="chapter" id="job-36">36</a></li>
+				<li><a href="WEB/Job.37.html" target="content" class="chapter" id="job-37">37</a></li>
+				<li><a href="WEB/Job.38.html" target="content" class="chapter" id="job-38">38</a></li>
+				<li><a href="WEB/Job.39.html" target="content" class="chapter" id="job-39">39</a></li>
+				<li><a href="WEB/Job.40.html" target="content" class="chapter" id="job-40">40</a></li>
+				<li><a href="WEB/Job.41.html" target="content" class="chapter" id="job-41">41</a></li>
+				<li><a href="WEB/Job.42.html" target="content" class="chapter" id="job-42">42</a></li>
+			</ul>
+		<script>$('a.job').click(function () {$('ul.job').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="psa" id="psa" onclick="clickOTBook()" class="clicked0 book psa poetry">Psa</a>
+			<ul class="psa poetry chapters">
+				<li><a href="WEB/Ps.1.html" target="content" class="chapter" id="psa-1">1</a></li>
+				<li><a href="WEB/Ps.2.html" target="content" class="chapter" id="psa-2">2</a></li>
+				<li><a href="WEB/Ps.3.html" target="content" class="chapter" id="psa-3">3</a></li>
+				<li><a href="WEB/Ps.4.html" target="content" class="chapter" id="psa-4">4</a></li>
+				<li><a href="WEB/Ps.5.html" target="content" class="chapter" id="psa-5">5</a></li>
+				<li><a href="WEB/Ps.6.html" target="content" class="chapter" id="psa-6">6</a></li>
+				<li><a href="WEB/Ps.7.html" target="content" class="chapter" id="psa-7">7</a></li>
+				<li><a href="WEB/Ps.8.html" target="content" class="chapter" id="psa-8">8</a></li>
+				<li><a href="WEB/Ps.9.html" target="content" class="chapter" id="psa-9">9</a></li>
+				<li><a href="WEB/Ps.10.html" target="content" class="chapter" id="psa-10">10</a></li>
+				<li><a href="WEB/Ps.11.html" target="content" class="chapter" id="psa-11">11</a></li>
+				<li><a href="WEB/Ps.12.html" target="content" class="chapter" id="psa-12">12</a></li>
+				<li><a href="WEB/Ps.13.html" target="content" class="chapter" id="psa-13">13</a></li>
+				<li><a href="WEB/Ps.14.html" target="content" class="chapter" id="psa-14">14</a></li>
+				<li><a href="WEB/Ps.15.html" target="content" class="chapter" id="psa-15">15</a></li>
+				<li><a href="WEB/Ps.16.html" target="content" class="chapter" id="psa-16">16</a></li>
+				<li><a href="WEB/Ps.17.html" target="content" class="chapter" id="psa-17">17</a></li>
+				<li><a href="WEB/Ps.18.html" target="content" class="chapter" id="psa-18">18</a></li>
+				<li><a href="WEB/Ps.19.html" target="content" class="chapter" id="psa-19">19</a></li>
+				<li><a href="WEB/Ps.20.html" target="content" class="chapter" id="psa-20">20</a></li>
+				<li><a href="WEB/Ps.21.html" target="content" class="chapter" id="psa-21">21</a></li>
+				<li><a href="WEB/Ps.22.html" target="content" class="chapter" id="psa-22">22</a></li>
+				<li><a href="WEB/Ps.23.html" target="content" class="chapter" id="psa-23">23</a></li>
+				<li><a href="WEB/Ps.24.html" target="content" class="chapter" id="psa-24">24</a></li>
+				<li><a href="WEB/Ps.25.html" target="content" class="chapter" id="psa-25">25</a></li>
+				<li><a href="WEB/Ps.26.html" target="content" class="chapter" id="psa-26">26</a></li>
+				<li><a href="WEB/Ps.27.html" target="content" class="chapter" id="psa-27">27</a></li>
+				<li><a href="WEB/Ps.28.html" target="content" class="chapter" id="psa-28">28</a></li>
+				<li><a href="WEB/Ps.29.html" target="content" class="chapter" id="psa-29">29</a></li>
+				<li><a href="WEB/Ps.30.html" target="content" class="chapter" id="psa-30">30</a></li>
+				<li><a href="WEB/Ps.31.html" target="content" class="chapter" id="psa-31">31</a></li>
+				<li><a href="WEB/Ps.32.html" target="content" class="chapter" id="psa-32">32</a></li>
+				<li><a href="WEB/Ps.33.html" target="content" class="chapter" id="psa-33">33</a></li>
+				<li><a href="WEB/Ps.34.html" target="content" class="chapter" id="psa-34">34</a></li>
+				<li><a href="WEB/Ps.35.html" target="content" class="chapter" id="psa-35">35</a></li>
+				<li><a href="WEB/Ps.36.html" target="content" class="chapter" id="psa-36">36</a></li>
+				<li><a href="WEB/Ps.37.html" target="content" class="chapter" id="psa-37">37</a></li>
+				<li><a href="WEB/Ps.38.html" target="content" class="chapter" id="psa-38">38</a></li>
+				<li><a href="WEB/Ps.39.html" target="content" class="chapter" id="psa-39">39</a></li>
+				<li><a href="WEB/Ps.40.html" target="content" class="chapter" id="psa-40">40</a></li>
+				<li><a href="WEB/Ps.41.html" target="content" class="chapter" id="psa-41">41</a></li>
+				<li><a href="WEB/Ps.42.html" target="content" class="chapter" id="psa-42">42</a></li>
+				<li><a href="WEB/Ps.43.html" target="content" class="chapter" id="psa-43">43</a></li>
+				<li><a href="WEB/Ps.44.html" target="content" class="chapter" id="psa-44">44</a></li>
+				<li><a href="WEB/Ps.45.html" target="content" class="chapter" id="psa-45">45</a></li>
+				<li><a href="WEB/Ps.46.html" target="content" class="chapter" id="psa-46">46</a></li>
+				<li><a href="WEB/Ps.47.html" target="content" class="chapter" id="psa-47">47</a></li>
+				<li><a href="WEB/Ps.48.html" target="content" class="chapter" id="psa-48">48</a></li>
+				<li><a href="WEB/Ps.49.html" target="content" class="chapter" id="psa-49">49</a></li>
+				<li><a href="WEB/Ps.50.html" target="content" class="chapter" id="psa-50">50</a></li>
+				<li><a href="WEB/Ps.51.html" target="content" class="chapter" id="psa-51">51</a></li>
+				<li><a href="WEB/Ps.52.html" target="content" class="chapter" id="psa-52">52</a></li>
+				<li><a href="WEB/Ps.53.html" target="content" class="chapter" id="psa-53">53</a></li>
+				<li><a href="WEB/Ps.54.html" target="content" class="chapter" id="psa-54">54</a></li>
+				<li><a href="WEB/Ps.55.html" target="content" class="chapter" id="psa-55">55</a></li>
+				<li><a href="WEB/Ps.56.html" target="content" class="chapter" id="psa-56">56</a></li>
+				<li><a href="WEB/Ps.57.html" target="content" class="chapter" id="psa-57">57</a></li>
+				<li><a href="WEB/Ps.58.html" target="content" class="chapter" id="psa-58">58</a></li>
+				<li><a href="WEB/Ps.59.html" target="content" class="chapter" id="psa-59">59</a></li>
+				<li><a href="WEB/Ps.60.html" target="content" class="chapter" id="psa-60">60</a></li>
+				<li><a href="WEB/Ps.61.html" target="content" class="chapter" id="psa-61">61</a></li>
+				<li><a href="WEB/Ps.62.html" target="content" class="chapter" id="psa-62">62</a></li>
+				<li><a href="WEB/Ps.63.html" target="content" class="chapter" id="psa-63">63</a></li>
+				<li><a href="WEB/Ps.64.html" target="content" class="chapter" id="psa-64">64</a></li>
+				<li><a href="WEB/Ps.65.html" target="content" class="chapter" id="psa-65">65</a></li>
+				<li><a href="WEB/Ps.66.html" target="content" class="chapter" id="psa-66">66</a></li>
+				<li><a href="WEB/Ps.67.html" target="content" class="chapter" id="psa-67">67</a></li>
+				<li><a href="WEB/Ps.68.html" target="content" class="chapter" id="psa-68">68</a></li>
+				<li><a href="WEB/Ps.69.html" target="content" class="chapter" id="psa-69">69</a></li>
+				<li><a href="WEB/Ps.70.html" target="content" class="chapter" id="psa-70">70</a></li>
+				<li><a href="WEB/Ps.71.html" target="content" class="chapter" id="psa-71">71</a></li>
+				<li><a href="WEB/Ps.72.html" target="content" class="chapter" id="psa-72">72</a></li>
+				<li><a href="WEB/Ps.73.html" target="content" class="chapter" id="psa-73">73</a></li>
+				<li><a href="WEB/Ps.74.html" target="content" class="chapter" id="psa-74">74</a></li>
+				<li><a href="WEB/Ps.75.html" target="content" class="chapter" id="psa-75">75</a></li>
+				<li><a href="WEB/Ps.76.html" target="content" class="chapter" id="psa-76">76</a></li>
+				<li><a href="WEB/Ps.77.html" target="content" class="chapter" id="psa-77">77</a></li>
+				<li><a href="WEB/Ps.78.html" target="content" class="chapter" id="psa-78">78</a></li>
+				<li><a href="WEB/Ps.79.html" target="content" class="chapter" id="psa-79">79</a></li>
+				<li><a href="WEB/Ps.80.html" target="content" class="chapter" id="psa-80">80</a></li>
+				<li><a href="WEB/Ps.81.html" target="content" class="chapter" id="psa-81">81</a></li>
+				<li><a href="WEB/Ps.82.html" target="content" class="chapter" id="psa-82">82</a></li>
+				<li><a href="WEB/Ps.83.html" target="content" class="chapter" id="psa-83">83</a></li>
+				<li><a href="WEB/Ps.84.html" target="content" class="chapter" id="psa-84">84</a></li>
+				<li><a href="WEB/Ps.85.html" target="content" class="chapter" id="psa-85">85</a></li>
+				<li><a href="WEB/Ps.86.html" target="content" class="chapter" id="psa-86">86</a></li>
+				<li><a href="WEB/Ps.87.html" target="content" class="chapter" id="psa-87">87</a></li>
+				<li><a href="WEB/Ps.88.html" target="content" class="chapter" id="psa-88">88</a></li>
+				<li><a href="WEB/Ps.89.html" target="content" class="chapter" id="psa-89">89</a></li>
+				<li><a href="WEB/Ps.90.html" target="content" class="chapter" id="psa-90">90</a></li>
+				<li><a href="WEB/Ps.91.html" target="content" class="chapter" id="psa-91">91</a></li>
+				<li><a href="WEB/Ps.92.html" target="content" class="chapter" id="psa-92">92</a></li>
+				<li><a href="WEB/Ps.93.html" target="content" class="chapter" id="psa-93">93</a></li>
+				<li><a href="WEB/Ps.94.html" target="content" class="chapter" id="psa-94">94</a></li>
+				<li><a href="WEB/Ps.95.html" target="content" class="chapter" id="psa-95">95</a></li>
+				<li><a href="WEB/Ps.96.html" target="content" class="chapter" id="psa-96">96</a></li>
+				<li><a href="WEB/Ps.97.html" target="content" class="chapter" id="psa-97">97</a></li>
+				<li><a href="WEB/Ps.98.html" target="content" class="chapter" id="psa-98">98</a></li>
+				<li><a href="WEB/Ps.99.html" target="content" class="chapter" id="psa-99">99</a></li>
+				<li><a href="WEB/Ps.100.html" target="content" class="chapter" id="psa-100">100</a></li>
+				<li><a href="WEB/Ps.101.html" target="content" class="chapter" id="psa-101">101</a></li>
+				<li><a href="WEB/Ps.102.html" target="content" class="chapter" id="psa-102">102</a></li>
+				<li><a href="WEB/Ps.103.html" target="content" class="chapter" id="psa-103">103</a></li>
+				<li><a href="WEB/Ps.104.html" target="content" class="chapter" id="psa-104">104</a></li>
+				<li><a href="WEB/Ps.105.html" target="content" class="chapter" id="psa-105">105</a></li>
+				<li><a href="WEB/Ps.106.html" target="content" class="chapter" id="psa-106">106</a></li>
+				<li><a href="WEB/Ps.107.html" target="content" class="chapter" id="psa-107">107</a></li>
+				<li><a href="WEB/Ps.108.html" target="content" class="chapter" id="psa-108">108</a></li>
+				<li><a href="WEB/Ps.109.html" target="content" class="chapter" id="psa-109">109</a></li>
+				<li><a href="WEB/Ps.110.html" target="content" class="chapter" id="psa-110">110</a></li>
+				<li><a href="WEB/Ps.111.html" target="content" class="chapter" id="psa-111">111</a></li>
+				<li><a href="WEB/Ps.112.html" target="content" class="chapter" id="psa-112">112</a></li>
+				<li><a href="WEB/Ps.113.html" target="content" class="chapter" id="psa-113">113</a></li>
+				<li><a href="WEB/Ps.114.html" target="content" class="chapter" id="psa-114">114</a></li>
+				<li><a href="WEB/Ps.115.html" target="content" class="chapter" id="psa-115">115</a></li>
+				<li><a href="WEB/Ps.116.html" target="content" class="chapter" id="psa-116">116</a></li>
+				<li><a href="WEB/Ps.117.html" target="content" class="chapter" id="psa-117">117</a></li>
+				<li><a href="WEB/Ps.118.html" target="content" class="chapter" id="psa-118">118</a></li>
+				<li><a href="WEB/Ps.119.html" target="content" class="chapter" id="psa-119">119</a></li>
+				<li><a href="WEB/Ps.120.html" target="content" class="chapter" id="psa-120">120</a></li>
+				<li><a href="WEB/Ps.121.html" target="content" class="chapter" id="psa-121">121</a></li>
+				<li><a href="WEB/Ps.122.html" target="content" class="chapter" id="psa-122">122</a></li>
+				<li><a href="WEB/Ps.123.html" target="content" class="chapter" id="psa-123">123</a></li>
+				<li><a href="WEB/Ps.124.html" target="content" class="chapter" id="psa-124">124</a></li>
+				<li><a href="WEB/Ps.125.html" target="content" class="chapter" id="psa-125">125</a></li>
+				<li><a href="WEB/Ps.126.html" target="content" class="chapter" id="psa-126">126</a></li>
+				<li><a href="WEB/Ps.127.html" target="content" class="chapter" id="psa-127">127</a></li>
+				<li><a href="WEB/Ps.128.html" target="content" class="chapter" id="psa-128">128</a></li>
+				<li><a href="WEB/Ps.129.html" target="content" class="chapter" id="psa-129">129</a></li>
+				<li><a href="WEB/Ps.130.html" target="content" class="chapter" id="psa-130">130</a></li>
+				<li><a href="WEB/Ps.131.html" target="content" class="chapter" id="psa-131">131</a></li>
+				<li><a href="WEB/Ps.132.html" target="content" class="chapter" id="psa-132">132</a></li>
+				<li><a href="WEB/Ps.133.html" target="content" class="chapter" id="psa-133">133</a></li>
+				<li><a href="WEB/Ps.134.html" target="content" class="chapter" id="psa-134">134</a></li>
+				<li><a href="WEB/Ps.135.html" target="content" class="chapter" id="psa-135">135</a></li>
+				<li><a href="WEB/Ps.136.html" target="content" class="chapter" id="psa-136">136</a></li>
+				<li><a href="WEB/Ps.137.html" target="content" class="chapter" id="psa-137">137</a></li>
+				<li><a href="WEB/Ps.138.html" target="content" class="chapter" id="psa-138">138</a></li>
+				<li><a href="WEB/Ps.139.html" target="content" class="chapter" id="psa-139">139</a></li>
+				<li><a href="WEB/Ps.140.html" target="content" class="chapter" id="psa-140">140</a></li>
+				<li><a href="WEB/Ps.141.html" target="content" class="chapter" id="psa-141">141</a></li>
+				<li><a href="WEB/Ps.142.html" target="content" class="chapter" id="psa-142">142</a></li>
+				<li><a href="WEB/Ps.143.html" target="content" class="chapter" id="psa-143">143</a></li>
+				<li><a href="WEB/Ps.144.html" target="content" class="chapter" id="psa-144">144</a></li>
+				<li><a href="WEB/Ps.145.html" target="content" class="chapter" id="psa-145">145</a></li>
+				<li><a href="WEB/Ps.146.html" target="content" class="chapter" id="psa-146">146</a></li>
+				<li><a href="WEB/Ps.147.html" target="content" class="chapter" id="psa-147">147</a></li>
+				<li><a href="WEB/Ps.148.html" target="content" class="chapter" id="psa-148">148</a></li>
+				<li><a href="WEB/Ps.149.html" target="content" class="chapter" id="psa-149">149</a></li>
+				<li><a href="WEB/Ps.150.html" target="content" class="chapter" id="psa-150">150</a></li>
+			</ul>
+		<script>$('a.psa').click(function () {$('ul.psa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="pro" id="pro" onclick="clickOTBook()" class="clicked0 book pro poetry">Pro</a>
+			<ul class="pro poetry chapters">
+				<li><a href="WEB/Prov.1.html" target="content" class="chapter" id="pro-1">1</a></li>
+				<li><a href="WEB/Prov.2.html" target="content" class="chapter" id="pro-2">2</a></li>
+				<li><a href="WEB/Prov.3.html" target="content" class="chapter" id="pro-3">3</a></li>
+				<li><a href="WEB/Prov.4.html" target="content" class="chapter" id="pro-4">4</a></li>
+				<li><a href="WEB/Prov.5.html" target="content" class="chapter" id="pro-5">5</a></li>
+				<li><a href="WEB/Prov.6.html" target="content" class="chapter" id="pro-6">6</a></li>
+				<li><a href="WEB/Prov.7.html" target="content" class="chapter" id="pro-7">7</a></li>
+				<li><a href="WEB/Prov.8.html" target="content" class="chapter" id="pro-8">8</a></li>
+				<li><a href="WEB/Prov.9.html" target="content" class="chapter" id="pro-9">9</a></li>
+				<li><a href="WEB/Prov.10.html" target="content" class="chapter" id="pro-10">10</a></li>
+				<li><a href="WEB/Prov.11.html" target="content" class="chapter" id="pro-11">11</a></li>
+				<li><a href="WEB/Prov.12.html" target="content" class="chapter" id="pro-12">12</a></li>
+				<li><a href="WEB/Prov.13.html" target="content" class="chapter" id="pro-13">13</a></li>
+				<li><a href="WEB/Prov.14.html" target="content" class="chapter" id="pro-14">14</a></li>
+				<li><a href="WEB/Prov.15.html" target="content" class="chapter" id="pro-15">15</a></li>
+				<li><a href="WEB/Prov.16.html" target="content" class="chapter" id="pro-16">16</a></li>
+				<li><a href="WEB/Prov.17.html" target="content" class="chapter" id="pro-17">17</a></li>
+				<li><a href="WEB/Prov.18.html" target="content" class="chapter" id="pro-18">18</a></li>
+				<li><a href="WEB/Prov.19.html" target="content" class="chapter" id="pro-19">19</a></li>
+				<li><a href="WEB/Prov.20.html" target="content" class="chapter" id="pro-20">20</a></li>
+				<li><a href="WEB/Prov.21.html" target="content" class="chapter" id="pro-21">21</a></li>
+				<li><a href="WEB/Prov.22.html" target="content" class="chapter" id="pro-22">22</a></li>
+				<li><a href="WEB/Prov.23.html" target="content" class="chapter" id="pro-23">23</a></li>
+				<li><a href="WEB/Prov.24.html" target="content" class="chapter" id="pro-24">24</a></li>
+				<li><a href="WEB/Prov.25.html" target="content" class="chapter" id="pro-25">25</a></li>
+				<li><a href="WEB/Prov.26.html" target="content" class="chapter" id="pro-26">26</a></li>
+				<li><a href="WEB/Prov.27.html" target="content" class="chapter" id="pro-27">27</a></li>
+				<li><a href="WEB/Prov.28.html" target="content" class="chapter" id="pro-28">28</a></li>
+				<li><a href="WEB/Prov.29.html" target="content" class="chapter" id="pro-29">29</a></li>
+				<li><a href="WEB/Prov.30.html" target="content" class="chapter" id="pro-30">30</a></li>
+				<li><a href="WEB/Prov.31.html" target="content" class="chapter" id="pro-31">31</a></li>
+			</ul>
+		<script>$('a.pro').click(function () {$('ul.pro').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="ecc" onclick="clickOTBook()" class="clicked0 book ecc poetry">Ecc</a>
+			<ul class="ecc poetry chapters">
+				<li><a href="WEB/Eccl.1.html" target="content" class="chapter" id="pro-1">1</a></li>
+				<li><a href="WEB/Eccl.2.html" target="content" class="chapter" id="pro-2">2</a></li>
+				<li><a href="WEB/Eccl.3.html" target="content" class="chapter" id="pro-3">3</a></li>
+				<li><a href="WEB/Eccl.4.html" target="content" class="chapter" id="pro-4">4</a></li>
+				<li><a href="WEB/Eccl.5.html" target="content" class="chapter" id="pro-5">5</a></li>
+				<li><a href="WEB/Eccl.6.html" target="content" class="chapter" id="pro-6">6</a></li>
+				<li><a href="WEB/Eccl.7.html" target="content" class="chapter" id="pro-7">7</a></li>
+				<li><a href="WEB/Eccl.8.html" target="content" class="chapter" id="pro-8">8</a></li>
+				<li><a href="WEB/Eccl.9.html" target="content" class="chapter" id="pro-9">9</a></li>
+				<li><a href="WEB/Eccl.10.html" target="content" class="chapter" id="pro-10">10</a></li>
+				<li><a href="WEB/Eccl.11.html" target="content" class="chapter" id="pro-11">11</a></li>
+				<li><a href="WEB/Eccl.12.html" target="content" class="chapter" id="pro-12">12</a></li>
+			</ul>
+		<script>$('a.ecc').click(function () {$('ul.ecc').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="sos" id="sos" onclick="clickOTBook()" class="clicked0 book sos poetry">SOS</a>
+			<ul class="sos poetry chapters">
+				<li><a href="WEB/Song.1.html" target="content" class="chapter" id="sos-1">1</a></li>
+				<li><a href="WEB/Song.2.html" target="content" class="chapter" id="sos-2">2</a></li>
+				<li><a href="WEB/Song.3.html" target="content" class="chapter" id="sos-3">3</a></li>
+				<li><a href="WEB/Song.4.html" target="content" class="chapter" id="sos-4">4</a></li>
+				<li><a href="WEB/Song.5.html" target="content" class="chapter" id="sos-5">5</a></li>
+				<li><a href="WEB/Song.6.html" target="content" class="chapter" id="sos-6">6</a></li>
+				<li><a href="WEB/Song.7.html" target="content" class="chapter" id="sos-7">7</a></li>
+				<li><a href="WEB/Song.8.html" target="content" class="chapter" id="sos-8">8</a></li>
+			</ul>
+		<script>$('a.sos').click(function () {$('ul.sos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="isa" id="isa" onclick="clickOTBook()" class="clicked0 book isa">Isa</a>
+			<ul class="isa chapters">
+				<li><a href="WEB/Isa.1.html" target="content" class="chapter" id="isa-1">1</a></li>
+				<li><a href="WEB/Isa.2.html" target="content" class="chapter" id="isa-2">2</a></li>
+				<li><a href="WEB/Isa.3.html" target="content" class="chapter" id="isa-3">3</a></li>
+				<li><a href="WEB/Isa.4.html" target="content" class="chapter" id="isa-4">4</a></li>
+				<li><a href="WEB/Isa.5.html" target="content" class="chapter" id="isa-5">5</a></li>
+				<li><a href="WEB/Isa.6.html" target="content" class="chapter" id="isa-6">6</a></li>
+				<li><a href="WEB/Isa.7.html" target="content" class="chapter" id="isa-7">7</a></li>
+				<li><a href="WEB/Isa.8.html" target="content" class="chapter" id="isa-8">8</a></li>
+				<li><a href="WEB/Isa.9.html" target="content" class="chapter" id="isa-9">9</a></li>
+				<li><a href="WEB/Isa.10.html" target="content" class="chapter" id="isa-10">10</a></li>
+				<li><a href="WEB/Isa.11.html" target="content" class="chapter" id="isa-11">11</a></li>
+				<li><a href="WEB/Isa.12.html" target="content" class="chapter" id="isa-12">12</a></li>
+				<li><a href="WEB/Isa.13.html" target="content" class="chapter" id="isa-13">13</a></li>
+				<li><a href="WEB/Isa.14.html" target="content" class="chapter" id="isa-14">14</a></li>
+				<li><a href="WEB/Isa.15.html" target="content" class="chapter" id="isa-15">15</a></li>
+				<li><a href="WEB/Isa.16.html" target="content" class="chapter" id="isa-16">16</a></li>
+				<li><a href="WEB/Isa.17.html" target="content" class="chapter" id="isa-17">17</a></li>
+				<li><a href="WEB/Isa.18.html" target="content" class="chapter" id="isa-18">18</a></li>
+				<li><a href="WEB/Isa.19.html" target="content" class="chapter" id="isa-19">19</a></li>
+				<li><a href="WEB/Isa.20.html" target="content" class="chapter" id="isa-20">20</a></li>
+				<li><a href="WEB/Isa.21.html" target="content" class="chapter" id="isa-21">21</a></li>
+				<li><a href="WEB/Isa.22.html" target="content" class="chapter" id="isa-22">22</a></li>
+				<li><a href="WEB/Isa.23.html" target="content" class="chapter" id="isa-23">23</a></li>
+				<li><a href="WEB/Isa.24.html" target="content" class="chapter" id="isa-24">24</a></li>
+				<li><a href="WEB/Isa.25.html" target="content" class="chapter" id="isa-25">25</a></li>
+				<li><a href="WEB/Isa.26.html" target="content" class="chapter" id="isa-26">26</a></li>
+				<li><a href="WEB/Isa.27.html" target="content" class="chapter" id="isa-27">27</a></li>
+				<li><a href="WEB/Isa.28.html" target="content" class="chapter" id="isa-28">28</a></li>
+				<li><a href="WEB/Isa.29.html" target="content" class="chapter" id="isa-29">29</a></li>
+				<li><a href="WEB/Isa.30.html" target="content" class="chapter" id="isa-30">30</a></li>
+				<li><a href="WEB/Isa.31.html" target="content" class="chapter" id="isa-31">31</a></li>
+				<li><a href="WEB/Isa.32.html" target="content" class="chapter" id="isa-32">32</a></li>
+				<li><a href="WEB/Isa.33.html" target="content" class="chapter" id="isa-33">33</a></li>
+				<li><a href="WEB/Isa.34.html" target="content" class="chapter" id="isa-34">34</a></li>
+				<li><a href="WEB/Isa.35.html" target="content" class="chapter" id="isa-35">35</a></li>
+				<li><a href="WEB/Isa.36.html" target="content" class="chapter" id="isa-36">36</a></li>
+				<li><a href="WEB/Isa.37.html" target="content" class="chapter" id="isa-37">37</a></li>
+				<li><a href="WEB/Isa.38.html" target="content" class="chapter" id="isa-38">38</a></li>
+				<li><a href="WEB/Isa.39.html" target="content" class="chapter" id="isa-39">39</a></li>
+				<li><a href="WEB/Isa.40.html" target="content" class="chapter" id="isa-40">40</a></li>
+				<li><a href="WEB/Isa.41.html" target="content" class="chapter" id="isa-41">41</a></li>
+				<li><a href="WEB/Isa.42.html" target="content" class="chapter" id="isa-42">42</a></li>
+				<li><a href="WEB/Isa.43.html" target="content" class="chapter" id="isa-43">43</a></li>
+				<li><a href="WEB/Isa.44.html" target="content" class="chapter" id="isa-44">44</a></li>
+				<li><a href="WEB/Isa.45.html" target="content" class="chapter" id="isa-45">45</a></li>
+				<li><a href="WEB/Isa.46.html" target="content" class="chapter" id="isa-46">46</a></li>
+				<li><a href="WEB/Isa.47.html" target="content" class="chapter" id="isa-47">47</a></li>
+				<li><a href="WEB/Isa.48.html" target="content" class="chapter" id="isa-48">48</a></li>
+				<li><a href="WEB/Isa.49.html" target="content" class="chapter" id="isa-49">49</a></li>
+				<li><a href="WEB/Isa.50.html" target="content" class="chapter" id="isa-50">50</a></li>
+				<li><a href="WEB/Isa.51.html" target="content" class="chapter" id="isa-51">51</a></li>
+				<li><a href="WEB/Isa.52.html" target="content" class="chapter" id="isa-52">52</a></li>
+				<li><a href="WEB/Isa.53.html" target="content" class="chapter" id="isa-53">53</a></li>
+				<li><a href="WEB/Isa.54.html" target="content" class="chapter" id="isa-54">54</a></li>
+				<li><a href="WEB/Isa.55.html" target="content" class="chapter" id="isa-55">55</a></li>
+				<li><a href="WEB/Isa.56.html" target="content" class="chapter" id="isa-56">56</a></li>
+				<li><a href="WEB/Isa.57.html" target="content" class="chapter" id="isa-57">57</a></li>
+				<li><a href="WEB/Isa.58.html" target="content" class="chapter" id="isa-58">58</a></li>
+				<li><a href="WEB/Isa.59.html" target="content" class="chapter" id="isa-59">59</a></li>
+				<li><a href="WEB/Isa.60.html" target="content" class="chapter" id="isa-60">60</a></li>
+				<li><a href="WEB/Isa.61.html" target="content" class="chapter" id="isa-61">61</a></li>
+				<li><a href="WEB/Isa.62.html" target="content" class="chapter" id="isa-62">62</a></li>
+				<li><a href="WEB/Isa.63.html" target="content" class="chapter" id="isa-63">63</a></li>
+				<li><a href="WEB/Isa.64.html" target="content" class="chapter" id="isa-64">64</a></li>
+				<li><a href="WEB/Isa.65.html" target="content" class="chapter" id="isa-65">65</a></li>
+				<li><a href="WEB/Isa.66.html" target="content" class="chapter" id="isa-66">66</a></li>
+			</ul>
+		<script>$('a.isa').click(function () {$('ul.isa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jer" id="jer" onclick="clickOTBook()" class="clicked0 book jer">Jer</a>
+			<ul class="jer chapters">
+				<li><a href="WEB/Jer.1.html" target="content" class="chapter" id="jer-1">1</a></li>
+				<li><a href="WEB/Jer.2.html" target="content" class="chapter" id="jer-2">2</a></li>
+				<li><a href="WEB/Jer.3.html" target="content" class="chapter" id="jer-3">3</a></li>
+				<li><a href="WEB/Jer.4.html" target="content" class="chapter" id="jer-4">4</a></li>
+				<li><a href="WEB/Jer.5.html" target="content" class="chapter" id="jer-5">5</a></li>
+				<li><a href="WEB/Jer.6.html" target="content" class="chapter" id="jer-6">6</a></li>
+				<li><a href="WEB/Jer.7.html" target="content" class="chapter" id="jer-7">7</a></li>
+				<li><a href="WEB/Jer.8.html" target="content" class="chapter" id="jer-8">8</a></li>
+				<li><a href="WEB/Jer.9.html" target="content" class="chapter" id="jer-9">9</a></li>
+				<li><a href="WEB/Jer.10.html" target="content" class="chapter" id="jer-10">10</a></li>
+				<li><a href="WEB/Jer.11.html" target="content" class="chapter" id="jer-11">11</a></li>
+				<li><a href="WEB/Jer.12.html" target="content" class="chapter" id="jer-12">12</a></li>
+				<li><a href="WEB/Jer.13.html" target="content" class="chapter" id="jer-13">13</a></li>
+				<li><a href="WEB/Jer.14.html" target="content" class="chapter" id="jer-14">14</a></li>
+				<li><a href="WEB/Jer.15.html" target="content" class="chapter" id="jer-15">15</a></li>
+				<li><a href="WEB/Jer.16.html" target="content" class="chapter" id="jer-16">16</a></li>
+				<li><a href="WEB/Jer.17.html" target="content" class="chapter" id="jer-17">17</a></li>
+				<li><a href="WEB/Jer.18.html" target="content" class="chapter" id="jer-18">18</a></li>
+				<li><a href="WEB/Jer.19.html" target="content" class="chapter" id="jer-19">19</a></li>
+				<li><a href="WEB/Jer.20.html" target="content" class="chapter" id="jer-20">20</a></li>
+				<li><a href="WEB/Jer.21.html" target="content" class="chapter" id="jer-21">21</a></li>
+				<li><a href="WEB/Jer.22.html" target="content" class="chapter" id="jer-22">22</a></li>
+				<li><a href="WEB/Jer.23.html" target="content" class="chapter" id="jer-23">23</a></li>
+				<li><a href="WEB/Jer.24.html" target="content" class="chapter" id="jer-24">24</a></li>
+				<li><a href="WEB/Jer.25.html" target="content" class="chapter" id="jer-25">25</a></li>
+				<li><a href="WEB/Jer.26.html" target="content" class="chapter" id="jer-26">26</a></li>
+				<li><a href="WEB/Jer.27.html" target="content" class="chapter" id="jer-27">27</a></li>
+				<li><a href="WEB/Jer.28.html" target="content" class="chapter" id="jer-28">28</a></li>
+				<li><a href="WEB/Jer.29.html" target="content" class="chapter" id="jer-29">29</a></li>
+				<li><a href="WEB/Jer.30.html" target="content" class="chapter" id="jer-30">30</a></li>
+				<li><a href="WEB/Jer.31.html" target="content" class="chapter" id="jer-31">31</a></li>
+				<li><a href="WEB/Jer.32.html" target="content" class="chapter" id="jer-32">32</a></li>
+				<li><a href="WEB/Jer.33.html" target="content" class="chapter" id="jer-33">33</a></li>
+				<li><a href="WEB/Jer.34.html" target="content" class="chapter" id="jer-34">34</a></li>
+				<li><a href="WEB/Jer.35.html" target="content" class="chapter" id="jer-35">35</a></li>
+				<li><a href="WEB/Jer.36.html" target="content" class="chapter" id="jer-36">36</a></li>
+				<li><a href="WEB/Jer.37.html" target="content" class="chapter" id="jer-37">37</a></li>
+				<li><a href="WEB/Jer.38.html" target="content" class="chapter" id="jer-38">38</a></li>
+				<li><a href="WEB/Jer.39.html" target="content" class="chapter" id="jer-39">39</a></li>
+				<li><a href="WEB/Jer.40.html" target="content" class="chapter" id="jer-40">40</a></li>
+				<li><a href="WEB/Jer.41.html" target="content" class="chapter" id="jer-41">41</a></li>
+				<li><a href="WEB/Jer.42.html" target="content" class="chapter" id="jer-42">42</a></li>
+				<li><a href="WEB/Jer.43.html" target="content" class="chapter" id="jer-43">43</a></li>
+				<li><a href="WEB/Jer.44.html" target="content" class="chapter" id="jer-44">44</a></li>
+				<li><a href="WEB/Jer.45.html" target="content" class="chapter" id="jer-45">45</a></li>
+				<li><a href="WEB/Jer.46.html" target="content" class="chapter" id="jer-46">46</a></li>
+				<li><a href="WEB/Jer.47.html" target="content" class="chapter" id="jer-47">47</a></li>
+				<li><a href="WEB/Jer.48.html" target="content" class="chapter" id="jer-48">48</a></li>
+				<li><a href="WEB/Jer.49.html" target="content" class="chapter" id="jer-49">49</a></li>
+				<li><a href="WEB/Jer.50.html" target="content" class="chapter" id="jer-50">50</a></li>
+				<li><a href="WEB/Jer.51.html" target="content" class="chapter" id="jer-51">51</a></li>
+				<li><a href="WEB/Jer.52.html" target="content" class="chapter" id="jer-52">52</a></li>
+			</ul>
+		<script>$('a.jer').click(function () {$('ul.jer').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="lam" id="lam" onclick="clickOTBook()" class="clicked0 book lam">Lam</a>
+			<ul class="lam chapters">
+				<li><a href="WEB/Lam.1.html" target="content" class="chapter" id="lam-1">1</a></li>
+				<li><a href="WEB/Lam.2.html" target="content" class="chapter" id="lam-2">2</a></li>
+				<li><a href="WEB/Lam.3.html" target="content" class="chapter" id="lam-3">3</a></li>
+				<li><a href="WEB/Lam.4.html" target="content" class="chapter" id="lam-4">4</a></li>
+				<li><a href="WEB/Lam.5.html" target="content" class="chapter" id="lam-5">5</a></li>
+			</ul>
+		<script>$('a.lam').click(function () {$('ul.lam').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="eze" id="eze" onclick="clickOTBook()" class="clicked0 book eeze">Eze</a>
+			<ul class="eze chapters">
+				<li><a href="WEB/Ezek.1.html" target="content" class="chapter" id="eze-1">1</a></li>
+				<li><a href="WEB/Ezek.2.html" target="content" class="chapter" id="eze-2">2</a></li>
+				<li><a href="WEB/Ezek.3.html" target="content" class="chapter" id="eze-3">3</a></li>
+				<li><a href="WEB/Ezek.4.html" target="content" class="chapter" id="eze-4">4</a></li>
+				<li><a href="WEB/Ezek.5.html" target="content" class="chapter" id="eze-5">5</a></li>
+				<li><a href="WEB/Ezek.6.html" target="content" class="chapter" id="eze-6">6</a></li>
+				<li><a href="WEB/Ezek.7.html" target="content" class="chapter" id="eze-7">7</a></li>
+				<li><a href="WEB/Ezek.8.html" target="content" class="chapter" id="eze-8">8</a></li>
+				<li><a href="WEB/Ezek.9.html" target="content" class="chapter" id="eze-9">9</a></li>
+				<li><a href="WEB/Ezek.10.html" target="content" class="chapter" id="eze-10">10</a></li>
+				<li><a href="WEB/Ezek.11.html" target="content" class="chapter" id="eze-11">11</a></li>
+				<li><a href="WEB/Ezek.12.html" target="content" class="chapter" id="eze-12">12</a></li>
+				<li><a href="WEB/Ezek.13.html" target="content" class="chapter" id="eze-13">13</a></li>
+				<li><a href="WEB/Ezek.14.html" target="content" class="chapter" id="eze-14">14</a></li>
+				<li><a href="WEB/Ezek.15.html" target="content" class="chapter" id="eze-15">15</a></li>
+				<li><a href="WEB/Ezek.16.html" target="content" class="chapter" id="eze-16">16</a></li>
+				<li><a href="WEB/Ezek.17.html" target="content" class="chapter" id="eze-17">17</a></li>
+				<li><a href="WEB/Ezek.18.html" target="content" class="chapter" id="eze-18">18</a></li>
+				<li><a href="WEB/Ezek.19.html" target="content" class="chapter" id="eze-19">19</a></li>
+				<li><a href="WEB/Ezek.20.html" target="content" class="chapter" id="eze-20">20</a></li>
+				<li><a href="WEB/Ezek.21.html" target="content" class="chapter" id="eze-21">21</a></li>
+				<li><a href="WEB/Ezek.22.html" target="content" class="chapter" id="eze-22">22</a></li>
+				<li><a href="WEB/Ezek.23.html" target="content" class="chapter" id="eze-23">23</a></li>
+				<li><a href="WEB/Ezek.24.html" target="content" class="chapter" id="eze-24">24</a></li>
+				<li><a href="WEB/Ezek.25.html" target="content" class="chapter" id="eze-25">25</a></li>
+				<li><a href="WEB/Ezek.26.html" target="content" class="chapter" id="eze-26">26</a></li>
+				<li><a href="WEB/Ezek.27.html" target="content" class="chapter" id="eze-27">27</a></li>
+				<li><a href="WEB/Ezek.28.html" target="content" class="chapter" id="eze-28">28</a></li>
+				<li><a href="WEB/Ezek.29.html" target="content" class="chapter" id="eze-29">29</a></li>
+				<li><a href="WEB/Ezek.30.html" target="content" class="chapter" id="eze-30">30</a></li>
+				<li><a href="WEB/Ezek.31.html" target="content" class="chapter" id="eze-31">31</a></li>
+				<li><a href="WEB/Ezek.32.html" target="content" class="chapter" id="eze-32">32</a></li>
+				<li><a href="WEB/Ezek.33.html" target="content" class="chapter" id="eze-33">33</a></li>
+				<li><a href="WEB/Ezek.34.html" target="content" class="chapter" id="eze-34">34</a></li>
+				<li><a href="WEB/Ezek.35.html" target="content" class="chapter" id="eze-35">35</a></li>
+				<li><a href="WEB/Ezek.36.html" target="content" class="chapter" id="eze-36">36</a></li>
+				<li><a href="WEB/Ezek.37.html" target="content" class="chapter" id="eze-37">37</a></li>
+				<li><a href="WEB/Ezek.38.html" target="content" class="chapter" id="eze-38">38</a></li>
+				<li><a href="WEB/Ezek.39.html" target="content" class="chapter" id="eze-39">39</a></li>
+				<li><a href="WEB/Ezek.40.html" target="content" class="chapter" id="eze-40">40</a></li>
+				<li><a href="WEB/Ezek.41.html" target="content" class="chapter" id="eze-41">41</a></li>
+				<li><a href="WEB/Ezek.42.html" target="content" class="chapter" id="eze-42">42</a></li>
+				<li><a href="WEB/Ezek.43.html" target="content" class="chapter" id="eze-43">43</a></li>
+				<li><a href="WEB/Ezek.44.html" target="content" class="chapter" id="eze-44">44</a></li>
+				<li><a href="WEB/Ezek.45.html" target="content" class="chapter" id="eze-45">45</a></li>
+				<li><a href="WEB/Ezek.46.html" target="content" class="chapter" id="eze-46">46</a></li>
+				<li><a href="WEB/Ezek.47.html" target="content" class="chapter" id="eze-47">47</a></li>
+				<li><a href="WEB/Ezek.48.html" target="content" class="chapter" id="eze-48">48</a></li>
+			</ul>
+		<script>$('a.eze').click(function () {$('ul.eze').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="dan" id="dan" onclick="clickOTBook()" class="clicked0 book dan">Dan</a>
+			<ul class="dan chapters">
+				<li><a href="WEB/Dan.1.html" target="content" class="chapter" id="dan-1">1</a></li>
+				<li><a href="WEB/Dan.2.html" target="content" class="chapter" id="dan-2">2</a></li>
+				<li><a href="WEB/Dan.3.html" target="content" class="chapter" id="dan-3">3</a></li>
+				<li><a href="WEB/Dan.4.html" target="content" class="chapter" id="dan-4">4</a></li>
+				<li><a href="WEB/Dan.5.html" target="content" class="chapter" id="dan-5">5</a></li>
+				<li><a href="WEB/Dan.6.html" target="content" class="chapter" id="dan-6">6</a></li>
+				<li><a href="WEB/Dan.7.html" target="content" class="chapter" id="dan-7">7</a></li>
+				<li><a href="WEB/Dan.8.html" target="content" class="chapter" id="dan-8">8</a></li>
+				<li><a href="WEB/Dan.9.html" target="content" class="chapter" id="dan-9">9</a></li>
+				<li><a href="WEB/Dan.10.html" target="content" class="chapter" id="dan-10">10</a></li>
+				<li><a href="WEB/Dan.11.html" target="content" class="chapter" id="dan-11">11</a></li>
+				<li><a href="WEB/Dan.12.html" target="content" class="chapter" id="dan-12">12</a></li>
+			</ul>
+		<script>$('a.dan').click(function () {$('ul.dan').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="hos" id="hos" onclick="clickOTBook()" class="clicked0 book hos minor">Hos</a>
+			<ul class="hos minor chapters">
+				<li><a href="WEB/Hos.1.html" target="content" class="chapter" id="hos-1">1</a></li>
+				<li><a href="WEB/Hos.2.html" target="content" class="chapter" id="hos-2">2</a></li>
+				<li><a href="WEB/Hos.3.html" target="content" class="chapter" id="hos-3">3</a></li>
+				<li><a href="WEB/Hos.4.html" target="content" class="chapter" id="hos-4">4</a></li>
+				<li><a href="WEB/Hos.5.html" target="content" class="chapter" id="hos-5">5</a></li>
+				<li><a href="WEB/Hos.6.html" target="content" class="chapter" id="hos-6">6</a></li>
+				<li><a href="WEB/Hos.7.html" target="content" class="chapter" id="hos-7">7</a></li>
+				<li><a href="WEB/Hos.8.html" target="content" class="chapter" id="hos-8">8</a></li>
+				<li><a href="WEB/Hos.9.html" target="content" class="chapter" id="hos-9">9</a></li>
+				<li><a href="WEB/Hos.10.html" target="content" class="chapter" id="hos-10">10</a></li>
+				<li><a href="WEB/Hos.11.html" target="content" class="chapter" id="hos-11">11</a></li>
+				<li><a href="WEB/Hos.12.html" target="content" class="chapter" id="hos-12">12</a></li>
+				<li><a href="WEB/Hos.13.html" target="content" class="chapter" id="hos-13">13</a></li>
+				<li><a href="WEB/Hos.14.html" target="content" class="chapter" id="hos-14">14</a></li>
+			</ul>
+		<script>$('a.hos').click(function () {$('ul.hos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="joe" id="joe" onclick="clickOTBook()" class="clicked0 book joe minor">Joe</a>
+			<ul class="joe minor chapters">
+				<li><a href="WEB/Joel.1.html" target="content" class="chapter" id="joe-1">1</a></li>
+				<li><a href="WEB/Joel.2.html" target="content" class="chapter" id="joe-2">2</a></li>
+				<li><a href="WEB/Joel.3.html" target="content" class="chapter" id="joe-3">3</a></li>
+			</ul>
+		<script>$('a.joe').click(function () {$('ul.joe').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="amo" id="amo" onclick="clickOTBook()" class="clicked0 book amo minor">Amo</a>
+			<ul class="amo minor chapters">
+				<li><a href="WEB/Amos.1.html" target="content" class="chapter" id="amo-1">1</a></li>
+				<li><a href="WEB/Amos.2.html" target="content" class="chapter" id="amo-2">2</a></li>
+				<li><a href="WEB/Amos.3.html" target="content" class="chapter" id="amo-3">3</a></li>
+				<li><a href="WEB/Amos.4.html" target="content" class="chapter" id="amo-4">4</a></li>
+				<li><a href="WEB/Amos.5.html" target="content" class="chapter" id="amo-5">5</a></li>
+				<li><a href="WEB/Amos.6.html" target="content" class="chapter" id="amo-6">6</a></li>
+				<li><a href="WEB/Amos.7.html" target="content" class="chapter" id="amo-7">7</a></li>
+				<li><a href="WEB/Amos.8.html" target="content" class="chapter" id="amo-8">8</a></li>
+				<li><a href="WEB/Amos.9.html" target="content" class="chapter" id="amo-9">9</a></li>
+			</ul>
+		<script>$('a.amo').click(function () {$('ul.amo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="oba" id="oba" onclick="clickOTBook()" class="clicked0 book oba minor">Oba</a>
+			<ul class="oba minor chapters">
+				<li><a href="WEB/Obad1.html" target="content" class="chapter" id="oba-1">1</a></li>
+			</ul>
+		<script>$('a.oba').click(function () {$('ul.oba').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jon" id="jon" onclick="clickOTBook()" class="clicked0 book jon minor">Jon</a>
+			<ul class="jon minor chapters">
+				<li><a href="WEB/Jonah.1.html" target="content" class="chapter" id="jon-1">1</a></li>
+				<li><a href="WEB/Jonah.2.html" target="content" class="chapter" id="jon-2">2</a></li>
+				<li><a href="WEB/Jonah.3.html" target="content" class="chapter" id="jon-3">3</a></li>
+				<li><a href="WEB/Jonah.4.html" target="content" class="chapter" id="jon-4">4</a></li>
+			</ul>
+		<script>$('a.jon').click(function () {$('ul.jon').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="mic" id="mic" onclick="clickOTBook()" class="clicked0 book mic minor">Mic</a>
+			<ul class="mic minor chapters">
+				<li><a href="WEB/Mic.1.html" target="content" class="chapter" id="mic-1">1</a></li>
+				<li><a href="WEB/Mic.2.html" target="content" class="chapter" id="mic-2">2</a></li>
+				<li><a href="WEB/Mic.3.html" target="content" class="chapter" id="mic-3">3</a></li>
+				<li><a href="WEB/Mic.4.html" target="content" class="chapter" id="mic-4">4</a></li>
+				<li><a href="WEB/Mic.5.html" target="content" class="chapter" id="mic-5">5</a></li>
+				<li><a href="WEB/Mic.6.html" target="content" class="chapter" id="mic-6">6</a></li>
+				<li><a href="WEB/Mic.7.html" target="content" class="chapter" id="mic-7">7</a></li>
+			</ul>
+		<script>$('a.mic').click(function () {$('ul.mic').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="nah" id="nah" onclick="clickOTBook()" class="clicked0 book nah minor">Nah</a>
+			<ul class="nah minor chapters">
+				<li><a href="WEB/Nah.1.html" target="content" class="chapter" id="nah-1">1</a></li>
+				<li><a href="WEB/Nah.2.html" target="content" class="chapter" id="nah-2">2</a></li>
+				<li><a href="WEB/Nah.3.html" target="content" class="chapter" id="nah-3">3</a></li>
+			</ul>
+		<script>$('a.nah').click(function () {$('ul.nah').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="hab" id="hab" onclick="clickOTBook()" class="clicked0 book hab minor">Hab</a>
+			<ul class="hab minor chapters">
+				<li><a href="WEB/Hab.1.html" target="content" class="chapter" id="hab-1">1</a></li>
+				<li><a href="WEB/Hab.2.html" target="content" class="chapter" id="hab-2">2</a></li>
+				<li><a href="WEB/Hab.3.html" target="content" class="chapter" id="hab-3">3</a></li>
+			</ul>
+		<script>$('a.hab').click(function () {$('ul.hab').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="zep" id="zep" onclick="clickOTBook()" class="clicked0 book zep minor">Zeph</a>
+			<ul class="zep minor chapters">
+				<li><a href="WEB/Zeph.1.html" target="content" class="chapter" id="zep-1">1</a></li>
+				<li><a href="WEB/Zeph.2.html" target="content" class="chapter" id="zep-2">2</a></li>
+				<li><a href="WEB/Zeph.3.html" target="content" class="chapter" id="zep-3">3</a></li>
+			</ul>
+		<script>$('a.zep').click(function () {$('ul.zep').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="hag" id="hag" onclick="clickOTBook()" class="clicked0 book hag minor">Hag</a>
+			<ul class="hag minor chapters">
+				<li><a href="WEB/Hag.1.html" target="content" class="chapter" id="hag-1">1</a></li>
+				<li><a href="WEB/Hag.2.html" target="content" class="chapter" id="hag-2">2</a></li>
+			</ul>
+		<script>$('a.hag').click(function () {$('ul.hag').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="zec" id="zec" onclick="clickOTBook()" class="clicked0 book zec minor">Zec</a>
+			<ul class="zec minor chapters">
+				<li><a href="WEB/Zech.1.html" target="content" class="chapter" id="zec-1">1</a></li>
+				<li><a href="WEB/Zech.2.html" target="content" class="chapter" id="zec-2">2</a></li>
+				<li><a href="WEB/Zech.3.html" target="content" class="chapter" id="zec-3">3</a></li>
+				<li><a href="WEB/Zech.4.html" target="content" class="chapter" id="zec-4">4</a></li>
+				<li><a href="WEB/Zech.5.html" target="content" class="chapter" id="zec-5">5</a></li>
+				<li><a href="WEB/Zech.6.html" target="content" class="chapter" id="zec-6">6</a></li>
+				<li><a href="WEB/Zech.7.html" target="content" class="chapter" id="zec-7">7</a></li>
+				<li><a href="WEB/Zech.8.html" target="content" class="chapter" id="zec-8">8</a></li>
+				<li><a href="WEB/Zech.9.html" target="content" class="chapter" id="zec-9">9</a></li>
+				<li><a href="WEB/Zech.10.html" target="content" class="chapter" id="zec-10">10</a></li>
+				<li><a href="WEB/Zech.11.html" target="content" class="chapter" id="zec-11">11</a></li>
+				<li><a href="WEB/Zech.12.html" target="content" class="chapter" id="zec-12">12</a></li>
+				<li><a href="WEB/Zech.13.html" target="content" class="chapter" id="zec-13">13</a></li>
+				<li><a href="WEB/Zech.14.html" target="content" class="chapter" id="zec-14">14</a></li>
+			</ul>
+		<script>$('a.zec').click(function () {$('ul.zec').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="mal" id="mal" onclick="clickOTBook()" class="clicked0 book mal minor">Mal</a>
+			<ul class="mal minor chapters">
+				<li><a href="WEB/Mal.1.html" target="content" class="chapter" id="mal-1">1</a></li>
+				<li><a href="WEB/Mal.2.html" target="content" class="chapter" id="mal-2">2</a></li>
+				<li><a href="WEB/Mal.3.html" target="content" class="chapter" id="mal-3">3</a></li>
+				<li><a href="WEB/Mal.4.html" target="content" class="chapter" id="mal-4">4</a></li>
+			</ul>
+		<script>$('a.mal').click(function () {$('ul.mal').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+	</ul>
+</section>
+<section class="clicked0 books apocrypha">
+	<ul>
+		<li><a name="bar" id="bar" onclick="clickAPBook()" class="clicked0 book bar">Bar</a>
+			<ul class="bar chapters">
+				<li><a href="#" target="content" class="chapter" id="bar-1">1</a></li>
+				<li><a href="#" target="content" class="chapter" id="bar-2">2</a></li>
+				<li><a href="#" target="content" class="chapter" id="bar-3">3</a></li>
+				<li><a href="#" target="content" class="chapter" id="bar-4">4</a></li>
+				<li><a href="#" target="content" class="chapter" id="bar-5">5</a></li>
+			</ul>
+		<script>$('a.bar').click(function () {$('ul.bar').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="ada" id="ada" onclick="clickAPBook()" class="clicked0 book">Add Dan</a></li>
+		<li><a name="pra" id="pra" onclick="clickAPBook()" class="clicked0 book pra">Pr Azar</a>
+			<ul class="pra chapters">
+				<li><a href="#" target="content" class="chapter" id="pra-1">1</a></li>
+			</ul>
+		<script>$('a.pra').click(function () {$('ul.pra').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="bel" id="bel" onclick="clickAPBook()" class="clicked0 book bel">Bel</a>
+			<ul class="bel chapters">
+				<li><a href="#" target="content" class="chapter" id="bel-1">1</a></li>
+			</ul>
+		<script>$('a.bel').click(function () {$('ul.bel').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="sth" id="sth" onclick="clickAPBook()" class="clicked0 book">Sg Three</a></li>
+		<li><a name="sus" id="sus" onclick="clickAPBook()" class="clicked0 book sus">Sus</a>
+			<ul class="sus chapters">
+				<li><a href="#" target="content" class="chapter" id="sus-1">1</a></li>
+			</ul>
+		<script>$('a.sus').click(function () {$('ul.sus').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="esd" id="esd" onclick="clickAPBook()" class="clicked0 book">1-2 Esd</a></li>
+		<li><a name="aest" id="aest" onclick="clickAPBook()" class="clicked0 book">Add Esth</a></li>
+		<li><a name="lje" id="lje" onclick="clickAPBook()" class="clicked0 book lje">Ep Jer</a>
+			<ul class="lje chapters">
+				<li><a href="#" target="content" class="chapter" id="lje-1">1</a></li>
+			</ul>
+		<script>$('a.lje').click(function () {$('ul.lje').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jdt" id="jdt" onclick="clickAPBook()" class="clicked0 book">Jdt</a></li>
+		<li><a name="mac" id="mac" onclick="clickAPBook()" class="clicked0 book">1-4 Macc</a></li>
+		<li><a name="prm" id="prm" onclick="clickAPBook()" class="clicked0 book prm">Pr Man</a>
+			<ul class="prm chapters">
+				<li><a href="#" target="content" class="chapter" id="prm-1">1</a></li>
+			</ul>
+		<script>$('a.prm').click(function () {$('ul.prm').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="adp" id="adp" onclick="clickAPBook()" class="clicked0 book adp">Ps 151</a>
+			<ul class="adp chapters">
+				<li><a href="#" target="content" class="chapter">Add 151</a></li>
+				<li><a href="#" target="content" class="chapter">Psa 151</a></li>
+			</ul>
+		<script>$('a.adp').click(function () {$('ul.adp').show("fast");$('a.apocrypha').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="sir" id="sir" onclick="clickAPBook()" class="clicked0 book">Sir</a></li>
+		<li><a name="tob" id="tob" onclick="clickAPBook()" class="clicked0 book">Tob</a></li>
+		<li><a name="wis" id="wis" onclick="clickAPBook()" class="clicked0 book">Wis</a></li>
+	</ul>
+</section>
+<section class="clicked0 books nt">
+	<ul>
+		<li><a name="mat" id="mat" onclick="clickNTBook()" class="clicked0 book mat gspl">Mat</a>
+			<ul class="mat gspl chapters">
+				<li><a href="WEB/Matt.1.html" target="content" class="chapter" id="mat-1">1</a></li>
+				<li><a href="WEB/Matt.2.html" target="content" class="chapter" id="mat-2">2</a></li>
+				<li><a href="WEB/Matt.3.html" target="content" class="chapter" id="mat-3">3</a></li>
+				<li><a href="WEB/Matt.4.html" target="content" class="chapter" id="mat-4">4</a></li>
+				<li><a href="WEB/Matt.5.html" target="content" class="chapter" id="mat-5">5</a></li>
+				<li><a href="WEB/Matt.6.html" target="content" class="chapter" id="mat-6">6</a></li>
+				<li><a href="WEB/Matt.7.html" target="content" class="chapter" id="mat-7">7</a></li>
+				<li><a href="WEB/Matt.8.html" target="content" class="chapter" id="mat-8">8</a></li>
+				<li><a href="WEB/Matt.9.html" target="content" class="chapter" id="mat-9">9</a></li>
+				<li><a href="WEB/Matt.10.html" target="content" class="chapter" id="mat-10">10</a></li>
+				<li><a href="WEB/Matt.11.html" target="content" class="chapter" id="mat-11">11</a></li>
+				<li><a href="WEB/Matt.12.html" target="content" class="chapter" id="mat-12">12</a></li>
+				<li><a href="WEB/Matt.13.html" target="content" class="chapter" id="mat-13">13</a></li>
+				<li><a href="WEB/Matt.14.html" target="content" class="chapter" id="mat-14">14</a></li>
+				<li><a href="WEB/Matt.15.html" target="content" class="chapter" id="mat-15">15</a></li>
+				<li><a href="WEB/Matt.16.html" target="content" class="chapter" id="mat-16">16</a></li>
+				<li><a href="WEB/Matt.17.html" target="content" class="chapter" id="mat-17">17</a></li>
+				<li><a href="WEB/Matt.18.html" target="content" class="chapter" id="mat-18">18</a></li>
+				<li><a href="WEB/Matt.19.html" target="content" class="chapter" id="mat-19">19</a></li>
+				<li><a href="WEB/Matt.20.html" target="content" class="chapter" id="mat-20">20</a></li>
+				<li><a href="WEB/Matt.21.html" target="content" class="chapter" id="mat-21">21</a></li>
+				<li><a href="WEB/Matt.22.html" target="content" class="chapter" id="mat-22">22</a></li>
+				<li><a href="WEB/Matt.23.html" target="content" class="chapter" id="mat-23">23</a></li>
+				<li><a href="WEB/Matt.24.html" target="content" class="chapter" id="mat-24">24</a></li>
+				<li><a href="WEB/Matt.25.html" target="content" class="chapter" id="mat-25">25</a></li>
+				<li><a href="WEB/Matt.26.html" target="content" class="chapter" id="mat-26">26</a></li>
+				<li><a href="WEB/Matt.27.html" target="content" class="chapter" id="mat-27">27</a></li>
+				<li><a href="WEB/Matt.28.html" target="content" class="chapter" id="mat-28">28</a></li>
+			</ul>
+		<script>$('a.mat').click(function () {$('ul.mat').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="mar" id="mar" onclick="clickNTBook()" class="clicked0 book mar gspl">Mar</a>
+			<ul class="mar gspl chapters">
+				<li><a href="WEB/Mark.1.html" target="content" class="chapter" id="mar-1">1</a></li>
+				<li><a href="WEB/Mark.2.html" target="content" class="chapter" id="mar-2">2</a></li>
+				<li><a href="WEB/Mark.3.html" target="content" class="chapter" id="mar-3">3</a></li>
+				<li><a href="WEB/Mark.4.html" target="content" class="chapter" id="mar-4">4</a></li>
+				<li><a href="WEB/Mark.5.html" target="content" class="chapter" id="mar-5">5</a></li>
+				<li><a href="WEB/Mark.6.html" target="content" class="chapter" id="mar-6">6</a></li>
+				<li><a href="WEB/Mark.7.html" target="content" class="chapter" id="mar-7">7</a></li>
+				<li><a href="WEB/Mark.8.html" target="content" class="chapter" id="mar-8">8</a></li>
+				<li><a href="WEB/Mark.9.html" target="content" class="chapter" id="mar-9">9</a></li>
+				<li><a href="WEB/Mark.10.html" target="content" class="chapter" id="mar-10">10</a></li>
+				<li><a href="WEB/Mark.11.html" target="content" class="chapter" id="mar-11">11</a></li>
+				<li><a href="WEB/Mark.12.html" target="content" class="chapter" id="mar-12">12</a></li>
+				<li><a href="WEB/Mark.13.html" target="content" class="chapter" id="mar-13">13</a></li>
+				<li><a href="WEB/Mark.14.html" target="content" class="chapter" id="mar-14">14</a></li>
+				<li><a href="WEB/Mark.15.html" target="content" class="chapter" id="mar-15">15</a></li>
+				<li><a href="WEB/Mark.16.html" target="content" class="chapter" id="mar-16">16</a></li>
+			</ul>
+		<script>$('a.mar').click(function () {$('ul.mar').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="luk" id="luk" onclick="clickNTBook()" class="clicked0 book luk gspl">Luk</a>
+			<ul class="luk gspl chapters">
+				<li><a href="WEB/Luke.1.html" target="content" class="chapter" id="luk-1">1</a></li>
+				<li><a href="WEB/Luke.2.html" target="content" class="chapter" id="luk-2">2</a></li>
+				<li><a href="WEB/Luke.3.html" target="content" class="chapter" id="luk-3">3</a></li>
+				<li><a href="WEB/Luke.4.html" target="content" class="chapter" id="luk-4">4</a></li>
+				<li><a href="WEB/Luke.5.html" target="content" class="chapter" id="luk-5">5</a></li>
+				<li><a href="WEB/Luke.6.html" target="content" class="chapter" id="luk-6">6</a></li>
+				<li><a href="WEB/Luke.7.html" target="content" class="chapter" id="luk-7">7</a></li>
+				<li><a href="WEB/Luke.8.html" target="content" class="chapter" id="luk-8">8</a></li>
+				<li><a href="WEB/Luke.9.html" target="content" class="chapter" id="luk-9">9</a></li>
+				<li><a href="WEB/Luke.10.html" target="content" class="chapter" id="luk-10">10</a></li>
+				<li><a href="WEB/Luke.11.html" target="content" class="chapter" id="luk-11">11</a></li>
+				<li><a href="WEB/Luke.12.html" target="content" class="chapter" id="luk-12">12</a></li>
+				<li><a href="WEB/Luke.13.html" target="content" class="chapter" id="luk-13">13</a></li>
+				<li><a href="WEB/Luke.14.html" target="content" class="chapter" id="luk-14">14</a></li>
+				<li><a href="WEB/Luke.15.html" target="content" class="chapter" id="luk-15">15</a></li>
+				<li><a href="WEB/Luke.16.html" target="content" class="chapter" id="luk-16">16</a></li>
+				<li><a href="WEB/Luke.17.html" target="content" class="chapter" id="luk-17">17</a></li>
+				<li><a href="WEB/Luke.18.html" target="content" class="chapter" id="luk-18">18</a></li>
+				<li><a href="WEB/Luke.19.html" target="content" class="chapter" id="luk-19">19</a></li>
+				<li><a href="WEB/Luke.20.html" target="content" class="chapter" id="luk-20">20</a></li>
+				<li><a href="WEB/Luke.21.html" target="content" class="chapter" id="luk-21">21</a></li>
+				<li><a href="WEB/Luke.22.html" target="content" class="chapter" id="luk-22">22</a></li>
+				<li><a href="WEB/Luke.23.html" target="content" class="chapter" id="luk-23">23</a></li>
+				<li><a href="WEB/Luke.24.html" target="content" class="chapter" id="luk-24">24</a></li>
+			</ul>
+		<script>$('a.luk').click(function () {$('ul.luk').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="joh" id="joh" onclick="clickNTBook()" class="clicked0 book joh gspl">John</a>
+			<ul class="joh gspl chapters">
+				<li><a href="WEB/John.1.html" target="content" class="chapter" id="joh-1">1</a></li>
+				<li><a href="WEB/John.2.html" target="content" class="chapter" id="joh-2">2</a></li>
+				<li><a href="WEB/John.3.html" target="content" class="chapter" id="joh-3">3</a></li>
+				<li><a href="WEB/John.4.html" target="content" class="chapter" id="joh-4">4</a></li>
+				<li><a href="WEB/John.5.html" target="content" class="chapter" id="joh-5">5</a></li>
+				<li><a href="WEB/John.6.html" target="content" class="chapter" id="joh-6">6</a></li>
+				<li><a href="WEB/John.7.html" target="content" class="chapter" id="joh-7">7</a></li>
+				<li><a href="WEB/John.8.html" target="content" class="chapter" id="joh-8">8</a></li>
+				<li><a href="WEB/John.9.html" target="content" class="chapter" id="joh-9">9</a></li>
+				<li><a href="WEB/John.10.html" target="content" class="chapter" id="joh-10">10</a></li>
+				<li><a href="WEB/John.11.html" target="content" class="chapter" id="joh-11">11</a></li>
+				<li><a href="WEB/John.12.html" target="content" class="chapter" id="joh-12">12</a></li>
+				<li><a href="WEB/John.13.html" target="content" class="chapter" id="joh-13">13</a></li>
+				<li><a href="WEB/John.14.html" target="content" class="chapter" id="joh-14">14</a></li>
+				<li><a href="WEB/John.15.html" target="content" class="chapter" id="joh-15">15</a></li>
+				<li><a href="WEB/John.16.html" target="content" class="chapter" id="joh-16">16</a></li>
+				<li><a href="WEB/John.17.html" target="content" class="chapter" id="joh-17">17</a></li>
+				<li><a href="WEB/John.18.html" target="content" class="chapter" id="joh-18">18</a></li>
+				<li><a href="WEB/John.19.html" target="content" class="chapter" id="joh-19">19</a></li>
+				<li><a href="WEB/John.20.html" target="content" class="chapter" id="joh-20">20</a></li>
+				<li><a href="WEB/John.21.html" target="content" class="chapter" id="joh-21">21</a></li>
+			</ul>
+		<script>$('a.joh').click(function () {$('ul.joh').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="act" id="act" onclick="clickNTBook()" class="clicked0 book act gspl">Acts</a>
+			<ul class="act gspl chapters">
+				<li><a href="WEB/Acts.1.html" target="content" class="chapter" id="act-1">1</a></li>
+				<li><a href="WEB/Acts.2.html" target="content" class="chapter" id="act-2">2</a></li>
+				<li><a href="WEB/Acts.3.html" target="content" class="chapter" id="act-3">3</a></li>
+				<li><a href="WEB/Acts.4.html" target="content" class="chapter" id="act-4">4</a></li>
+				<li><a href="WEB/Acts.5.html" target="content" class="chapter" id="act-5">5</a></li>
+				<li><a href="WEB/Acts.6.html" target="content" class="chapter" id="act-6">6</a></li>
+				<li><a href="WEB/Acts.7.html" target="content" class="chapter" id="act-7">7</a></li>
+				<li><a href="WEB/Acts.8.html" target="content" class="chapter" id="act-8">8</a></li>
+				<li><a href="WEB/Acts.9.html" target="content" class="chapter" id="act-9">9</a></li>
+				<li><a href="WEB/Acts.10.html" target="content" class="chapter" id="act-10">10</a></li>
+				<li><a href="WEB/Acts.11.html" target="content" class="chapter" id="act-11">11</a></li>
+				<li><a href="WEB/Acts.12.html" target="content" class="chapter" id="act-12">12</a></li>
+				<li><a href="WEB/Acts.13.html" target="content" class="chapter" id="act-13">13</a></li>
+				<li><a href="WEB/Acts.14.html" target="content" class="chapter" id="act-14">14</a></li>
+				<li><a href="WEB/Acts.15.html" target="content" class="chapter" id="act-15">15</a></li>
+				<li><a href="WEB/Acts.16.html" target="content" class="chapter" id="act-16">16</a></li>
+				<li><a href="WEB/Acts.17.html" target="content" class="chapter" id="act-17">17</a></li>
+				<li><a href="WEB/Acts.18.html" target="content" class="chapter" id="act-18">18</a></li>
+				<li><a href="WEB/Acts.19.html" target="content" class="chapter" id="act-19">19</a></li>
+				<li><a href="WEB/Acts.20.html" target="content" class="chapter" id="act-20">20</a></li>
+				<li><a href="WEB/Acts.21.html" target="content" class="chapter" id="act-21">21</a></li>
+				<li><a href="WEB/Acts.22.html" target="content" class="chapter" id="act-22">22</a></li>
+				<li><a href="WEB/Acts.23.html" target="content" class="chapter" id="act-23">23</a></li>
+				<li><a href="WEB/Acts.24.html" target="content" class="chapter" id="act-24">24</a></li>
+				<li><a href="WEB/Acts.25.html" target="content" class="chapter" id="act-25">25</a></li>
+				<li><a href="WEB/Acts.26.html" target="content" class="chapter" id="act-26">26</a></li>
+				<li><a href="WEB/Acts.27.html" target="content" class="chapter" id="act-27">27</a></li>
+				<li><a href="WEB/Acts.28.html" target="content" class="chapter" id="act-28">28</a></li>
+			</ul>
+		<script>$('a.act').click(function () {$('ul.act').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="rom" id="rom" onclick="clickNTBook()" class="clicked0 book rom plltr">Rom</a>
+			<ul class="rom plltr chapters">
+				<li><a href="WEB/Rom.1.html" target="content" class="chapter" id="rom-1">1</a></li>
+				<li><a href="WEB/Rom.2.html" target="content" class="chapter" id="rom-2">2</a></li>
+				<li><a href="WEB/Rom.3.html" target="content" class="chapter" id="rom-3">3</a></li>
+				<li><a href="WEB/Rom.4.html" target="content" class="chapter" id="rom-4">4</a></li>
+				<li><a href="WEB/Rom.5.html" target="content" class="chapter" id="rom-5">5</a></li>
+				<li><a href="WEB/Rom.6.html" target="content" class="chapter" id="rom-6">6</a></li>
+				<li><a href="WEB/Rom.7.html" target="content" class="chapter" id="rom-7">7</a></li>
+				<li><a href="WEB/Rom.8.html" target="content" class="chapter" id="rom-8">8</a></li>
+				<li><a href="WEB/Rom.9.html" target="content" class="chapter" id="rom-9">9</a></li>
+				<li><a href="WEB/Rom.10.html" target="content" class="chapter" id="rom-10">10</a></li>
+				<li><a href="WEB/Rom.11.html" target="content" class="chapter" id="rom-11">11</a></li>
+				<li><a href="WEB/Rom.12.html" target="content" class="chapter" id="rom-12">12</a></li>
+				<li><a href="WEB/Rom.13.html" target="content" class="chapter" id="rom-13">13</a></li>
+				<li><a href="WEB/Rom.14.html" target="content" class="chapter" id="rom-14">14</a></li>
+				<li><a href="WEB/Rom.15.html" target="content" class="chapter" id="rom-15">15</a></li>
+				<li><a href="WEB/Rom.16.html" target="content" class="chapter" id="rom-16">16</a></li>
+			</ul>
+		<script>$('a.rom').click(function () {$('ul.rom').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="cor1" id="cor1" onclick="clickNTBook()" class="clicked0 book cor1 plltr">1 Cor</a>
+			<ul class="cor1 plltr chapters">
+				<li><a href="WEB/1Cor.1.html" target="content" class="chapter" id="cor1-1">1</a></li>
+				<li><a href="WEB/1Cor.2.html" target="content" class="chapter" id="cor1-2">2</a></li>
+				<li><a href="WEB/1Cor.3.html" target="content" class="chapter" id="cor1-3">3</a></li>
+				<li><a href="WEB/1Cor.4.html" target="content" class="chapter" id="cor1-4">4</a></li>
+				<li><a href="WEB/1Cor.5.html" target="content" class="chapter" id="cor1-5">5</a></li>
+				<li><a href="WEB/1Cor.6.html" target="content" class="chapter" id="cor1-6">6</a></li>
+				<li><a href="WEB/1Cor.7.html" target="content" class="chapter" id="cor1-7">7</a></li>
+				<li><a href="WEB/1Cor.8.html" target="content" class="chapter" id="cor1-8">8</a></li>
+				<li><a href="WEB/1Cor.9.html" target="content" class="chapter" id="cor1-9">9</a></li>
+				<li><a href="WEB/1Cor.10.html" target="content" class="chapter" id="cor1-10">10</a></li>
+				<li><a href="WEB/1Cor.11.html" target="content" class="chapter" id="cor1-11">11</a></li>
+				<li><a href="WEB/1Cor.12.html" target="content" class="chapter" id="cor1-12">12</a></li>
+				<li><a href="WEB/1Cor.13.html" target="content" class="chapter" id="cor1-13">13</a></li>
+				<li><a href="WEB/1Cor.14.html" target="content" class="chapter" id="cor1-14">14</a></li>
+				<li><a href="WEB/1Cor.15.html" target="content" class="chapter" id="cor1-15">15</a></li>
+				<li><a href="WEB/1Cor.16.html" target="content" class="chapter" id="cor1-16">16</a></li>
+			</ul>
+		<script>$('a.cor1').click(function () {$('ul.cor1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="cor2" id="cor2" onclick="clickNTBook()" class="clicked0 book cor2 plltr">2 Cor</a>
+			<ul class="cor2 plltr chapters">
+				<li><a href="WEB/2Cor.1.html" target="content" class="chapter" id="cor2-1">1</a></li>
+				<li><a href="WEB/2Cor.2.html" target="content" class="chapter" id="cor2-2">2</a></li>
+				<li><a href="WEB/2Cor.3.html" target="content" class="chapter" id="cor2-3">3</a></li>
+				<li><a href="WEB/2Cor.4.html" target="content" class="chapter" id="cor2-4">4</a></li>
+				<li><a href="WEB/2Cor.5.html" target="content" class="chapter" id="cor2-5">5</a></li>
+				<li><a href="WEB/2Cor.6.html" target="content" class="chapter" id="cor2-6">6</a></li>
+				<li><a href="WEB/2Cor.7.html" target="content" class="chapter" id="cor2-7">7</a></li>
+				<li><a href="WEB/2Cor.8.html" target="content" class="chapter" id="cor2-8">8</a></li>
+				<li><a href="WEB/2Cor.9.html" target="content" class="chapter" id="cor2-9">9</a></li>
+				<li><a href="WEB/2Cor.10.html" target="content" class="chapter" id="cor2-10">10</a></li>
+				<li><a href="WEB/2Cor.11.html" target="content" class="chapter" id="cor2-11">11</a></li>
+				<li><a href="WEB/2Cor.12.html" target="content" class="chapter" id="cor2-12">12</a></li>
+				<li><a href="WEB/2Cor.13.html" target="content" class="chapter" id="cor2-13">13</a></li>
+			</ul>
+		<script>$('a.cor2').click(function () {$('ul.cor2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="gal" id="gal" onclick="clickNTBook()" class="clicked0 book gal plltr">Gal</a>
+			<ul class="gal plltr chapters">
+				<li><a href="WEB/Gal.1.html" target="content" class="chapter" id="gal-1">1</a></li>
+				<li><a href="WEB/Gal.2.html" target="content" class="chapter" id="gal-2">2</a></li>
+				<li><a href="WEB/Gal.3.html" target="content" class="chapter" id="gal-3">3</a></li>
+				<li><a href="WEB/Gal.4.html" target="content" class="chapter" id="gal-4">4</a></li>
+				<li><a href="WEB/Gal.5.html" target="content" class="chapter" id="gal-5">5</a></li>
+				<li><a href="WEB/Gal.6.html" target="content" class="chapter" id="gal-6">6</a></li>
+			</ul>
+		<script>$('a.gal').click(function () {$('ul.gal').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="eph" id="eph" onclick="clickNTBook()" class="clicked0 book eph plltr">Eph</a>
+			<ul class="eph plltr chapters">
+				<li><a href="WEB/Eph.1.html" target="content" class="chapter" id="eph-1">1</a></li>
+				<li><a href="WEB/Eph.2.html" target="content" class="chapter" id="eph-2">2</a></li>
+				<li><a href="WEB/Eph.3.html" target="content" class="chapter" id="eph-3">3</a></li>
+				<li><a href="WEB/Eph.4.html" target="content" class="chapter" id="eph-4">4</a></li>
+				<li><a href="WEB/Eph.5.html" target="content" class="chapter" id="eph-5">5</a></li>
+				<li><a href="WEB/Eph.6.html" target="content" class="chapter" id="eph-6">6</a></li>
+			</ul>
+		<script>$('a.eph').click(function () {$('ul.eph').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="phi" id="phi" onclick="clickNTBook()" class="clicked0 book phi plltr">Phil</a>
+			<ul class="phi plltr chapters">
+				<li><a href="WEB/Phil.1.html" target="content" class="chapter" id="phi-1">1</a></li>
+				<li><a href="WEB/Phil.2.html" target="content" class="chapter" id="phi-2">2</a></li>
+				<li><a href="WEB/Phil.3.html" target="content" class="chapter" id="phi-3">3</a></li>
+				<li><a href="WEB/Phil.4.html" target="content" class="chapter" id="phi-4">4</a></li>
+			</ul>
+		<script>$('a.phi').click(function () {$('ul.phi').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="col" id="col" onclick="clickNTBook()" class="clicked0 book col plltr">Col</a>
+			<ul class="col plltr chapters">
+				<li><a href="WEB/Col.1.html" target="content" class="chapter" id="col-1">1</a></li>
+				<li><a href="WEB/Col.2.html" target="content" class="chapter" id="col-2">2</a></li>
+				<li><a href="WEB/Col.3.html" target="content" class="chapter" id="col-3">3</a></li>
+				<li><a href="WEB/Col.4.html" target="content" class="chapter" id="col-4">4</a></li>
+			</ul>
+		<script>$('a.col').click(function () {$('ul.col').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="1th" id="1th" onclick="clickNTBook()" class="clicked0 book th1 plltr">1 Thess</a>
+			<ul class="th1 plltr chapters">
+				<li><a href="WEB/1Thess.1.html" target="content" class="chapter" id="1th-1">1</a></li>
+				<li><a href="WEB/1Thess.2.html" target="content" class="chapter" id="1th-2">2</a></li>
+				<li><a href="WEB/1Thess.3.html" target="content" class="chapter" id="1th-3">3</a></li>
+				<li><a href="WEB/1Thess.4.html" target="content" class="chapter" id="1th-4">4</a></li>
+				<li><a href="WEB/1Thess.5.html" target="content" class="chapter" id="1th-5">5</a></li>
+			</ul>
+		<script>$('a.th1').click(function () {$('ul.th1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="2th" id="2th" onclick="clickNTBook()" class="clicked0 book th2 plltr">2 Thess</a>
+			<ul class="th2 plltr chapters">
+				<li><a href="WEB/2Thess.1.html" target="content" class="chapter" id="2th-1">1</a></li>
+				<li><a href="WEB/2Thess.2.html" target="content" class="chapter" id="2th-2">2</a></li>
+				<li><a href="WEB/2Thess.3.html" target="content" class="chapter" id="2th-3">3</a></li>
+			</ul>
+		<script>$('a.th2').click(function () {$('ul.th2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="1ti" id="1ti" onclick="clickNTBook()" class="clicked0 book ti1 plltr">1 Tim</a>
+			<ul class="ti1 plltr chapters">
+				<li><a href="WEB/1Tim.1.html" target="content" class="chapter" id="1ti-1">1</a></li>
+				<li><a href="WEB/1Tim.2.html" target="content" class="chapter" id="1ti-2">2</a></li>
+				<li><a href="WEB/1Tim.3.html" target="content" class="chapter" id="1ti-3">3</a></li>
+				<li><a href="WEB/1Tim.4.html" target="content" class="chapter" id="1ti-4">4</a></li>
+				<li><a href="WEB/1Tim.5.html" target="content" class="chapter" id="1ti-5">5</a></li>
+				<li><a href="WEB/1Tim.6.html" target="content" class="chapter" id="1ti-6">6</a></li>
+			</ul>
+		<script>$('a.ti1').click(function () {$('ul.ti1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="2ti" id="2ti" onclick="clickNTBook()" class="clicked0 book ti2 plltr">2 Tim</a>
+			<ul class="ti2 plltr chapters">
+				<li><a href="WEB/2Tim.1.html" target="content" class="chapter" id="2ti-1">1</a></li>
+				<li><a href="WEB/2Tim.2.html" target="content" class="chapter" id="2ti-2">2</a></li>
+				<li><a href="WEB/2Tim.3.html" target="content" class="chapter" id="2ti-3">3</a></li>
+				<li><a href="WEB/2Tim.14.html" target="content" class="chapter" id="2ti-4">4</a></li>
+			</ul>
+		<script>$('a.ti2').click(function () {$('ul.ti2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="tit" id="tit" onclick="clickNTBook()" class="clicked0 book tit plltr">Titus</a>
+			<ul class="tit plltr chapters">
+				<li><a href="WEB/Titus.1.html" target="content" class="chapter" id="tit-1">1</a></li>
+				<li><a href="WEB/Titus.2.html" target="content" class="chapter" id="tit-2">2</a></li>
+				<li><a href="WEB/Titus.3.html" target="content" class="chapter" id="tit-3">3</a></li>
+			</ul>
+		<script>$('a.tit').click(function () {$('ul.tit').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="phm" id="phm" onclick="clickNTBook()" class="clicked0 book phm">Phm</a>
+			<ul class="phm chapters">
+				<li><a href="WEB/Phlm.1.html" target="content" class="chapter" id="phm-1">1</a></li>
+			</ul>
+		<script>$('a.phm').click(function () {$('ul.phm').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="heb" id="heb" onclick="clickNTBook()" class="clicked0 book heb">Heb</a>
+			<ul class="heb chapters">
+				<li><a href="WEB/Heb.1.html" target="content" class="chapter" id="heb-1">1</a></li>
+				<li><a href="WEB/Heb.2.html" target="content" class="chapter" id="heb-2">2</a></li>
+				<li><a href="WEB/Heb.3.html" target="content" class="chapter" id="heb-3">3</a></li>
+				<li><a href="WEB/Heb.4.html" target="content" class="chapter" id="heb-4">4</a></li>
+				<li><a href="WEB/Heb.5.html" target="content" class="chapter" id="heb-5">5</a></li>
+				<li><a href="WEB/Heb.6.html" target="content" class="chapter" id="heb-6">6</a></li>
+				<li><a href="WEB/Heb.7.html" target="content" class="chapter" id="heb-7">7</a></li>
+				<li><a href="WEB/Heb.8.html" target="content" class="chapter" id="heb-8">8</a></li>
+				<li><a href="WEB/Heb.9.html" target="content" class="chapter" id="heb-9">9</a></li>
+				<li><a href="WEB/Heb.10.html" target="content" class="chapter" id="heb-10">10</a></li>
+				<li><a href="WEB/Heb.11.html" target="content" class="chapter" id="heb-11">11</a></li>
+				<li><a href="WEB/Heb.12.html" target="content" class="chapter" id="heb-12">12</a></li>
+				<li><a href="WEB/Heb.13.html" target="content" class="chapter" id="heb-13">13</a></li>
+			</ul>
+		<script>$('a.heb').click(function () {$('ul.heb').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jam" id="jam" onclick="clickNTBook()" class="clicked0 book jam">Jam</a>
+			<ul class="jam chapters">
+				<li><a href="WEB/Jas.1.html" target="content" class="chapter" id="jam-1">1</a></li>
+				<li><a href="WEB/Jas.2.html" target="content" class="chapter" id="jam-2">2</a></li>
+				<li><a href="WEB/Jas.3.html" target="content" class="chapter" id="jam-3">3</a></li>
+				<li><a href="WEB/Jas.4.html" target="content" class="chapter" id="jam-4">4</a></li>
+				<li><a href="WEB/Jas.5.html" target="content" class="chapter" id="jam-5">5</a></li>
+			</ul>
+		<script>$('a.jam').click(function () {$('ul.jam').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="1pe" id="1pe" onclick="clickNTBook()" class="clicked0 book pe1">1 Pe</a>
+			<ul class="pe1 chapters">
+				<li><a href="WEB/1Pet.1.html" target="content" class="chapter" id="1pe-1">1</a></li>
+				<li><a href="WEB/1Pet.2.html" target="content" class="chapter" id="1pe-2">2</a></li>
+				<li><a href="WEB/1Pet.3.html" target="content" class="chapter" id="1pe-3">3</a></li>
+				<li><a href="WEB/1Pet.4.html" target="content" class="chapter" id="1pe-4">4</a></li>
+				<li><a href="WEB/1Pet.5.html" target="content" class="chapter" id="1pe-5">5</a></li>
+			</ul>
+		<script>$('a.pe1').click(function () {$('ul.pe1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="2pe" id="2pe" onclick="clickNTBook()" class="clicked0 book pe2">2 Pe</a>
+			<ul class="pe2 chapters">
+				<li><a href="WEB/2Pet.1.html" target="content" class="chapter" id="2pe-1">1</a></li>
+				<li><a href="WEB/2Pet.2.html" target="content" class="chapter" id="2pe-2">2</a></li>
+				<li><a href="WEB/2Pet.3.html" target="content" class="chapter" id="2pe-3">3</a></li>
+			</ul>
+		<script>$('a.pe2').click(function () {$('ul.pe2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="1jo" id="1jo" onclick="clickNTBook()" class="clicked0 book jo1">1 Jo</a>
+			<ul class="john1 chapters">
+				<li><a href="WEB/1John.1.html" target="content" class="chapter" id="1jo-1">1</a></li>
+				<li><a href="WEB/1John.2.html" target="content" class="chapter" id="1jo-2">2</a></li>
+				<li><a href="WEB/1John.3.html" target="content" class="chapter" id="1jo-3">3</a></li>
+				<li><a href="WEB/1John.4.html" target="content" class="chapter" id="1jo-4">4</a></li>
+				<li><a href="WEB/1John.5.html" target="content" class="chapter" id="1jo-5">5</a></li>
+			</ul>
+		<script>$('a.jo1').click(function () {$('ul.jo1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="2jo" id="2jo" onclick="clickNTBook()" class="clicked0 book jo2">2 Jo</a>
+			<ul class="jo2 chapters">
+				<li><a href="WEB/2John.1.html" target="content" class="chapter" id="2jo-1">1</a></li>
+			</ul>
+		<script>$('a.jo2').click(function () {$('ul.jo2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="3jo" id="3jo" onclick="clickNTBook()" class="clicked0 book jo3">3 Jo</a>
+			<ul class="jo3 chapters">
+				<li><a href="WEB/3John.1.html" target="content" class="chapter" id="3jo-1">1</a></li>
+			</ul>
+		<script>$('a.john3').click(function () {$('ul.john3').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jud" id="jud" onclick="clickNTBook()" class="clicked0 book jud">Jud</a>
+			<ul class="jud chapters">
+				<li><a href="WEB/Jude.1.html" target="content" class="chapter" id="jud-1">1</a></li>
+			</ul>
+		<script>$('a.jud').click(function () {$('ul.jud').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="rev" id="rev" onclick="clickNTBook()" class="clicked0 book rev">Rev</a>
+			<ul class="rev chapters">
+				<li><a href="WEB/Rev.1.html" target="content" class="chapter" id="rev-1">1</a></li>
+				<li><a href="WEB/Rev.2.html" target="content" class="chapter" id="rev-2">2</a></li>
+				<li><a href="WEB/Rev.3.html" target="content" class="chapter" id="rev-3">3</a></li>
+				<li><a href="WEB/Rev.4.html" target="content" class="chapter" id="rev-4">4</a></li>
+				<li><a href="WEB/Rev.5.html" target="content" class="chapter" id="rev-5">5</a></li>
+				<li><a href="WEB/Rev.6.html" target="content" class="chapter" id="rev-6">6</a></li>
+				<li><a href="WEB/Rev.7.html" target="content" class="chapter" id="rev-7">7</a></li>
+				<li><a href="WEB/Rev.8.html" target="content" class="chapter" id="rev-8">8</a></li>
+				<li><a href="WEB/Rev.9.html" target="content" class="chapter" id="rev-9">9</a></li>
+				<li><a href="WEB/Rev.10.html" target="content" class="chapter" id="rev-10">10</a></li>
+				<li><a href="WEB/Rev.11.html" target="content" class="chapter" id="rev-11">11</a></li>
+				<li><a href="WEB/Rev.12.html" target="content" class="chapter" id="rev-12">12</a></li>
+				<li><a href="WEB/Rev.13.html" target="content" class="chapter" id="rev-13">13</a></li>
+				<li><a href="WEB/Rev.14.html" target="content" class="chapter" id="rev-14">14</a></li>
+				<li><a href="WEB/Rev.15.html" target="content" class="chapter" id="rev-15">15</a></li>
+				<li><a href="WEB/Rev.16.html" target="content" class="chapter" id="rev-16">16</a></li>
+				<li><a href="WEB/Rev.17.html" target="content" class="chapter" id="rev-17">17</a></li>
+				<li><a href="WEB/Rev.18.html" target="content" class="chapter" id="rev-18">18</a></li>
+				<li><a href="WEB/Rev.19.html" target="content" class="chapter" id="rev-19">19</a></li>
+				<li><a href="WEB/Rev.20.html" target="content" class="chapter" id="rev-20">20</a></li>
+				<li><a href="WEB/Rev.21.html" target="content" class="chapter" id="rev-21">21</a></li>
+				<li><a href="WEB/Rev.22.html" target="content" class="chapter" id="rev-22">22</a></li>
+			</ul>
+		<script>$('a.rev').click(function () {$('ul.rev').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+	</ul>
+</section>
+<section class="clicked0 books other">
+	<ul>
+		<li><a name="eno" id="eno" onclick="clickOtherBook()" class="clicked0 book eno">Enoch</a>
+			<ul class="eno chapters">
+				<li><a href="#01.html" target="content" class="chapter" id="eno-1">1</a></li>
+				<li><a href="#02.html" target="content" class="chapter" id="eno-2">2</a></li>
+				<li><a href="#03.html" target="content" class="chapter" id="eno-3">3</a></li>
+				<li><a href="#04.html" target="content" class="chapter" id="eno-4">4</a></li>
+				<li><a href="#05.html" target="content" class="chapter" id="eno-5">5</a></li>
+				<li><a href="#06.html" target="content" class="chapter" id="eno-6">6</a></li>
+				<li><a href="#07.html" target="content" class="chapter" id="eno-7">7</a></li>
+				<li><a href="#08.html" target="content" class="chapter" id="eno-8">8</a></li>
+				<li><a href="#09.html" target="content" class="chapter" id="eno-9">9</a></li>
+				<li><a href="#10.html" target="content" class="chapter" id="eno-10">10</a></li>
+				<li><a href="#11.html" target="content" class="chapter" id="eno-11">11</a></li>
+				<li><a href="#12.html" target="content" class="chapter" id="eno-12">12</a></li>
+				<li><a href="#13.html" target="content" class="chapter" id="eno-13">13</a></li>
+				<li><a href="#14.html" target="content" class="chapter" id="eno-14">14</a></li>
+				<li><a href="#15.html" target="content" class="chapter" id="eno-15">15</a></li>
+				<li><a href="#16.html" target="content" class="chapter" id="eno-16">16</a></li>
+				<li><a href="#17.html" target="content" class="chapter" id="eno-17">17</a></li>
+				<li><a href="#18.html" target="content" class="chapter" id="eno-18">18</a></li>
+				<li><a href="#19.html" target="content" class="chapter" id="eno-19">19</a></li>
+				<li><a href="#20.html" target="content" class="chapter" id="eno-20">20</a></li>
+				<li><a href="#21.html" target="content" class="chapter" id="eno-21">21</a></li>
+				<li><a href="#22.html" target="content" class="chapter" id="eno-22">22</a></li>
+				<li><a href="#23.html" target="content" class="chapter" id="eno-23">23</a></li>
+				<li><a href="#24.html" target="content" class="chapter" id="eno-24">24</a></li>
+				<li><a href="#25.html" target="content" class="chapter" id="eno-25">25</a></li>
+				<li><a href="#26.html" target="content" class="chapter" id="eno-26">26</a></li>
+				<li><a href="#27.html" target="content" class="chapter" id="eno-27">27</a></li>
+				<li><a href="#28.html" target="content" class="chapter" id="eno-28">28</a></li>
+				<li><a href="#29.html" target="content" class="chapter" id="eno-29">29</a></li>
+				<li><a href="#30.html" target="content" class="chapter" id="eno-30">30</a></li>
+				<li><a href="#31.html" target="content" class="chapter" id="eno-31">31</a></li>
+				<li><a href="#32.html" target="content" class="chapter" id="eno-32">32</a></li>
+				<li><a href="#33.html" target="content" class="chapter" id="eno-33">33</a></li>
+				<li><a href="#34.html" target="content" class="chapter" id="eno-34">34</a></li>
+				<li><a href="#35.html" target="content" class="chapter" id="eno-35">35</a></li>
+				<li><a href="#36.html" target="content" class="chapter" id="eno-36">36</a></li>
+				<li><a href="#37.html" target="content" class="chapter" id="eno-37">37</a></li>
+				<li><a href="#38.html" target="content" class="chapter" id="eno-38">38</a></li>
+				<li><a href="#39.html" target="content" class="chapter" id="eno-39">39</a></li>
+				<li><a href="#40.html" target="content" class="chapter" id="eno-40">40</a></li>
+				<li><a href="#41.html" target="content" class="chapter" id="eno-41">41</a></li>
+				<li><a href="#42.html" target="content" class="chapter" id="eno-42">42</a></li>
+				<li><a href="#43.html" target="content" class="chapter" id="eno-43">43</a></li>
+				<li><a href="#44.html" target="content" class="chapter" id="eno-44">44</a></li>
+				<li><a href="#45.html" target="content" class="chapter" id="eno-45">45</a></li>
+				<li><a href="#46.html" target="content" class="chapter" id="eno-46">46</a></li>
+				<li><a href="#47.html" target="content" class="chapter" id="eno-47">47</a></li>
+				<li><a href="#48.html" target="content" class="chapter" id="eno-48">48</a></li>
+				<li><a href="#49.html" target="content" class="chapter" id="eno-49">49</a></li>
+				<li><a href="#50.html" target="content" class="chapter" id="eno-50">50</a></li>
+				<li><a href="#51.html" target="content" class="chapter" id="eno-51">51</a></li>
+				<li><a href="#52.html" target="content" class="chapter" id="eno-52">52</a></li>
+				<li><a href="#53.html" target="content" class="chapter" id="eno-53">53</a></li>
+				<li><a href="#54.html" target="content" class="chapter" id="eno-54">54</a></li>
+				<li><a href="#55.html" target="content" class="chapter" id="eno-55">55</a></li>
+				<li><a href="#56.html" target="content" class="chapter" id="eno-56">56</a></li>
+				<li><a href="#57.html" target="content" class="chapter" id="eno-57">57</a></li>
+				<li><a href="#58.html" target="content" class="chapter" id="eno-58">58</a></li>
+				<li><a href="#59.html" target="content" class="chapter" id="eno-59">59</a></li>
+				<li><a href="#60.html" target="content" class="chapter" id="eno-60">60</a></li>
+				<li><a href="#61.html" target="content" class="chapter" id="eno-61">61</a></li>
+				<li><a href="#62.html" target="content" class="chapter" id="eno-62">62</a></li>
+				<li><a href="#63.html" target="content" class="chapter" id="eno-63">63</a></li>
+				<li><a href="#64.html" target="content" class="chapter" id="eno-64">64</a></li>
+				<li><a href="#65.html" target="content" class="chapter" id="eno-65">65</a></li>
+				<li><a href="#66.html" target="content" class="chapter" id="eno-66">66</a></li>
+				<li><a href="#67.html" target="content" class="chapter" id="eno-67">67</a></li>
+				<li><a href="#68.html" target="content" class="chapter" id="eno-68">68</a></li>
+				<li><a href="#69.html" target="content" class="chapter" id="eno-69">69</a></li>
+				<li><a href="#70.html" target="content" class="chapter" id="eno-70">70</a></li>
+				<li><a href="#71.html" target="content" class="chapter" id="eno-71">71</a></li>
+				<li><a href="#72.html" target="content" class="chapter" id="eno-72">72</a></li>
+				<li><a href="#73.html" target="content" class="chapter" id="eno-73">73</a></li>
+				<li><a href="#74.html" target="content" class="chapter" id="eno-74">74</a></li>
+				<li><a href="#75.html" target="content" class="chapter" id="eno-75">75</a></li>
+				<li><a href="#76.html" target="content" class="chapter" id="eno-76">76</a></li>
+				<li><a href="#77.html" target="content" class="chapter" id="eno-77">77</a></li>
+				<li><a href="#78.html" target="content" class="chapter" id="eno-78">78</a></li>
+				<li><a href="#79.html" target="content" class="chapter" id="eno-79">79</a></li>
+				<li><a href="#80.html" target="content" class="chapter" id="eno-80">80</a></li>
+				<li><a href="#81.html" target="content" class="chapter" id="eno-81">81</a></li>
+				<li><a href="#82.html" target="content" class="chapter" id="eno-82">82</a></li>
+				<li><a href="#83.html" target="content" class="chapter" id="eno-83">83</a></li>
+				<li><a href="#84.html" target="content" class="chapter" id="eno-84">84</a></li>
+				<li><a href="#85.html" target="content" class="chapter" id="eno-85">85</a></li>
+				<li><a href="#86.html" target="content" class="chapter" id="eno-86">86</a></li>
+				<li><a href="#87.html" target="content" class="chapter" id="eno-87">87</a></li>
+				<li><a href="#88.html" target="content" class="chapter" id="eno-88">88</a></li>
+				<li><a href="#89.html" target="content" class="chapter" id="eno-89">89</a></li>
+				<li><a href="#90.html" target="content" class="chapter" id="eno-90">90</a></li>
+				<li><a href="#91.html" target="content" class="chapter" id="eno-91">91</a></li>
+				<li><a href="#92.html" target="content" class="chapter" id="eno-92">92</a></li>
+				<li><a href="#93.html" target="content" class="chapter" id="eno-93">93</a></li>
+				<li><a href="#94.html" target="content" class="chapter" id="eno-94">94</a></li>
+				<li><a href="#95.html" target="content" class="chapter" id="eno-95">95</a></li>
+				<li><a href="#96.html" target="content" class="chapter" id="eno-96">96</a></li>
+				<li><a href="#97.html" target="content" class="chapter" id="eno-97">97</a></li>
+				<li><a href="#98.html" target="content" class="chapter" id="eno-98">98</a></li>
+				<li><a href="#99.html" target="content" class="chapter" id="eno-99">99</a></li>
+				<li><a href="#100.html" target="content" class="chapter" id="eno-100">100</a></li>
+				<li><a href="#101.html" target="content" class="chapter" id="eno-101">101</a></li>
+				<li><a href="#102.html" target="content" class="chapter" id="eno-102">102</a></li>
+				<li><a href="#103.html" target="content" class="chapter" id="eno-103">103</a></li>
+				<li><a href="#104.html" target="content" class="chapter" id="eno-104">104</a></li>
+				<li><a href="#105.html" target="content" class="chapter" id="eno-105">105</a></li>
+			</ul>
+		<script>$('a.eno').click(function () {$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="jub" id="jub" onclick="clickOtherBook()" class="clicked0 book jub">Jubliee</a></li>
+		<li><a name="jose" onclick="clickOtherBook()" class="clicked0 book jose" title="Josephus">Jose</a>
+			<ul class="jose chapters">
+				<li><a href="#" target="content" class="chapter">Preface</a></li>
+				<li><a href="#" target="content" class="chapter">1</a></li>
+				<li><a href="#" target="content" class="chapter">2</a></li>
+				<li><a href="#" target="content" class="chapter">3</a></li>
+				<li><a href="#" target="content" class="chapter">4</a></li>
+				<li><a href="#" target="content" class="chapter">5</a></li>
+				<li><a href="#" target="content" class="chapter">6</a></li>
+				<li><a href="#" target="content" class="chapter">7</a></li>
+				<li><a href="#" target="content" class="chapter">8</a></li>
+				<li><a href="#" target="content" class="chapter">9</a></li>
+				<li><a href="#" target="content" class="chapter">10</a></li>
+				<li><a href="#" target="content" class="chapter">11</a></li>
+				<li><a href="#" target="content" class="chapter">12</a></li>
+				<li><a href="#" target="content" class="chapter">13</a></li>
+				<li><a href="#" target="content" class="chapter">14</a></li>
+				<li><a href="#" target="content" class="chapter">15</a></li>
+				<li><a href="#" target="content" class="chapter">16</a></li>
+				<li><a href="#" target="content" class="chapter">17</a></li>
+				<li><a href="#" target="content" class="chapter">18</a></li>
+				<li><a href="#" target="content" class="chapter">19</a></li>
+				<li><a href="#" target="content" class="chapter">20</a></li>
+			</ul>
+		<script>$('a.jose').click(function () {$('ul.jose').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="euse" onclick="clickOtherBook()" class="clicked0 book euse" title="Eusebius">Euse</a>
+			<ul class="other euse chapters">
+				<li><a href="#" target="content" class="chapter bks">I</a></li>
+				<li><a href="#" target="content" class="chapte bks">II</a></li>
+				<li><a href="#" target="content" class="chapter bks">III</a></li>
+				<li><a href="#" target="content" class="chapter bks">IV</a></li>
+				<li><a href="#" target="content" class="chapter bks">V</a></li>
+				<li><a href="#" target="content" class="chapter bks">VI</a></li>
+				<li><a href="#" target="content" class="chapter bks">VII</a></li>
+				<li><a href="#" target="content" class="chapter bks">VIII</a></li>
+				<li><a href="#" target="content" class="chapter bks">IX</a></li>
+				<li><a href="#" target="content" class="chapter bks">X</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Galilee</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Hell/Rom.</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Israel</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Judah</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Judea</a></li>
+				<li><a href="#" target="content" class="chapter rulers">Rulers: Palest.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Chron. Pref.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Chron. Intro</a></li>
+				<li><a href="#" target="content" class="chapter chron">Chald. Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Assyrian Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Median Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Lydian Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Persian Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Heb. Ch. 1</a></li>
+				<li><a href="#" target="content" class="chapter chron">Heb. Ch. 2</a></li>
+				<li><a href="#" target="content" class="chapter chron">Egyptian Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Greek Chron.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Greek Olymp.</a></li>
+				<li><a href="#" target="content" class="chapter chron">Corinth, Sparta</a></li>
+				<li><a href="#" target="content" class="chapter chron">Asia &amp; Syria</a></li>
+				<li><a href="#" target="content" class="chapter chron">Romans</a></li>
+			</ul>
+		<script>$('a.euse').click(function () {$('ul.euse').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+	<script>$('a.eno').click(function () {$('section.content').show("fast");$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+	</ul>
+</section>
+<section class="books admin about">
+	<ul>
+		<li><a name="about-aa" class="book about-aa">About</a>
+			<ul class="about-aa">
+				<li>An HTML5 mobile Bible reader using the NET Bible and other open licensed religious texts</li>
+				<li><a name="contributions-link" class="contributions-link">Text Sources</a>.</li>
+				<li><a href="https://github.com/arjwright/All-Books">All Books Project on GitHub</a></li>
+				<li><a name"reset-reading" class="reset-reading">Reset</a></li>
+			</ul>
+		<script>$('a.about-aa').click(function () {$('ul.about-aa').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.contributions-link').click(function () {$('ul.contributions').show("fast");$('ul.about-aa').hide("fast");});</script>
+		<script>$('a.reset-reading').click(function () {$('a').removeClass("clicked1 clicked2 clicked3 clicked4 clicked5");$('section.books').show("fast");$('section.admin').hide("fast");$('a').removeClass('active');});</script>
+		</li>
+		<li><a name="contributions" class="book contributions">Contrib.</a>
+			<ul class="contributions chapters">
+				<li><a href="https://unbound.biola.edu/index.cfm?method=downloads.showDownloadMain" target="_blank" class="chapter">Unbound Bible</a></li>
+			</ul>
+		<script>$('a.contributions').click(function () {$('ul.contributions').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+		<li><a name="stats" class="book stats-aa">Stats</a>
+			<ul class="stats-aa">
+				<li>Books read in OT: <span id="resultOT"></span></li>
+				<li>Books read in Apocrypha: <span id="resultAP"></span></li>
+				<li>Books read in NT: <span id="resultNT"></span></li>
+				<li>Books read in Others: <span id="resultHB"></span></li>
+				<li><a name"reset-reading" class="reset-reading">Reset</a></li>
+			</ul>
+		<script>$('a.stats-aa').click(function () {$('ul.stats-aa').show("fast");$('a.about').addClass('active');$('a.book').hide("fast");});</script>
+		</li>
+	</ul>
+</section>
+<section class="content">
+	<iframe class="content" name="content" seamless="seamless">
+		Ideally, there would be content here that is a seperate html document. 
+	</iframe>
+</section>
+<footer id="resultNone">
+</footer>
+<script>$('a.chapter').click(function () {$('section.content').show("fast");$('ul.chapters').hide("fast");$('a.book').hide("fast");});</script>
+<script>var count = 0; $("a").each(function() {var $thisBook = $(this); var count = 0; $thisBook.click(function() {count++; $thisBook.toggleClass("clicked1", count % 1 == 0); $thisBook.toggleClass("clicked2", count % 2 == 0); $thisBook.toggleClass("clicked3", count % 3 == 0); $thisBook.toggleClass("clicked4", count % 4 == 0); $thisBook.toggleClass("clicked5", count % 5 == 0);});});</script>
+
+<script>
+function clickOTBook()
+{
+if(typeof(Storage)!=="All Books OT")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultOT").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickAPBook()
+{
+if(typeof(Storage)!=="All Books AP")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultAP").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickNTBook()
+{
+if(typeof(Storage)!=="All Books NT")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultNT").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickOtherBook()
+{
+if(typeof(Storage)!=="All Books HB")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+    }
+  else
+    {
+    localStorage.clickcount=1;
+    }
+  document.getElementById("resultHB").innerHTML=" " + localStorage.clickcount + " ";
+  }
+else
+  {
+  document.getElementById("resultNone").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</body>
+</html>

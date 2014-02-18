@@ -1,17 +1,17 @@
 /*Styles for All Books, Personal Bible Reader Project
 Created by Antoine RJ Wright
 Created: 12/25/2011
-Last Modified: 1:18 PM 5/2/2012 */
+Last Modified: 2:23 AM 12/20/2012 */
 
 		html {color:#000;background-color:#FFF; font:1em arial,sans-serif;}
 		body {font-family:arial, sans-serif;}
 		a, a:visited {color:#000; text-decoration:none;}
 			a:hover, a:focus {color:#FFD700; text-decoration:underline; cursor:pointer;}
 		header {font-size:.6em;height:1.75em; border-bottom:1px solid #000; padding:.5em 0; margin-bottom: .5em; position:absolute; top:0px; overflow:hidden;}
-			header h1 {width: 5em; display:inline; font-size:1em;}
+			header h1 {width: 5em; display:inline; font-size:1em; position:relative; top:-1000px;}
 				header h1:hover {cursor:pointer;}
-			header nav {margin-left: 5.5em; margin-top:-1.5em;}
-				header nav a, header nav span {padding:.25em; display:inline-block; height: 1.5em;}
+			header nav {/*margin-left: 5.5em;*/ margin-top:-1.5em;}
+				header nav a, header nav span {padding:.25em; display:inline-block; height: 3.25em; border-top: 1px solid #000; border-right:1px solid #000;}
 				header nav a.active, header nav span {color:#FFF; background-color:#FFD700; text-decoration:none;}
 					header nav span {background-color:transparent; color:#000; font-weight:700; padding:0 .125em;}
 						header nav span:before {content:"(";}
@@ -20,7 +20,7 @@ Last Modified: 1:18 PM 5/2/2012 */
 			section.home ul li a {border:1px solid #F1F1F1;  padding: .5em; width: 5em; }
 		section.books ul, section.other ul {margin-left:-2.5em;}
 		section.books ul li, section.other ul li {display:inline-block;  float:left;}
-		section.books ul li a {background-color:transparent; border: 1px solid #F1F1F1; padding: .5em; width: 3.5em; height:2.5em; display:block; font-weight:500;}
+		section.books ul li a {background-color:transparent; border: 1px solid #F1F1F1; padding: .5em; width: 4em; height:3em; display:block; font-weight:500;}
 			section.books ul li a {color:#000;}
 				section.books ul li a.clicked1 {color:#333;}
 				section.books ul li a.clicked2 {color:#666;}
