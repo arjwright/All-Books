@@ -1,15 +1,17 @@
 CACHE MANIFEST
-# 2014-02-18  All Books 1.3.x
-# version: major.minor.x
-# added public version; changed nav UI; added Biblia API and LEB version for personal
-../favicon.ico
-http://dl.dropboxusercontent.com/u/14080531/favicon.ico
-../apple-touch-icon.png
-http://dl.dropboxusercontent.com/u/14080531/apple-touch-icon.png
-../arjw-logo.jpg
+# 2014-05-28  All Books 1.3.0528
+# version: major.minor.date-edited
+# added MMM logo  for fav/apple icons; corrected links; restyled nav; corrected nav
 jquery-latest.min.js
-http://dl.dropboxusercontent.com/u/14080531/jquery-latest.min.js
 all-books-styles.css
+../favicon.ico
+../apple-touch-icon.png
+../arjw-logo.jpg
+http://dl.dropboxusercontent.com/u/14080531/favicon.ico
+http://dl.dropboxusercontent.com/u/14080531/apple-touch-icon.png
+http://dl.dropboxusercontent.com/u/14080531/jquery-latest.min.js
+http://mobileministrymagazine.com/favicon.ico
+http://mobileministrymagazine.com/apple-touch-icon.png
 http://api.biblia.com/v1/bible/content/LEB.html
 
 NETWORK:

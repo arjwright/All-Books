@@ -7,17 +7,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>All Books</title>
 	<link rel="stylesheet" type="text/css" href="all-books-styles.css" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	   <link rel="shortcut icon" href="http://mobileministrymagazine.com/favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+       <link rel="apple-touch-icon" href="http://mobileministrymagazine.com/apple-touch-icon.png">
 	<script src="jquery-latest.min.js"></script>
+       <script src="http://dl.dropboxusercontent.com/u/14080531/jquery-latest.min.js"></script>
 </head>
 <body>
 <header>
 	<h1>All Books</h1>
 	<nav>
 		<a class="ot"><abbr title="Old Testament">OT</abbr></a>
-		<a class="apocrypha">Apocrypha</a>
+		<a class="apocrypha">Apoc</a>
 		<a class="nt"><abbr title="New Testament">NT</abbr></a>
-		<a class="other">Others</a>
-		<a class="search">Search</a>
+		<a class="other">Hist</a>
+		<!--<a class="search">Search</a>-->
 		<a class="about">About</a>
 	</nav>
 	<script>$('h1').click(function () {$('ul.chapters').hide("fast");$('section.content').hide("fast");$('section.admin').hide("fast");$('section.books').show("fast");$('a').removeClass('active');$('ul.stats-aa').hide("fast");});</script>
@@ -27,7 +32,7 @@
 	<script>$('a.other').click(function () {$('a').removeClass('active');$('a.other').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.other').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
 	<script>$('a.about').click(function () {$('a').removeClass('active');$('a.about').addClass('active');$('section.books').hide("fast");$('section.content').hide("fast");$('section.about').show("fast");$('ul.chapters').hide("fast");$('a.book').show("fast");$('ul.about-aa').hide("fast");$('ul.contributions').hide("fast");$('ul.stats-aa').hide("fast");});</script>
 </header>
-<div style="clear:both;height:1px;">&nbsp;</div>
+<div style="clear:both;height:15px;">&nbsp;</div>
 <section class="clicked0 books ot">
 	<ul>
 		<li><a name="gen" id="gen" onclick="clickOTBook()" class="clicked0 book gen torah">Gen</a>
@@ -83,7 +88,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=gen+49&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="gen-49">49</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=gen+50&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="gen-50">50</a></li>
 			</ul>
-		<script>$('a.gen').click(function () {$('ul.gen').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.gen').click(function () {$('ul.gen').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Gen</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="exo" id="exo" onclick="clickOTBook()" class="clicked0 book exo torah">Exo</a>
 			<ul class="exo torah chapters">
@@ -128,7 +133,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=exo+39&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="exo-39">39</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=exo+40&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="exo-40">40</a></li>
 			</ul>
-		<script>$('a.exo').click(function () {$('ul.exo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.exo').click(function () {$('ul.exo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Exo</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="lev" id="lev" onclick="clickOTBook()" class="clicked0 book lev torah">Lev</a>
 			<ul class="lev torah chapters">
@@ -160,7 +165,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=lev+26&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="lev-26">26</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=lev+27&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="lev-27">27</a></li>
 			</ul>
-		<script>$('a.lev').click(function () {$('ul.lev').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.lev').click(function () {$('ul.lev').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Lev</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="num" id="num" onclick="clickOTBook()" class="clicked0 book num torah">Num</a>
 			<ul class="num torah chapters">
@@ -201,7 +206,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=num+35&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="num-35">35</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=num+36&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="num-36">36</a></li>
 			</ul>
-		<script>$('a.num').click(function () {$('ul.num').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.num').click(function () {$('ul.num').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Num</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="deu" id="deu" onclick="clickOTBook()" class="clicked0 book deu torah">Deu</a>
 			<ul class="deu torah chapters">
@@ -240,7 +245,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=deu+33&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="deu-33">33</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=deu+34&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="deu-34">34</a></li>
 			</ul>
-		<script>$('a.deu').click(function () {$('ul.deu').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.deu').click(function () {$('ul.deu').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Deu</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="jos" id="jos" onclick="clickOTBook()" class="clicked0 book jos">Jos</a>
 			<ul class="jos chapters">
@@ -269,7 +274,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jos23&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jos-23">23</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jos24&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jos-24">24</a></li>
 			</ul>
-		<script>$('a.jos').click(function () {$('ul.jos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jos').click(function () {$('ul.jos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Jos</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="jdg" id="jdg" onclick="clickOTBook()" class="clicked0 book jdg">Jdg</a>
 			<ul class="jdg chapters">
@@ -295,7 +300,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jdg20&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jdg-20">20</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jdg21&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jdg-21">21</a></li>
 			</ul>
-		<script>$('a.jdg').click(function () {$('ul.jdg').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jdg').click(function () {$('ul.jdg').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Jdg</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="rut" id="rut" onclick="clickOTBook()" class="clicked0 book rut">Ruth</a>
 			<ul class="rut chapters">
@@ -304,7 +309,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rut3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rut-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rut4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rut-4">4</a></li>
 			</ul>
-		<script>$('a.rut').click(function () {$('ul.rut').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.rut').click(function () {$('ul.rut').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Rut</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="sam1" id="sam1" onclick="clickOTBook()" class="clicked0 book sam1">1 Sam</a>
 			<ul class="sam1 chapters">
@@ -340,7 +345,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1sa30&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sam1-30">30</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1sa31&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sam1-31">31</a></li>
 			</ul>
-		<script>$('a.sam1').click(function () {$('ul.sam1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.sam1').click(function () {$('ul.sam1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>1Sam</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="sam2" id="sam2" onclick="clickOTBook()" class="clicked0 book sam2">2 Sam</a>
 			<ul class="sam2 chapters">
@@ -369,7 +374,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2sa23&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sam2-23">23</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2sa24&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sam2-24">24</a></li>
 			</ul>
-		<script>$('a.sam2').click(function () {$('ul.sam2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.sam2').click(function () {$('ul.sam2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>2Sam</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="kgs1" id="kgs1" onclick="clickOTBook()" class="clicked0 book kgs1">1 Kgs</a>
 			<ul class="kgs1 chapters">
@@ -396,7 +401,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ki21&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="kgs1-21">21</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ki22&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="kgs1-22">22</a></li>
 			</ul>
-		<script>$('a.kgs1').click(function () {$('ul.kgs1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.kgs1').click(function () {$('ul.kgs1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>1Kgs</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="kgs2" id="kgs2" onclick="clickOTBook()" class="clicked0 book kgs2">2 Kgs</a>
 			<ul class="kgs2 chapters">
@@ -426,7 +431,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ki24&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="kgs2-24">24</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ki25&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="kgs2-25">25</a></li>
 			</ul>
-		<script>$('a.kgs2').click(function () {$('ul.kgs2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.kgs2').click(function () {$('ul.kgs2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>2Kgs</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="chr1" id="chr1" onclick="clickOTBook()" class="clicked0 book chr1">1 Chr</a>
 			<ul class="chr1 chapters">
@@ -460,7 +465,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ch28&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="chr1-28">28</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ch29&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="chr1-29">29</a></li>
 			</ul>
-		<script>$('a.chr1').click(function () {$('ul.chr1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.chr1').click(function () {$('ul.chr1').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>1Chr</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="chr2" id="chr2" onclick="clickOTBook()" class="clicked0 book chr2">2 Chr</a>
 			<ul class="chr2 chapters">
@@ -502,7 +507,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ch36&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="chr2-36">36</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ch37&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="chr2-37">37</a></li>
 			</ul>
-		<script>$('a.chr2').click(function () {$('ul.chr2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.chr2').click(function () {$('ul.chr2').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>2Chr</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="ezr" id="ezr" onclick="clickOTBook()" class="clicked0 book ezr">Ezr</a>
 			<ul class="ezra chapters">
@@ -517,7 +522,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=ezr9&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="ezr-9">9</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=ezr9&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="ezr-10">10</a></li>
 			</ul>
-		<script>$('a.ezr').click(function () {$('ul.ezr').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.ezr').click(function () {$('ul.ezr').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Ezr</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="neh" id="neh" onclick="clickOTBook()" class="clicked0 book neh">Neh</a>
 			<ul class="neh chapters">
@@ -535,7 +540,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=neh12&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="neh-12">12</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=neh13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="neh-13">13</a></li>
 			</ul>
-		<script>$('a.neh').click(function () {$('ul.neh').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.neh').click(function () {$('ul.neh').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Neh</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="est" id="est" onclick="clickOTBook()" class="clicked0 book est">Est</a>
 			<ul class="est chapters">
@@ -550,7 +555,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=est9&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="est-9">9</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=est10&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="est-10">10</a></li>
 			</ul>
-		<script>$('a.est').click(function () {$('ul.est').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.est').click(function () {$('ul.est').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Est</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="job" id="job" onclick="clickOTBook()" class="clicked0 book job">Job</a>
 			<ul class="job chapters">
@@ -597,7 +602,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=job41&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="job-41">41</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=job42&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="job-42">42</a></li>
 			</ul>
-		<script>$('a.job').click(function () {$('ul.job').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.job').click(function () {$('ul.job').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Job</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="psa" id="psa" onclick="clickOTBook()" class="clicked0 book psa poetry">Psa</a>
 			<ul class="psa poetry chapters">
@@ -752,7 +757,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=psa149&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="psa-149">149</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=psa150&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="psa-150">150</a></li>
 			</ul>
-		<script>$('a.psa').click(function () {$('ul.psa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.psa').click(function () {$('ul.psa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Psa</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="pro" id="pro" onclick="clickOTBook()" class="clicked0 book pro poetry">Pro</a>
 			<ul class="pro poetry chapters">
@@ -788,7 +793,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=pro30&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="pro-30">30</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=pro31&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="pro-31">31</a></li>
 			</ul>
-		<script>$('a.pro').click(function () {$('ul.pro').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.pro').click(function () {$('ul.pro').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Pro</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="ecc" onclick="clickOTBook()" class="clicked0 book ecc poetry">Ecc</a>
 			<ul class="ecc poetry chapters">
@@ -805,7 +810,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=ecc11&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="pro-11">11</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=ecc12&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="pro-12">12</a></li>
 			</ul>
-		<script>$('a.ecc').click(function () {$('ul.ecc').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.ecc').click(function () {$('ul.ecc').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Ecc</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="sos" id="sos" onclick="clickOTBook()" class="clicked0 book sos poetry">SOS</a>
 			<ul class="sos poetry chapters">
@@ -818,7 +823,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=sos7&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sos-7">7</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=sos8&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="sos-8">8</a></li>
 			</ul>
-		<script>$('a.sos').click(function () {$('ul.sos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.sos').click(function () {$('ul.sos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>SoS</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="isa" id="isa" onclick="clickOTBook()" class="clicked0 book isa">Isa</a>
 			<ul class="isa chapters">
@@ -889,7 +894,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=isa65&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="isa-65">65</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=isa66&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="isa-66">66</a></li>
 			</ul>
-		<script>$('a.isa').click(function () {$('ul.isa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.isa').click(function () {$('ul.isa').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Isa</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="jer" id="jer" onclick="clickOTBook()" class="clicked0 book jer">Jer</a>
 			<ul class="jer chapters">
@@ -946,7 +951,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jer51&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jer-51">51</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jer52&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jer-52">52</a></li>
 			</ul>
-		<script>$('a.jer').click(function () {$('ul.jer').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jer').click(function () {$('ul.jer').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Jer</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="lam" id="lam" onclick="clickOTBook()" class="clicked0 book lam">Lam</a>
 			<ul class="lam chapters">
@@ -956,7 +961,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=lam4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="lam-4">4</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=lam5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="lam-5">5</a></li>
 			</ul>
-		<script>$('a.lam').click(function () {$('ul.lam').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.lam').click(function () {$('ul.lam').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Lam</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="eze" id="eze" onclick="clickOTBook()" class="clicked0 book eeze">Eze</a>
 			<ul class="eze chapters">
@@ -1009,7 +1014,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=eze47&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eze-47">47</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=eze48&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eze-48">48</a></li>
 			</ul>
-		<script>$('a.eze').click(function () {$('ul.eze').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.eze').click(function () {$('ul.eze').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Eze</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="dan" id="dan" onclick="clickOTBook()" class="clicked0 book dan">Dan</a>
 			<ul class="dan chapters">
@@ -1026,7 +1031,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=dan11&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="dan-11">11</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=dan12&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="dan-12">12</a></li>
 			</ul>
-		<script>$('a.dan').click(function () {$('ul.dan').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.dan').click(function () {$('ul.dan').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Dan</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="hos" id="hos" onclick="clickOTBook()" class="clicked0 book hos minor">Hos</a>
 			<ul class="hos minor chapters">
@@ -1045,7 +1050,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hos13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hos-13">13</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hos14&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hos-14">14</a></li>
 			</ul>
-		<script>$('a.hos').click(function () {$('ul.hos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.hos').click(function () {$('ul.hos').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Hos</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="joe" id="joe" onclick="clickOTBook()" class="clicked0 book joe minor">Joe</a>
 			<ul class="joe minor chapters">
@@ -1053,7 +1058,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=joe2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="joe-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=joe3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="joe-3">3</a></li>
 			</ul>
-		<script>$('a.joe').click(function () {$('ul.joe').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.joe').click(function () {$('ul.joe').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Joe</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="amo" id="amo" onclick="clickOTBook()" class="clicked0 book amo minor">Amo</a>
 			<ul class="amo minor chapters">
@@ -1067,13 +1072,13 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=amo8&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="amo-8">8</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=amo9&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="amo-9">9</a></li>
 			</ul>
-		<script>$('a.amo').click(function () {$('ul.amo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.amo').click(function () {$('ul.amo').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Amo</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="oba" id="oba" onclick="clickOTBook()" class="clicked0 book oba minor">Oba</a>
 			<ul class="oba minor chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=oba1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="oba-1">1</a></li>
 			</ul>
-		<script>$('a.oba').click(function () {$('ul.oba').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.oba').click(function () {$('ul.oba').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Oba</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="jon" id="jon" onclick="clickOTBook()" class="clicked0 book jon minor">Jon</a>
 			<ul class="jon minor chapters">
@@ -1082,7 +1087,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jon3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jon-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jon4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jon-4">4</a></li>
 			</ul>
-		<script>$('a.jon').click(function () {$('ul.jon').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jon').click(function () {$('ul.jon').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Jon</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="mic" id="mic" onclick="clickOTBook()" class="clicked0 book mic minor">Mic</a>
 			<ul class="mic minor chapters">
@@ -1094,7 +1099,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mic6&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mic-6">6</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mic7&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mic-7">7</a></li>
 			</ul>
-		<script>$('a.mic').click(function () {$('ul.mic').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.mic').click(function () {$('ul.mic').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Mic</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="nah" id="nah" onclick="clickOTBook()" class="clicked0 book nah minor">Nah</a>
 			<ul class="nah minor chapters">
@@ -1102,7 +1107,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=nah2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="nah-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=nah3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="nah-3">3</a></li>
 			</ul>
-		<script>$('a.nah').click(function () {$('ul.nah').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.nah').click(function () {$('ul.nah').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Nah</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="hab" id="hab" onclick="clickOTBook()" class="clicked0 book hab minor">Hab</a>
 			<ul class="hab minor chapters">
@@ -1110,7 +1115,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hab2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hab-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hab3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hab-3">3</a></li>
 			</ul>
-		<script>$('a.hab').click(function () {$('ul.hab').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.hab').click(function () {$('ul.hab').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Hab</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="zep" id="zep" onclick="clickOTBook()" class="clicked0 book zep minor">Zeph</a>
 			<ul class="zep minor chapters">
@@ -1118,14 +1123,14 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=zep2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="zep-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=zep3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="zep-3">3</a></li>
 			</ul>
-		<script>$('a.zep').click(function () {$('ul.zep').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.zep').click(function () {$('ul.zep').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Zep</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="hag" id="hag" onclick="clickOTBook()" class="clicked0 book hag minor">Hag</a>
 			<ul class="hag minor chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hag1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hag-1">1</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=hag2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="hag-2">2</a></li>
 			</ul>
-		<script>$('a.hag').click(function () {$('ul.hag').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.hag').click(function () {$('ul.hag').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Hag</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="zec" id="zec" onclick="clickOTBook()" class="clicked0 book zec minor">Zec</a>
 			<ul class="zec minor chapters">
@@ -1144,7 +1149,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=zec13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="zec-13">13</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=zec14&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="zec-14">14</a></li>
 			</ul>
-		<script>$('a.zec').click(function () {$('ul.zec').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.zec').click(function () {$('ul.zec').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Zec</span>").appendTo("a.ot");});</script>
 		</li>
 		<li><a name="mal" id="mal" onclick="clickOTBook()" class="clicked0 book mal minor">Mal</a>
 			<ul class="mal minor chapters">
@@ -1153,7 +1158,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mal3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mal-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mal4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mal-4">4</a></li>
 			</ul>
-		<script>$('a.mal').click(function () {$('ul.mal').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.mal').click(function () {$('ul.mal').show("fast");$('a.ot').addClass('active');$('a.book').hide("fast");$("<span>Mal</span>").appendTo("a.ot");});</script>
 		</li>
 	</ul>
 </section>
@@ -1250,7 +1255,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mat27&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mat-27">27</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mat28&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mat-28">28</a></li>
 			</ul>
-		<script>$('a.mat').click(function () {$('ul.mat').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.mat').click(function () {$('ul.mat').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Mat</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="mar" id="mar" onclick="clickNTBook()" class="clicked0 book mar gspl">Mar</a>
 			<ul class="mar gspl chapters">
@@ -1271,7 +1276,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mar15&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mar-15">15</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=mar16&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="mar-16">16</a></li>
 			</ul>
-		<script>$('a.mar').click(function () {$('ul.mar').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.mar').click(function () {$('ul.mar').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Mar</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="luk" id="luk" onclick="clickNTBook()" class="clicked0 book luk gspl">Luk</a>
 			<ul class="luk gspl chapters">
@@ -1300,7 +1305,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=luk23&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="luk-23">23</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=luk24&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="luk-24">24</a></li>
 			</ul>
-		<script>$('a.luk').click(function () {$('ul.luk').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.luk').click(function () {$('ul.luk').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Luk</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="joh" id="joh" onclick="clickNTBook()" class="clicked0 book joh gspl">John</a>
 			<ul class="joh gspl chapters">
@@ -1326,7 +1331,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=joh20&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="joh-20">20</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=joh21&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="joh-21">21</a></li>
 			</ul>
-		<script>$('a.joh').click(function () {$('ul.joh').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.joh').click(function () {$('ul.joh').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Joh</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="act" id="act" onclick="clickNTBook()" class="clicked0 book act gspl">Acts</a>
 			<ul class="act gspl chapters">
@@ -1359,7 +1364,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=act27&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="act-27">27</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=act28&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="act-28">28</a></li>
 			</ul>
-		<script>$('a.act').click(function () {$('ul.act').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.act').click(function () {$('ul.act').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Act</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="rom" id="rom" onclick="clickNTBook()" class="clicked0 book rom plltr">Rom</a>
 			<ul class="rom plltr chapters">
@@ -1380,7 +1385,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rom15&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rom-15">15</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rom16&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rom-16">16</a></li>
 			</ul>
-		<script>$('a.rom').click(function () {$('ul.rom').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.rom').click(function () {$('ul.rom').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Rom</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="cor1" id="cor1" onclick="clickNTBook()" class="clicked0 book cor1 plltr">1 Cor</a>
 			<ul class="cor1 plltr chapters">
@@ -1401,7 +1406,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1co15&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="cor1-15">15</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1co16&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="cor1-16">16</a></li>
 			</ul>
-		<script>$('a.cor1').click(function () {$('ul.cor1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.cor1').click(function () {$('ul.cor1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>1Cor</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="cor2" id="cor2" onclick="clickNTBook()" class="clicked0 book cor2 plltr">2 Cor</a>
 			<ul class="cor2 plltr chapters">
@@ -1419,7 +1424,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2co12&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="cor2-12">12</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2co13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="cor2-13">13</a></li>
 			</ul>
-		<script>$('a.cor2').click(function () {$('ul.cor2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.cor2').click(function () {$('ul.cor2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>2Cor</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="gal" id="gal" onclick="clickNTBook()" class="clicked0 book gal plltr">Gal</a>
 			<ul class="gal plltr chapters">
@@ -1430,7 +1435,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=gal5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="gal-5">5</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=gal6&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="gal-6">6</a></li>
 			</ul>
-		<script>$('a.gal').click(function () {$('ul.gal').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.gal').click(function () {$('ul.gal').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Gal</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="eph" id="eph" onclick="clickNTBook()" class="clicked0 book eph plltr">Eph</a>
 			<ul class="eph plltr chapters">
@@ -1441,7 +1446,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=eph5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eph-5">5</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=eph6&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eph-6">6</a></li>
 			</ul>
-		<script>$('a.eph').click(function () {$('ul.eph').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.eph').click(function () {$('ul.eph').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Eph</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="phi" id="phi" onclick="clickNTBook()" class="clicked0 book phi plltr">Phil</a>
 			<ul class="phi plltr chapters">
@@ -1450,7 +1455,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=phi3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="phi-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=phi4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="phi-4">4</a></li>
 			</ul>
-		<script>$('a.phi').click(function () {$('ul.phi').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.phi').click(function () {$('ul.phi').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Phi</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="col" id="col" onclick="clickNTBook()" class="clicked0 book col plltr">Col</a>
 			<ul class="col plltr chapters">
@@ -1459,7 +1464,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=col3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="col-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=col4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="col-4">4</a></li>
 			</ul>
-		<script>$('a.col').click(function () {$('ul.col').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.col').click(function () {$('ul.col').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Col</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="1th" id="1th" onclick="clickNTBook()" class="clicked0 book th1 plltr">1 Thess</a>
 			<ul class="th1 plltr chapters">
@@ -1469,7 +1474,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1th4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1th-4">4</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1th5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1th-5">5</a></li>
 			</ul>
-		<script>$('a.th1').click(function () {$('ul.th1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.th1').click(function () {$('ul.th1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>1Th</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="2th" id="2th" onclick="clickNTBook()" class="clicked0 book th2 plltr">2 Thess</a>
 			<ul class="th2 plltr chapters">
@@ -1477,7 +1482,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2th2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2th-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2th3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2th-3">3</a></li>
 			</ul>
-		<script>$('a.th2').click(function () {$('ul.th2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.th2').click(function () {$('ul.th2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>2Th</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="1ti" id="1ti" onclick="clickNTBook()" class="clicked0 book ti1 plltr">1 Tim</a>
 			<ul class="ti1 plltr chapters">
@@ -1488,7 +1493,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ti5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1ti-5">5</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1ti6&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1ti-6">6</a></li>
 			</ul>
-		<script>$('a.ti1').click(function () {$('ul.ti1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.ti1').click(function () {$('ul.ti1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>1Ti</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="2ti" id="2ti" onclick="clickNTBook()" class="clicked0 book ti2 plltr">2 Tim</a>
 			<ul class="ti2 plltr chapters">
@@ -1497,7 +1502,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ti3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2ti-3">3</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2ti14&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2ti-4">4</a></li>
 			</ul>
-		<script>$('a.ti2').click(function () {$('ul.ti2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.ti2').click(function () {$('ul.ti2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>2Ti</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="tit" id="tit" onclick="clickNTBook()" class="clicked0 book tit plltr">Titus</a>
 			<ul class="tit plltr chapters">
@@ -1505,13 +1510,13 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=tit2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="tit-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=tit3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="tit-3">3</a></li>
 			</ul>
-		<script>$('a.tit').click(function () {$('ul.tit').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.tit').click(function () {$('ul.tit').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Tit</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="phm" id="phm" onclick="clickNTBook()" class="clicked0 book phm">Phm</a>
 			<ul class="phm chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=phm1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="phm-1">1</a></li>
 			</ul>
-		<script>$('a.phm').click(function () {$('ul.phm').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.phm').click(function () {$('ul.phm').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Phm</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="heb" id="heb" onclick="clickNTBook()" class="clicked0 book heb">Heb</a>
 			<ul class="heb chapters">
@@ -1529,7 +1534,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=heb12&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="heb-12">12</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=heb13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="heb-13">13</a></li>
 			</ul>
-		<script>$('a.heb').click(function () {$('ul.heb').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.heb').click(function () {$('ul.heb').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Heb</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="jam" id="jam" onclick="clickNTBook()" class="clicked0 book jam">Jam</a>
 			<ul class="jam chapters">
@@ -1539,7 +1544,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jam4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jam-4">4</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jam5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jam-5">5</a></li>
 			</ul>
-		<script>$('a.jam').click(function () {$('ul.jam').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jam').click(function () {$('ul.jam').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Jam</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="1pe" id="1pe" onclick="clickNTBook()" class="clicked0 book pe1">1 Pe</a>
 			<ul class="pe1 chapters">
@@ -1549,7 +1554,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1pe4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1pe-4">4</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1pe5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1pe-5">5</a></li>
 			</ul>
-		<script>$('a.pe1').click(function () {$('ul.pe1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.pe1').click(function () {$('ul.pe1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>1Pe</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="2pe" id="2pe" onclick="clickNTBook()" class="clicked0 book pe2">2 Pe</a>
 			<ul class="pe2 chapters">
@@ -1557,7 +1562,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2pe2&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2pe-2">2</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2pe3&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2pe-3">3</a></li>
 			</ul>
-		<script>$('a.pe2').click(function () {$('ul.pe2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.pe2').click(function () {$('ul.pe2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>2Pe</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="1jo" id="1jo" onclick="clickNTBook()" class="clicked0 book jo1">1 Jo</a>
 			<ul class="john1 chapters">
@@ -1567,25 +1572,25 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1jo4&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1jo-4">4</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=1jo5&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="1jo-5">5</a></li>
 			</ul>
-		<script>$('a.jo1').click(function () {$('ul.jo1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jo1').click(function () {$('ul.jo1').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>1Jo</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="2jo" id="2jo" onclick="clickNTBook()" class="clicked0 book jo2">2 Jo</a>
 			<ul class="jo2 chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=2jo1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="2jo-1">1</a></li>
 			</ul>
-		<script>$('a.jo2').click(function () {$('ul.jo2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jo2').click(function () {$('ul.jo2').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>2Jo</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="3jo" id="3jo" onclick="clickNTBook()" class="clicked0 book jo3">3 Jo</a>
 			<ul class="jo3 chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=3jo1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="3jo-1">1</a></li>
 			</ul>
-		<script>$('a.john3').click(function () {$('ul.john3').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.john3').click(function () {$('ul.john3').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>3Jo</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="jud" id="jud" onclick="clickNTBook()" class="clicked0 book jud">Jud</a>
 			<ul class="jud chapters">
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=jud1&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="jud-1">1</a></li>
 			</ul>
-		<script>$('a.jud').click(function () {$('ul.jud').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jud').click(function () {$('ul.jud').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Jud</span>").appendTo("a.nt");});</script>
 		</li>
 		<li><a name="rev" id="rev" onclick="clickNTBook()" class="clicked0 book rev">Rev</a>
 			<ul class="rev chapters">
@@ -1612,7 +1617,7 @@
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rev21&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rev-21">21</a></li>
 				<li><a href="http://api.biblia.com/v1/bible/content/LEB.html?passage=rev22&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="rev-22">22</a></li>
 			</ul>
-		<script>$('a.rev').click(function () {$('ul.rev').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.rev').click(function () {$('ul.rev').show("fast");$('a.nt').addClass('active');$('a.book').hide("fast");$("<span>Rev</span>").appendTo("a.nt");});</script>
 		</li>
 	</ul>
 </section>
@@ -1726,7 +1731,7 @@
 				<li><a href="enochl#104&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eno-104">104</a></li>
 				<li><a href="enochl#105&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter" id="eno-105">105</a></li>
 			</ul>
-		<script>$('a.eno').click(function () {$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.eno').click(function () {$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");$("<span>Eno</span>").appendTo("a.other");});</script>
 		</li>
 		<li><a name="jub" id="jub" onclick="clickOtherBook()" class="clicked0 book jub">Jubliee</a></li>
 		<li><a name="jose" onclick="clickOtherBook()" class="clicked0 book jose" title="Josephus">Jose</a>
@@ -1753,7 +1758,7 @@
 				<li><a href="jan19&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter">19</a></li>
 				<li><a href="jan20&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter">20</a></li>
 			</ul>
-		<script>$('a.jose').click(function () {$('ul.jose').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.jose').click(function () {$('ul.jose').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");$("<span>Jose</span>").appendTo("a.other");});</script>
 		</li>
 		<li><a name="euse" onclick="clickOtherBook()" class="clicked0 book euse" title="Eusebius">Euse</a>
 			<ul class="other euse chapters">
@@ -1789,9 +1794,9 @@
 				<li><a href="euseb13&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter chron">Asia &amp; Syria</a></li>
 				<li><a href="euseb14&key=7bdeda0aaef6fc477ed02189a4f81e35" target="content" class="chapter chron">Romans</a></li>
 			</ul>
-		<script>$('a.euse').click(function () {$('ul.euse').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+		<script>$('a.euse').click(function () {$('ul.euse').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");$("<span>Euse</span>").appendTo("a.other");});</script>
 		</li>
-	<script>$('a.eno').click(function () {$('section.content').show("fast");$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");});</script>
+	<script>$('a.eno').click(function () {$('section.content').show("fast");$('ul.eno').show("fast");$('a.other').addClass('active');$('a.book').hide("fast");$("<span>Eno</span>").appendTo("a.other");});</script>
 	</ul>
 </section>
 <section class="books admin about">
