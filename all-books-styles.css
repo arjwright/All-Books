@@ -1,16 +1,16 @@
 /*Styles for All Books, Personal Bible Reader Project
 Created by Antoine RJ Wright
 Created: 12/25/2011
-Last Modified: 5/28/2014 */
+Last Modified: 6/23/2014 */
 
-		html {color:#000;background-color:#FFF; font:1em arial,sans-serif;}
-		body {font-family:arial, sans-serif;}
+		html {color:#000;background-color:transparent; margin-top:-1px; font:1em arial,sans-serif;}
+		body {font-family:arial, sans-serif;background-color:#FFF;}
 		a, a:visited {color:#000; text-decoration:none;}
 			a:hover, a:focus {color:#FFD700; text-decoration:underline; cursor:pointer;}
-		header {font-size:.8em;height:27px; padding:.5em 0; margin-bottom: .5em; position:absolute; top:0px; overflow:hidden;}
+		header {font-size:.8em;height:27px; padding:.5em 0; margin-bottom:1px; overflow:hidden; margin:0 0 -20px 0;}
 			header h1 {width: 5em; display:inline; font-size:1em; position:relative; top:-1000px;}
 				header h1:hover {cursor:pointer;}
-			header nav {/*margin-left: 5.5em;*/ margin-top:-1.5em; height:55px;background-color:#F1F1F1;font-weight:700;}
+			header nav {/*margin-left: 5.5em;*/ margin-top:-22px; height:55px;background-color:#F1F1F1;font-weight:700;}
 				header nav a, header nav span {padding:.5em; display:inline-block;}
                 header nav a {width: 63px; height:30px; font-size:1em; display:inline-block; }
 				header nav a.active, header nav span {color:#FFF; background-color:#FFD700; text-decoration:none;}
@@ -19,7 +19,7 @@ Last Modified: 5/28/2014 */
 						/*header nav span:after {content:")";}*/
 		section.home ul li {list-style-type:none; display:inline-block; float:left;}
 			section.home ul li a {border:1px solid #F1F1F1;  padding: .5em; width: 5em; }
-		section.books ul, section.other ul {margin-left:-2.5em;}
+		section.books ul, section.other ul {margin-left:-2.5em;-webkit-margin-before:0;}
 		section.books ul li, section.other ul li {display:inline-block;  float:left;}
 		section.books ul li a {background-color:transparent; border: 1px solid #F1F1F1; padding: .5em; width: 4em; height:3em; display:block; font-weight:500;}
 			section.books ul li a {color:#000;}
@@ -112,6 +112,6 @@ Last Modified: 5/28/2014 */
 			.btt {padding: .5em; color:#FFF;}
 		ul.chapters, ul.contributions, ul.about-aa, ul.stats-aa {margin-left:-2em; display:none;}
 			ul.stats-aa li span {font-weight:700;}
-		iframe.content {width:98%; height:97%; max-height:97%; position:absolute; top:1.5em; margin-left:3px; display:block; overflow:scroll;}
+		iframe.content {width:98%; height:97%; max-height:97%; position:absolute; top:30px; margin-left:3px; display:block; overflow:scroll; border:none; font-family:Arial, sans-serif;}
 			iframe p span {display:none;}
 		section.content, sup {display:none;}
